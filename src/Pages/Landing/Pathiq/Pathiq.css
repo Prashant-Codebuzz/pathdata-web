@@ -1,0 +1,127 @@
+/* ---- Banner Start ---- */
+
+.turning_banner.sub {
+    /* padding: 100px 100px 100px; */
+}
+
+.turning_banner.sub .description span {
+    color: rgba(76, 112, 255, 1);
+}
+
+.turning_banner.sub .title {
+    margin-bottom: 60px;
+}
+
+.turning_banner.sub .company {
+    padding: 225px 0 0;
+}
+
+.turning_banner.sub .company h5 {
+    position: relative;
+    font-size: 20px;
+}
+
+/* ---- Banner End ---- */
+
+
+/* ---- Key Features Start ---- */
+.brands.sub {
+    padding: 20px 100px 20px;
+    background: linear-gradient(90deg, rgb(82 110 242 / 1%) 0%, rgb(134 164 255 / 1%) 100%);
+}
+
+.brands.sub .description,
+.brands.sub .desc {
+    max-width: 100%;
+}
+
+.brands.sub .desc {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.brands.sub .drives .content .shortdesc {
+    font-weight: 400;
+    margin: 0;
+}
+
+.brands.sub .drives .content .shortdesc span {
+    font-weight: 600;
+}
+
+/* ---- Key Features End ---- */
+
+
+/* ---- Why-Pathdata End ---- */
+.why_pathdata.sub {
+    background: none;
+}
+
+.why_pathdata.sub::after {
+    content: none;
+}
+
+.why_pathdata.sub .title {
+    font-family: var(--popping);
+    font-size: 36px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.why_pathdata.sub .description {
+    font-family: var(--popping);
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 62%;
+    margin: auto;
+    color: #E0E0E0;
+    margin-bottom: 40px;
+}
+
+.why_pathdata.sub .content .title {
+    font-family: var(--popping);
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.why_pathdata.sub .content ul {
+    margin-top: 24px;
+}
+
+.why_pathdata.sub .content ul li {
+    background-image: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.why_pathdata.sub .content ul li .que {
+    font-family: var(--popping);
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.why_pathdata.sub .content ul li .que span {
+    color: rgba(76, 112, 255, 1);
+}
+
+
+.why_pathdata.sub .content ul li .ans {
+    font-family: var(--popping);
+    font-size: 18px;
+    font-weight: 400;
+    color: #E0E0E0;
+    padding-left: 24px;
+}
+
+.why_pathdata.sub .content ul li .ans span {
+    font-weight: 600;
+}
+
+
+/* ---- Why-Pathdata End ---- */

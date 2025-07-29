@@ -1,0 +1,73 @@
+
+/* ---- Copyright Start ---- */
+.copyright {
+    background: linear-gradient(90deg, rgb(82 110 242 / 1%) 0%, rgb(134 164 255 / 1%) 100%);
+    padding: 85px 100px 60px;
+    position: relative;
+}
+
+.copyright .social {
+    position: absolute;
+    top: -25px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.copyright p {
+    font-family: var(--popping);
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.copyright p:last-child {
+    font-weight: 400;
+}
+
+@media (max-width: 1399px) {
+    .copyright {
+        padding: 75px 80px 60px;
+    }
+}
+
+@media (max-width: 1299px) {}
+
+@media (max-width: 1199px) {
+    .copyright {
+        padding: 65px 60px 60px;
+    }
+
+    .copyright p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .copyright {
+        padding: 65px 50px 50px;
+    }
+
+    .copyright p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 575px) {
+    .copyright {
+        padding: 65px 30px 30px;
+    }
+
+    .copyright p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+    .copyright {
+        padding: 65px 25px 30px;
+    }
+}
+
+
+/* ---- Copyright End ---- */

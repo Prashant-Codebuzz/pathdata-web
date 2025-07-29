@@ -1,0 +1,73 @@
+/* ---- Meet-Team Start ---- */
+.meet_team {
+    padding: 100px 100px 145px;
+
+}
+
+.meet_team .title {
+    font-family: var(--popping);
+    font-size: 36px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.meet_team .description {
+    font-family: var(--popping);
+    font-size: 20px;
+    font-weight: 400;
+    color: #E0E0E0;
+    margin-bottom: 40px;
+}
+
+.meet_team .box {
+    background: linear-gradient(90deg, #526EF2, #86A4FF);
+    border-radius: 16px;
+    padding: 1.5px;
+    height: 100%;
+}
+
+.meet_team .content {
+    border-radius: 16px;
+    background-color: rgba(1, 3, 23, 1);
+
+    max-height: 100%;
+    height: 100%;
+}
+
+
+.meet_team .content .image{
+    /* height: 200px; */
+}
+
+.meet_team .content .image img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+
+.meet_team .content .info {
+    padding: 20px;
+}
+
+
+.meet_team .content h3 {
+    font-family: var(--popping);
+    font-weight: 500;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.meet_team .content .shortdesc {
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 18px;
+    color: #E0E0E0;
+    margin: 6px 0 15px;
+}
+
+
+/* ---- Meet-Team End ---- */
