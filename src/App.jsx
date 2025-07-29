@@ -65,7 +65,7 @@ import QueryRunner from './Pages/QueryRunner/QueryRunner';
 import PendingInvites from './Pages/PendingInvites/PendingInvites';
 import AIChat from './Pages/AI-Chat/AIChat';
 
-import LandingLayout from './Components/Landing-page/LandingLayout';
+import LandingLayout from './Components/Landing-Page/LandingLayout';
 import LandingHome from './Pages/Landing/Home/Home';
 import Waypoint from './Pages/Landing/Waypoint/Waypoint';
 import Pathiq from './Pages/Landing/Pathiq/Pathiq';
