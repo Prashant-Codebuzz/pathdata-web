@@ -437,7 +437,7 @@
 }
 
 .aws-list li::before {
-    content: "⮞";
+    content: url("../../../assets/images/aws_right_arrow.png");
     position: absolute;
     left: 0;
     color: #E0E0E0;
