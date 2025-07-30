@@ -1,7 +1,8 @@
 /* ---- Banner Start ---- */
 
 .new_banner {
-    padding: 120px 100px 105px;
+    /* padding: 120px 100px 105px; */
+    padding: 80px 100px 70px;
     background-image: url('../../../assets/images/home/background1.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,7 +100,7 @@
 }
 
 .new_banner .vision {
-    padding: 180px 0 0;
+    padding: 130px 0 0;
 }
 
 .new_banner .vision .description {
@@ -110,7 +111,7 @@
 
 @media (max-width: 1399px) {
     .new_banner {
-        padding: 80px 80px 80px;
+        padding: 80px 80px 70px;
     }
 
     .new_banner .vision {
@@ -132,7 +133,7 @@
     }
 
     .new_banner .vision {
-        padding: 140px 0 0;
+        padding: 130px 0 0;
     }
 
     .book-btn {
@@ -421,7 +422,7 @@
 
 /* ---- Brands Start ---- */
 .brands {
-    padding: 20px 100px 180px;
+    padding: 20px 100px 160px;
     position: relative;
 
 }

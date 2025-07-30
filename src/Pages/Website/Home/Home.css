@@ -571,8 +571,8 @@
     /* background-color: #101316; */
     padding: 10px 0px 120px;
 
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #010317);
-    background-size: cover;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #010317);
+    background-size: cover; */
 }
 
 .company h5 {

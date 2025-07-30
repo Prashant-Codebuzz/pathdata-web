@@ -340,6 +340,9 @@ const Waypoint = () => {
                     Call Us:
                     <Link to="tel:+1 (555) 123‑4567"> +1 (555) 123‑4567</Link>
                     <span className='mx-3'>|</span>
+
+                    <br className='d-md-none' />
+
                     Email Us:
                     <Link to="mailto:contact@pathsdata.com"> contact@pathsdata.com</Link>
                 </p>

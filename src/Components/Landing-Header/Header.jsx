@@ -14,7 +14,7 @@ const Header = () => {
                     <div className="container-fluid">
 
                         <div className='navbar-brand py-0'>
-                            <Link to="/explore-pathdata">
+                            <Link to="/">
                                 <div className='logo'>
                                     <img src={logo} alt="" />
                                 </div>
@@ -28,7 +28,7 @@ const Header = () => {
                         <div className="offcanvas offcanvas-start" data-bs-scroll="true" tabIndex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                             <div className="offcanvas-header">
                                 <div className='navbar-brand'>
-                                    <Link to="/explore-pathdata">
+                                    <Link to="/">
                                         <img src={logo} alt="" />
                                     </Link>
                                 </div>

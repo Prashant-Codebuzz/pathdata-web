@@ -1,7 +1,7 @@
 /* ---- Banner Start ---- */
 
 .turning_banner {
-    padding: 110px 100px 100px;
+    padding: 90px 100px 70px;
     background-image: url('../../../assets/images/home/background1.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -105,7 +105,7 @@
 }
 
 .turning_banner .vision {
-    padding: 218px 0 0;
+    padding: 200px 0 0;
 }
 
 .turning_banner .vision .description:first-of-type {
@@ -303,6 +303,11 @@
 .inevitable.turningdata .description {
     max-width: 85%;
 }
+
+.inevitable.turningdata .description:last-of-type {
+    max-width: 100%;
+}
+
 
 
 
@@ -792,6 +797,4 @@
 
 
 
-.inevitable.turningdata{
-        
-}
+.inevitable.turningdata {}
