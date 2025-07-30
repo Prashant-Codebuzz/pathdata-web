@@ -336,7 +336,7 @@
 
 @media (max-width: 1399px) {
     .vision {
-        padding: 50px 80px 20px;
+        padding: 20px 80px 20px;
     }
 
     .vision .description {
@@ -346,7 +346,7 @@
 
 @media (max-width: 1199px) {
     .vision {
-        padding: 50px 60px 20px;
+        padding: 10px 60px 20px;
     }
 
     .vision .title {
@@ -365,7 +365,7 @@
 
 @media (max-width: 767px) {
     .vision {
-        padding: 50px 50px 20px;
+        padding: 0 50px 20px;
     }
 
     .vision .lines {
@@ -388,7 +388,7 @@
 
 @media (max-width: 575px) {
     .vision {
-        padding: 50px 30px 20px;
+        padding: 0 30px 20px;
     }
 
     .vision .title {
@@ -406,7 +406,7 @@
 
 @media (max-width: 425px) {
     .vision {
-        padding: 40px 25px 10px;
+        padding: 0 25px 10px;
     }
 
     .vision .title {
@@ -768,7 +768,7 @@
 
 @media (max-width: 1399px) {
     .inevitable {
-        padding: 60px 80px 100px;
+        padding: 60px 80px 120px;
     }
 }
 
@@ -780,7 +780,7 @@
 
 @media (max-width: 1199px) {
     .inevitable {
-        padding: 60px 60px 100px;
+        padding: 50px 60px 110px;
     }
 
     .inevitable .title {
@@ -794,7 +794,7 @@
 
 @media (max-width: 767px) {
     .inevitable {
-        padding: 60px 50px 80px;
+        padding: 40px 50px 100px;
     }
 
     .inevitable .title {
@@ -808,7 +808,7 @@
 
 @media (max-width: 575px) {
     .inevitable {
-        padding: 60px 30px 80px;
+        padding: 30px 30px 90px;
     }
 
     .inevitable .title {
@@ -829,7 +829,7 @@
 
 @media (max-width: 425px) {
     .inevitable {
-        padding: 60px 25px 80px;
+        padding: 30px 25px 80px;
     }
 
     .inevitable .title {

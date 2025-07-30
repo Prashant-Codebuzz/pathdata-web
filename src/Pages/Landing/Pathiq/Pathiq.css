@@ -21,12 +21,62 @@
     font-size: 20px;
 }
 
+
+@media (max-width: 1399px) {
+    .turning_banner.sub .company {
+        padding: 195px 0 0;
+    }
+}
+
+@media (max-width: 1199px) {
+    .turning_banner.sub .company {
+        padding: 170px 0 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .turning_banner.sub .company {
+        padding: 140px 0 0;
+    }
+
+    .turning_banner.sub::before {
+        top: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .turning_banner.sub .company {
+        padding: 120px 0 0;
+    }
+}
+
+@media (max-width: 475px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 400px) {
+    .turning_banner.sub::before {
+        top: 94%;
+    }
+}
+
+@media (max-width: 375px) {
+    .turning_banner.sub .company {
+        padding: 110px 0 0;
+    }
+
+    .turning_banner.sub::before {
+        top: 92%;
+    }
+}
+
+
 /* ---- Banner End ---- */
 
 
 /* ---- Key Features Start ---- */
 .brands.sub {
-    padding: 20px 100px 20px;
+    padding-block: 20px 20px;
     background: linear-gradient(90deg, rgb(82 110 242 / 1%) 0%, rgb(134 164 255 / 1%) 100%);
 }
 
@@ -49,12 +99,61 @@
     font-weight: 600;
 }
 
+@media (max-width: 1399px) {
+    .brands.sub .desc {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .brands.sub .drives .content .shortdesc {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 991px) {
+    .brands.sub .drives .content {
+        padding: 30px;
+    }
+
+    .brands.sub .drives .content .shortdesc {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 767px) {
+    .brands.sub .desc {
+        font-size: 20px;
+    }
+
+    .brands.sub .drives .content {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 575px) {
+    .brands.sub .desc {
+        font-size: 18px;
+    }
+
+    .brands.sub .drives .content {
+        padding: 22px;
+    }
+
+    .brands.sub .drives .content .shortdesc {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px) {}
+
 /* ---- Key Features End ---- */
 
 
 /* ---- Why-Pathdata End ---- */
 .why_pathdata.sub {
     background: none;
+    padding-bottom: 145px;
 }
 
 .why_pathdata.sub::after {
@@ -122,6 +221,101 @@
 .why_pathdata.sub .content ul li .ans span {
     font-weight: 600;
 }
+
+@media (max-width: 1399px) {
+    .why_pathdata.sub {
+        padding-bottom: 120px;
+    }
+
+    .why_pathdata.sub .description {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .why_pathdata.sub {
+        padding-bottom: 110px;
+    }
+
+    .why_pathdata.sub .title {
+        font-size: 34px;
+    }
+
+    .why_pathdata.sub .description {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 991px) {
+    .why_pathdata.sub .content .title {
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+
+    .why_pathdata.sub .content ul li .que {
+        font-size: 19px;
+    }
+
+    .why_pathdata.sub .content ul li .ans {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 767px) {
+    .why_pathdata.sub {
+        padding-bottom: 110px;
+    }
+
+    .why_pathdata.sub .title {
+        font-size: 32px;
+    }
+
+    .why_pathdata.sub .description {
+        font-size: 17px;
+    }
+
+    .why_pathdata.sub .content ul li {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .why_pathdata.sub {
+        padding-bottom: 90px;
+    }
+
+    .why_pathdata.sub .title {
+        font-size: 28px;
+    }
+
+    .why_pathdata.sub .description {
+        font-size: 16px;
+    }
+
+    .why_pathdata.sub .content .title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .why_pathdata.sub .content ul li .que {
+        font-size: 18px;
+    }
+
+    .why_pathdata.sub .content ul li .ans {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+    .why_pathdata.sub {
+        padding-bottom: 80px;
+    }
+
+    .why_pathdata.sub .title {
+        font-size: 24px;
+    }
+}
+
 
 
 /* ---- Why-Pathdata End ---- */

@@ -120,13 +120,26 @@
 
 @media (max-width: 1399px) {
     .turning_banner {
-        padding: 60px 80px 100px;
+        padding: 80px 80px 80px;
+    }
+
+    .turning_banner .vision {
+        padding: 195px 0 0;
     }
 }
 
 @media (max-width: 1199px) {
     .turning_banner {
-        padding: 60px 60px 100px;
+        padding: 60px 60px 60px;
+    }
+
+    .turning_banner::before {
+        top: 105%;
+        width: 118%;
+    }
+
+    .turning_banner .vision {
+        padding: 170px 0 0;
     }
 
     .turning_banner .left .title {
@@ -139,9 +152,21 @@
     }
 }
 
+@media (max-width: 991px) {
+    .turning_banner::before {
+        top: 102%;
+        width: 130%;
+    }
+}
+
 @media (max-width: 767px) {
     .turning_banner {
-        padding: 60px 50px 80px;
+        padding: 50px 50px 50px;
+    }
+
+    .turning_banner::before {
+        top: 103%;
+        width: 145%;
     }
 
     .turning_banner .left .title {
@@ -155,9 +180,12 @@
 
 @media (max-width: 575px) {
     .turning_banner {
-        padding: 60px 30px 60px;
+        padding: 40px 30px 40px;
     }
 
+    .turning_banner .vision {
+        padding: 150px 0 0;
+    }
 
     .turning_banner .left .title {
         font-size: 28px;
@@ -173,17 +201,38 @@
     .turning_banner .left .description {
         padding-bottom: 16px;
     }
+
+    .turning_banner::before {
+        top: 105%;
+        width: 165%;
+    }
+
+    .turning_banner .vision {
+        padding: 130px 0 0;
+    }
 }
 
 @media (max-width: 425px) {
     .turning_banner {
-        padding: 60px 25px 30px;
+        padding: 40px 25px 40px;
     }
 
     .turning_banner .left .title {
         font-size: 24px;
     }
 }
+
+@media (max-width: 375px) {
+    .turning_banner::before {
+        top: 106%;
+        width: 190%;
+    }
+
+    .turning_banner .vision {
+        padding: 130px 0 0;
+    }
+}
+
 
 
 /* ---- Banner End ---- */
@@ -198,31 +247,31 @@
 
 @media (max-width: 1399px) {
     .lines.turningdata {
-        margin-inline: 80px;
+        margin: 50px 80px 0;
     }
 }
 
 @media (max-width: 1199px) {
     .lines.turningdata {
-        margin-inline: 60px;
+        margin: 40px 60px 0;
     }
 }
 
 @media (max-width: 767px) {
     .lines.turningdata {
-        margin-inline: 50px;
+        margin: 30px 50px 0;
     }
 }
 
 @media (max-width: 575px) {
     .lines.turningdata {
-        margin-inline: 30px;
+        margin: 30px 30px 0;
     }
 }
 
 @media (max-width: 425px) {
     .lines.turningdata {
-        margin-inline: 25px;
+        margin: 30px 25px 0;
     }
 }
 
@@ -443,6 +492,10 @@
         padding: 16px 20px;
         font-size: 16px;
     }
+
+    .aws_service .aws-wrapper .aws-tabs {
+        gap: 15px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -501,9 +554,18 @@
     }
 }
 
+@media (max-width: 767px) {
+    .aws-tabs {
+        padding-inline: 50vw;
+        /* padding: 0 50vw 0; */
+        /* padding-left: 50vw; */
+        /* padding-right: 50vw !important;   */
+    }
+}
+
 @media (max-width: 575px) {
     .aws_service {
-        padding: 20px 30px 20px;
+        padding: 30px 30px 30px;
     }
 
     .aws_service .title {
@@ -514,15 +576,22 @@
         margin-bottom: 18px !important;
     }
 
+    .aws_service .aws-wrapper {
+        margin-top: 30px;
+    }
+
+    .aws_service .aws-wrapper .aws-tabs {
+        gap: 10px;
+    }
 }
 
 @media (max-width: 425px) {
     .aws_service {
-        padding: 10px 25px 10px;
+        padding: 30px 25px 10px;
     }
 
     .aws_service .title {
-        font-size: 34px;
+        font-size: 24px;
     }
 
 }
@@ -553,9 +622,6 @@
     background-size: 100% 100%; */
 }
 
-.why_pathdata .right {
-    /* margin-bottom: 90px; */
-}
 
 .why_pathdata .right .title {
     font-family: var(--popping);
@@ -605,10 +671,6 @@
         padding: 80px 60px 60px;
     }
 
-    .why_pathdata .right {
-        margin-bottom: 40px;
-    }
-
     .why_pathdata .right .title {
         font-size: 34px;
     }
@@ -624,21 +686,42 @@
 
     .why_pathdata .description {
         font-size: 18px;
-        margin-top: 60px;
+    }
+
+    .why_pathdata .right .description {
+        font-size: 22px;
+    }
+
+    .why_pathdata .right ul li .description {
+        font-size: 18px;
     }
 }
+
+@media (max-width: 991px) {
+    .why_pathdata::after {
+        top: 55%;
+    }
+}
+
+@media (max-width: 890px) {
+    .why_pathdata::after {
+        top: 47%;
+        width: 66%;
+    }
+}
+
 
 @media (max-width: 767px) {
     .why_pathdata {
         padding: 60px 50px 60px;
     }
 
-    .why_pathdata .row {
-        background-image: none;
+    .why_pathdata::after {
+        content: none;
     }
 
-    .why_pathdata .right {
-        margin-bottom: 0px;
+    .why_pathdata .row {
+        background-image: none;
     }
 
     .why_pathdata .right .title {
@@ -656,7 +739,14 @@
 
     .why_pathdata .description {
         font-size: 17px;
-        margin-top: 30px;
+    }
+
+    .why_pathdata .right .description {
+        font-size: 21px;
+    }
+
+    .why_pathdata .right ul li .description {
+        font-size: 17px;
     }
 }
 
@@ -681,6 +771,14 @@
     .why_pathdata .description {
         font-size: 16px;
     }
+
+    .why_pathdata .right .description {
+        font-size: 20px;
+    }
+
+    .why_pathdata .right ul li .description {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -690,3 +788,10 @@
 }
 
 /* ---- Why-Pathdata End ---- */
+
+
+
+
+.inevitable.turningdata{
+        
+}

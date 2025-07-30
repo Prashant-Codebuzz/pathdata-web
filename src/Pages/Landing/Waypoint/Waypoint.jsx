@@ -224,11 +224,35 @@ const Waypoint = () => {
                             <div
                                 key={index}
                                 className={`aws-tab ${index === activeTab ? 'active' : ''}`}
-                                onClick={() => setActiveTab(index)}
+                                onClick={(e) => {
+                                    setActiveTab(index);
+
+                                    if (window.innerWidth < 768) {
+
+                                        const tabElement = e.currentTarget;
+                                        const container = tabElement.parentElement;
+
+                                        const tabRect = tabElement.getBoundingClientRect();
+                                        const containerRect = container.getBoundingClientRect();
+
+                                        const offset =
+                                            tabRect.left -
+                                            containerRect.left -
+                                            containerRect.width / 2 +
+                                            tabRect.width / 2;
+
+                                        container.scrollBy({
+                                            left: offset,
+                                            behavior: 'smooth',
+                                        });
+
+                                    }
+                                }}
                             >
                                 {tab.title}
                             </div>
                         ))}
+
                     </div>
 
                     <div className="aws-content-section">

@@ -1,62 +1,3 @@
-/* ---- Contact Start ---- */
-.contact-info {
-    padding: 100px 100px 0;
-}
-
-.contact-info .info {}
-
-.contact-info .info h1 {
-    font-family: var(--popping);
-    font-size: 36px;
-    font-weight: 500;
-    color: #FFFFFF;
-    margin-bottom: 10px;
-}
-
-.contact-info .info .description {
-    font-family: var(--popping);
-    font-size: 20px;
-    font-weight: 400;
-    color: #E0E0E0;
-    max-width: 75%;
-}
-
-.contact-info .box {
-    background: linear-gradient(90deg, #526EF2, #86A4FF);
-    border-radius: 16px;
-    padding: 1px;
-    height: 100%;
-}
-
-.contact-info .box .content {
-    border-radius: 16px;
-    padding: 30px 40px;
-    background-color: rgba(1, 3, 23, 1);
-
-    max-height: 100%;
-    height: 100%;
-}
-
-.contact-info .box .content h3 {
-    font-family: var(--popping);
-    font-weight: 500;
-    font-size: 24px;
-    color: #ffffff;
-    margin: 10px 0 12px;
-}
-
-.contact-info .box .content .shortdesc {
-    font-family: var(--popping);
-    font-weight: 400;
-    font-size: 22px;
-    color: #E0E0E0;
-}
-
-
-
-/* ---- Contact End ---- */
-
-
 .contact.landing {
     padding: 100px 100px 145px;
     background: none;
@@ -128,3 +69,237 @@
     width: 100%;
     max-width: 170px;
 }
+
+
+@media (max-width: 1399px) {
+    .contact.landing {
+        padding: 60px 80px 120px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .contact.landing {
+        padding: 60px 60px 110px;
+    }
+
+    .contact.landing .title {
+        font-size: 34px;
+    }
+
+    .contact.landing .description {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact.landing {
+        padding: 50px 50px 100px;
+    }
+
+    .contact.landing .title {
+        font-size: 32px;
+    }
+
+    .contact.landing .description {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 575px) {
+    .contact.landing {
+        padding: 40px 30px 90px;
+    }
+
+    .contact.landing .title {
+        font-size: 28px;
+    }
+
+    .contact.landing .description {
+        font-size: 16px;
+    }
+
+    .contact.landing .contact-form {
+        margin: 40px auto 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .contact.landing {
+        padding: 40px 25px 80px;
+    }
+
+    .contact.landing .title {
+        font-size: 24px;
+    }
+}
+
+
+
+
+/* ---- Contact Start ---- */
+.contact-info {
+    padding: 100px 100px 0;
+}
+
+.contact-info .info {}
+
+.contact-info .info h1 {
+    font-family: var(--popping);
+    font-size: 36px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.contact-info .info .description {
+    font-family: var(--popping);
+    font-size: 20px;
+    font-weight: 400;
+    color: #E0E0E0;
+    max-width: 75%;
+}
+
+.contact-info .box {
+    background: linear-gradient(90deg, #526EF2, #86A4FF);
+    border-radius: 16px;
+    padding: 1px;
+    height: 100%;
+}
+
+.contact-info .box .content {
+    border-radius: 16px;
+    padding: 30px 40px;
+    background-color: rgba(1, 3, 23, 1);
+
+    max-height: 100%;
+    height: 100%;
+}
+
+.contact-info .box .content h3 {
+    font-family: var(--popping);
+    font-weight: 500;
+    font-size: 24px;
+    color: #ffffff;
+    margin: 10px 0 12px;
+}
+
+.contact-info .box .content .shortdesc {
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 22px;
+    color: #E0E0E0;
+}
+
+@media (max-width: 1399px) {
+    .contact-info {
+        padding: 60px 80px 10px;
+    }
+
+    .contact-info .info .description {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1299px) {
+    .contact-info .box .content {
+        padding: 30px 40px;
+    }
+
+    .contact-info .box .content h3 {
+        font-size: 22px;
+    }
+
+    .contact-info .box .content .shortdesc {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .contact-info {
+        padding: 60px 60px 20px;
+    }
+
+    .contact-info .info h1 {
+        font-size: 34px;
+    }
+
+    .contact-info .info .description {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact-info .box .content {
+        padding: 30px 30px;
+    }
+
+    .contact-info .box .content h3 {
+        font-size: 20px;
+        margin: 8px 0 10px;
+    }
+
+    .contact-info .box .content .shortdesc {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .contact-info {
+        padding: 50px 50px 20px;
+    }
+
+    .contact-info .info h1 {
+        font-size: 32px;
+    }
+
+    .contact-info .info .description {
+        font-size: 17px;
+    }
+
+    .contact-info .box .content {
+        padding: 24px 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact-info {
+        padding: 40px 30px 10px;
+    }
+
+    .contact-info .info h1 {
+        font-size: 28px;
+    }
+
+    .contact-info .info .description {
+        font-size: 16px;
+    }
+
+    .contact-info .box .content {
+        padding: 24px 20px;
+    }
+
+    .contact-info .box .content h3 {
+        font-size: 18px;
+        margin: 6px 0 8px;
+    }
+
+    .contact-info .box .content .shortdesc {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 425px) {
+    .contact-info {
+        padding: 40px 25px 10px;
+    }
+
+    .contact-info .info h1 {
+        font-size: 24px;
+    }
+}
+
+/* ---- Contact End ---- */

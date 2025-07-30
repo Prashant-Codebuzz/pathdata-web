@@ -36,8 +36,8 @@ const ContactUs = () => {
 
             {/* ---- Contact Start ---- */}
             <div className="contact-info">
-                <div className="row">
-                    <div className="col-lg-4">
+                <div className="row g-5 g-lg-0">
+                    <div className="col-lg-4 text-center text-lg-start">
                         <div className="info">
                             <h1 className="title">
                                 Contact Us
@@ -48,23 +48,23 @@ const ContactUs = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 col-sm-6">
                         <div className="box text-center">
                             <div className="content">
 
                                 <div className="image">
                                     <img src={contactemail} alt="" className='img-fluid' />
                                 </div>
-
+        
                                 <h3>Email Us</h3>
 
-                                <div className='shortdesc'>
+                                <span className='shortdesc'>
                                     contact@pathsdata.com
-                                </div>
+                                </span>
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 col-sm-6">
                         <div className="box text-center">
                             <div className="content">
 
@@ -74,9 +74,9 @@ const ContactUs = () => {
 
                                 <h3>Call Us</h3>
 
-                                <div className='shortdesc'>
+                                <span className='shortdesc'>
                                     +1 (555) 123‑4567
-                                </div>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -135,7 +135,7 @@ const ContactUs = () => {
 
                         <div className='col-lg-6 group'>
                             <label htmlFor="work_email" className='mb-2'>
-                                Work email
+                                Email
                             </label>
                             <input
                                 type="email"

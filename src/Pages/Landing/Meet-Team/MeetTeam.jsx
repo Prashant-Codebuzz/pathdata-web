@@ -39,7 +39,7 @@ const MeetTeam = () => {
         },
     ];
 
-    
+
     return (
         <>
 
@@ -54,15 +54,15 @@ const MeetTeam = () => {
                     Meet the Brains Behind the Breakthroughs.
                 </p>
 
-                <div className=" row g-5 g-md-5">
+                <div className="row g-5 g-md-5">
                     {
                         Exports.map((i, index) => {
                             return (
-                                <div className="col-lg-3" key={index}>
+                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12" key={index}>
                                     <div className="box">
                                         <div className="content d-flex flex-column">
                                             <div className="image">
-                                                <img src={i.image} alt="" className='img-fluid' />
+                                                <img src={i.image} alt={i.name} className='img-fluid' loading='lazy' />
                                             </div>
 
                                             <div className="info">

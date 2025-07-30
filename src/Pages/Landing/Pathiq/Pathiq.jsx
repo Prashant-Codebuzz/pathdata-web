@@ -138,7 +138,7 @@ const Pathiq = () => {
                 </p>
 
                 <div className="drives row justify-content-center g-5 g-md-5">
-                    <div className="col-xxl-5 col-lg-5 col-md-6">
+                    <div className="col-xxl-5 col-lg-5 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="content d-flex flex-column">
                                 <div className='shortdesc'>
@@ -152,7 +152,7 @@ const Pathiq = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xxl-5 col-lg-5 col-md-6">
+                    <div className="col-xxl-5 col-lg-5 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="content d-flex flex-column">
                                 <div className='shortdesc'>
@@ -161,7 +161,7 @@ const Pathiq = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xxl-5 col-lg-5 col-md-6">
+                    <div className="col-xxl-5 col-lg-5 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="content d-flex flex-column">
                                 <div className='shortdesc'>
@@ -176,7 +176,7 @@ const Pathiq = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xxl-5 col-lg-5 col-md-6">
+                    <div className="col-xxl-5 col-lg-5 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="content d-flex flex-column">
                                 <div className='shortdesc'>
