@@ -12,6 +12,7 @@ import powerby_1 from '../../../assets/images/powerby_1.png';
 import powerby_2 from '../../../assets/images/powerby_2.png';
 import powerby_3 from '../../../assets/images/powerby_3.png';
 import powerby_4 from '../../../assets/images/powerby_4.png';
+import whyrightarrow from '../../../assets/images/why-right-arrow.png';
 
 import { Link } from 'react-router-dom';
 
@@ -219,16 +220,31 @@ const Pathiq = () => {
 
                             <ul>
                                 <li>
-                                    <div className="que"><span>🡪</span> Brittle, Manual Pipelines</div>
+                                    <div className="que">
+                                        <span className='me-2'>
+                                            {/* 🡪 */}
+                                            <img src={whyrightarrow} alt="" />
+                                        </span> 
+                                        Brittle, Manual Pipelines</div>
 
                                     <p className='ans'>Hours spent writing and maintaining complex YAML and brittle scripts.</p>
                                 </li>
                                 <li>
-                                    <div className="que"><span>🡪</span> Slow Time-to-Insight</div>
+                                    <div className="que">
+                                        <span className='me-2'>
+                                            {/* 🡪 */}
+                                            <img src={whyrightarrow} alt="" />
+                                        </span> 
+                                        Slow Time-to-Insight</div>
                                     <p className='ans'>Getting from an idea to a deployable model takes weeks, not hours.</p>
                                 </li>
                                 <li>
-                                    <div className="que"><span>🡪</span> Silos and Complexity</div>
+                                    <div className="que">
+                                        <span className='me-2'>
+                                            {/* 🡪 */}
+                                            <img src={whyrightarrow} alt="" />
+                                        </span> 
+                                        Silos and Complexity</div>
                                     <p className='ans'>Engineers are isolated, and leaders are disconnected from the data that drives their decisions.</p>
                                 </li>
                             </ul>
@@ -242,16 +258,31 @@ const Pathiq = () => {
 
                             <ul>
                                 <li>
-                                    <div className="que"><span>🡪</span> AI-Powered Orchestration</div>
+                                    <div className="que">
+                                        <span className='me-2'>
+                                            {/* 🡪 */}
+                                            <img src={whyrightarrow} alt="" />
+                                        </span> 
+                                        AI-Powered Orchestration</div>
 
                                     <p className='ans'>Your <span>AI Copilot</span> handles the complexity, letting you focus on the outcome.</p>
                                 </li>
                                 <li>
-                                    <div className="que"><span>🡪</span> Accelerated Outcomes</div>
+                                    <div className="que">
+                                        <span className='me-2'>
+                                            {/* 🡪 */}
+                                            <img src={whyrightarrow} alt="" />
+                                        </span> 
+                                        Accelerated Outcomes</div>
                                     <p className='ans'>Go from idea to production in minutes, not weeks. The power of our AI Copilot delivers this speed on <span>your existing stack</span> or with a supercharged boost from our <span>Rust-native engine</span>.</p>
                                 </li>
                                 <li>
-                                    <div className="que"><span>🡪</span> Unified & Collaborative</div>
+                                    <div className="que">
+                                        <span className='me-2'>
+                                            {/* 🡪 */}
+                                            <img src={whyrightarrow} alt="" />
+                                        </span> 
+                                        Unified & Collaborative</div>
                                     <p className='ans'>PathsData intelligently connects your teams and tools, enabling effortless collaboration across your entire data and AI lifecycle. </p>
                                 </li>
                             </ul>
