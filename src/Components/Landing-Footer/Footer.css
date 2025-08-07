@@ -1,29 +1,73 @@
-
 /* ---- Copyright Start ---- */
 .copyright {
-    background: linear-gradient(90deg, rgb(82 110 242 / 1%) 0%, rgb(134 164 255 / 1%) 100%);
-    padding: 85px 100px 60px;
+    /* background: linear-gradient(90deg, rgb(82 110 242 / 1%) 0%, rgb(134 164 255 / 1%) 100%); */
+    background-image: url("../../assets/images/cruels.png");
+    background-repeat: no-repeat;
+    background-size: 100% 85%;
+    padding: 85px 100px 120px;
     position: relative;
 }
 
-.copyright .social {
+/* .copyright .social {
     position: absolute;
     top: -25px;
     transform: translateX(-50%);
     left: 50%;
+} */
+
+.copyright .title {
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 30px;
+    width: fit-content;
+    margin: auto;
+    padding: 15px 25px;
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
 }
+
 
 .copyright p {
     font-family: var(--popping);
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 36px;
+    font-weight: 400;
     color: #FFFFFF;
-    margin-bottom: 0;
+    margin-block: 25px 40px;
 }
 
-.copyright p:last-child {
-    font-weight: 400;
+.copyright p span {
+    background: linear-gradient(178.68deg, #FFFFFF 10.37%, #526EF2 146.85%);
+    -webkit-background-clip: text;
+    color: transparent;
 }
+
+.copyright form .form-control {
+    border: 1px solid #86A4FF26;
+    background: #060820;
+    border-radius: 7px;
+    font-family: var(--popping);
+    width: 20%;
+    padding: 18px 12px;
+    font-size: 16px;
+    color: #DADADA;
+}
+
+.copyright form .form-control::placeholder {
+    color: #DADADA;
+}
+
+.copyright form .form-control:focus {
+    box-shadow: none;
+}
+
+.copyright form .main-button {
+    border-radius: 7px;
+    padding: 15px 24px;
+    background: linear-gradient(95.08deg, #4361ee 11.21%, #738bff 90.73%);
+}
+
+
 
 @media (max-width: 1399px) {
     .copyright {
@@ -71,3 +115,24 @@
 
 
 /* ---- Copyright End ---- */
+
+footer.s {
+    padding: 35px 60px 35px
+}
+
+footer .first .book-btn {
+    background: transparent;
+}
+
+footer .first .book-btn:hover {
+    background: transparent;
+}
+
+footer .copy {
+    font-family: var(--popping);
+    font-weight: 300;
+    ;
+    font-size: 18px;
+    color: #848484;
+    margin-top: 60px;
+}

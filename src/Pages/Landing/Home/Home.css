@@ -6,7 +6,7 @@
     background-image: url('../../../assets/images/home/background1.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: inherit;
+    background-position: center;
     position: relative;
     overflow: hidden;
 }
@@ -73,11 +73,16 @@
 .new_banner .left .title {
     font-family: var(--popping);
     color: #fff;
-    font-size: 36px;
+    font-size: 55px;
     font-weight: 500;
     margin-bottom: 20px;
 }
 
+.new_banner .left .title span {
+    background: linear-gradient(180deg, #FFFFFF 16.26%, #526EF2 122.76%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 .new_banner .left .description {
     font-family: var(--popping);
@@ -86,6 +91,13 @@
     padding-bottom: 40px;
     color: #E0E0E0;
 }
+
+.new_banner .left .main-button {
+    outline: 0;
+    background: linear-gradient(95.08deg, #4361ee 11.21%, #738bff 90.73%);
+    padding-inline: 40px;
+}
+
 
 /* .new_banner .left .description{
 
@@ -105,7 +117,12 @@
 
 .new_banner .vision .description {
     margin-bottom: 0;
-    max-width: 44%;
+    max-width: 75%;
+}
+
+.new_banner .vision .description span {
+    background: linear-gradient(90deg, rgba(134, 164, 255, 0.27) 0%, rgba(2, 4, 24, 0) 100%);
+    color: #BDC9FF;
 }
 
 
@@ -258,19 +275,74 @@
 
 
 
+/* ---- Step Start ---- */
+.step {
+    padding: 0px 100px 90px;
+}
+
+.step .box {
+    background: #060820;
+    border: 1px solid #86A4FF26;
+    border-radius: 12px;
+    padding: 30px 22px;
+}
+
+.step .box .num {
+    background: linear-gradient(178.2deg, #FFFFFF 23.77%, #526EF2 75.35%);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 88px;
+    line-height: 136%;
+    /* color: red; */
+}
+
+.step .box .title {
+    padding-block: 10px 20px;
+    font-family: var(--popping);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.step .box .description {
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #C2C2C2;
+}
+
+/* ---- Step End ---- */
+
+
 
 /* ---- Vision Start ---- */
 .vision {
-    padding: 20px 100px 20px;
+    padding: 20px 100px 40px;
     /* background: linear-gradient(90deg, rgb(82 110 242 / 1%) 0%, rgb(134 164 255 / 1%) 100%); */
-
     position: relative;
 }
 
+.vision.s {
+    background-image: url("../../../assets/images/cruels.png");
+    background-repeat: no-repeat;
+    background-size: 100% 85%;
+}
+
+
 .vision .title {
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 30px;
+    width: fit-content;
+    margin: auto;
+    padding: 15px 25px;
     font-family: var(--popping);
-    font-size: 36px;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 18px;
     color: #FFFFFF;
     margin-bottom: 10px;
 }
@@ -282,13 +354,29 @@
 
 .vision .description {
     font-family: var(--popping);
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 400;
-    max-width: 62%;
+    max-width: 64%;
     margin: auto;
-    color: #E0E0E0;
-    margin-bottom: 30px;
+    color: #FFFFFF;
+    margin-block: 25px 30px;
 }
+
+.vision .description.s {
+    font-size: 36px;
+}
+
+.vision .description span {
+    background: linear-gradient(178.68deg, #FFFFFF 10.37%, #526EF2 146.85%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.vision .images {
+    margin-top: 50px;
+}
+
+
 
 .vision .lines {
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -422,9 +510,12 @@
 
 /* ---- Brands Start ---- */
 .brands {
+    background-image: url("../../../assets/images/board-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
     padding: 20px 100px 160px;
     position: relative;
-
 }
 
 
@@ -469,11 +560,15 @@
 
 
 .brands .title {
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 30px;
+    width: fit-content;
+    padding: 15px 25px;
     font-family: var(--popping);
-    font-size: 36px;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 18px;
     color: #FFFFFF;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .brands .title span {
@@ -482,20 +577,18 @@
 
 .brands .desc {
     font-family: var(--popping);
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 26px;
+    font-weight: 400;
     max-width: 62%;
-    margin: auto;
-    color: #E0E0E0;
+    color: #FFFFFF;
     margin-bottom: 8px;
 }
 
 .brands .description {
     font-family: var(--popping);
-    font-size: 20px;
     font-weight: 400;
-    max-width: 62%;
-    margin: auto;
+    font-size: 18px;
+    /* max-width: 62%; */
     color: #E0E0E0;
     margin-bottom: 40px;
 }
@@ -503,7 +596,6 @@
 
 
 .brands .drives .box {
-    background: linear-gradient(90deg, #526EF2, #86A4FF);
     border-radius: 16px;
     padding: 1px;
     height: 100%;
@@ -511,22 +603,31 @@
 
 .brands .drives .content {
     border-radius: 16px;
-    padding: 40px;
-    background-color: rgba(1, 3, 23, 1);
-
+    padding: 50px 30px 30px;
+    border: 1px solid #86A4FF26;
+    background: linear-gradient(123.15deg, #060820 2.79%, #0E134D 94%);
     max-height: 100%;
     height: 100%;
+    position: relative;
 }
 
 .brands .drives .content h3 {
     font-family: var(--popping);
     font-weight: 500;
-    font-size: 34px;
-    color: #E0E0E0;
+    font-size: 40px;
+    color: #FFFFFF;
+    margin-block: 50px 10px;
 }
 
 .brands .drives .content h3 span {
+    background: linear-gradient(149.9deg, #FFFFFF -38.6%, #526EF2 76.39%);
     color: rgba(76, 112, 255, 1);
+
+    background-image: url("../../../assets/images/iq.png");
+    color: #BDC9FF;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .brands .drives .content .shortdesc {
@@ -544,9 +645,16 @@
     font-weight: 400;
     font-size: 18px;
     color: #E0E0E0;
-    margin-top: auto;
+    max-width: 95%;
     margin-bottom: 0;
 }
+
+.brands .drives .content button {
+    position: absolute;
+    right: 22px;
+    bottom: 30px;
+}
+
 
 .brands .drives .content .buttons {
     transform: translate(-50%, 50px);

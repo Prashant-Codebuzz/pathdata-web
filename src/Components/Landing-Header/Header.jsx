@@ -16,7 +16,7 @@ const Header = () => {
                         <div className='navbar-brand py-0'>
                             <Link to="/">
                                 <div className='logo'>
-                                    <img src={logo} alt="" />
+                                    <img src={logos} alt="" />
                                 </div>
                             </Link>
                         </div>
@@ -29,7 +29,7 @@ const Header = () => {
                             <div className="offcanvas-header">
                                 <div className='navbar-brand'>
                                     <Link to="/">
-                                        <img src={logo} alt="" />
+                                        <img src={logos} alt="" />
                                     </Link>
                                 </div>
                                 <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -37,10 +37,16 @@ const Header = () => {
                             <div className="offcanvas-body">
                                 <ul className="navbar-nav mb-2 mb-lg-0 ms-auto">
                                     <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas">
-                                        <Link to="/join-team" className="nav-link">Join Our Team</Link>
+                                        <Link className="nav-link">About Us</Link>
+                                    </li>
+                                    <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas">
+                                        <Link to="/join-team" className="nav-link">Our Vision</Link>
+                                    </li>
+                                    <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas">
+                                        <Link to="/join-team" className="nav-link">Team</Link>
                                     </li>
                                     <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas" >
-                                        <Link to="/meet-team" className="nav-link">Meet Our Team</Link>
+                                        <Link className="nav-link">Blog</Link>
                                     </li>
                                     <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas" >
                                         <Link to="/contact-us" className="nav-link">Contact Us</Link>

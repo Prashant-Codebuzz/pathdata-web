@@ -24,7 +24,12 @@ const Pathiq = () => {
             <div className="turning_banner sub text-center">
                 <div className="left">
                     <p className="description f">
-                        <span>PATHIQ</span> by PATHSDATA
+                        PATH <span className='iq'>IQ</span>
+                        <br className='' />
+
+                        <div>
+                            by PATHSDATA.
+                        </div>
                     </p>
 
                     <h1 className="title">
@@ -37,7 +42,6 @@ const Pathiq = () => {
                             className="main-button book-btn discover-btn"
                         >
                             Contact Us
-                            <img src={rightarrow} className='ms-2' />
                         </Link>
                     </div>
                 </div>
@@ -126,66 +130,74 @@ const Pathiq = () => {
 
             {/* ---- Key Features Start ---- */}
             <div className="brands sub text-center">
-                <h1 className="title">
+                <h1 className="title m-auto">
                     Key Features
                 </h1>
 
-                <p className="desc">
-                    PATHSDATA: The Intelligent Core of Your Data & AI Operations.
-                </p>
-
                 <p className="description">
-                    Here are the features that enable your team to build, manage, and scale with unprecedented speed and simplicity.
+                    Here are the features that enable your team to build, manage, and scale
+                    with unprecedented speed and simplicity.
                 </p>
 
                 <div className="drives row justify-content-center g-5 g-md-5">
-                    <div className="col-xxl-5 col-lg-5 col-md-6 col-sm-6">
+                    <div className="col-xxl-6 col-lg-6 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="content d-flex flex-column">
+                                <div className="title">
+                                    AI-Native Orchestration Your AI Copilot
+                                </div>
+
                                 <div className='shortdesc'>
-                                    <span>AI-Native Orchestration</span> Your
-                                    <span>AI Copilot</span> automates complex
-                                    workflows, from data lineage to dependency management, allowing
-                                    you to build and manage robust
-                                    pipelines with natural language
+                                    automates complex workflows, from data lineage to
+                                    dependency management, allowing you to build and
+                                    manage robust pipelines with natural language
                                     instead of code.
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-xxl-5 col-lg-5 col-md-6 col-sm-6">
+                    <div className="col-xxl-6 col-lg-6 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="content d-flex flex-column">
+                                <div className="title">
+                                    Universal Stack Connectivity
+                                </div>
+
                                 <div className='shortdesc'>
-                                    <span>Universal Stack Connectivity</span> PathsData integrates seamlessly with your existing data lakes, warehouses, and ML platforms. You can choose to run on your infrastructure or on our high-performance, <span>Rust-native PathsData Engine</span> for maximum speed
+                                    PathsData integrates seamlessly with your existing data lakes, warehouses, and ML platforms. You can choose to run on your infrastructure or on our high-performance, Rust-native
+                                    PathsData Engine for maximum speed
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-xxl-5 col-lg-5 col-md-6 col-sm-6">
+                    <div className="col-xxl-6 col-lg-6 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="content d-flex flex-column">
+                                <div className="title">
+                                    Business Outcome-Driven
+                                </div>
+
                                 <div className='shortdesc'>
-                                    <span>Business Outcome-Driven</span> Every
-                                    function is designed to deliver
-                                    a tangible business result.
-                                    Focus on defining the outcome,
-                                    and our platform handles the
-                                    tedious, technical work required
-                                    to get there, faster.
+                                    Every function is designed to deliver a tangible business
+                                    result. Focus on defining the outcome, and our platform
+                                    handles the tedious, technical work required to get
+                                    there, faster.
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-xxl-5 col-lg-5 col-md-6 col-sm-6">
+                    <div className="col-xxl-6 col-lg-6 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="content d-flex flex-column">
+                                <div className="title">
+                                    Rust-Powered Performance
+                                </div>
+
                                 <div className='shortdesc'>
-                                    <span>Rust-Powered Performance</span> Experience unparalleled efficiency and scalability.
-                                    Our distributed compute engine,
-                                    built on Rust, is engineered to handle
-                                    even your most demanding data transformations and analytical
-                                    workloads with blazing speed.
+                                    Experience unparalleled efficiency and scalability. Our
+                                    distributed compute engine, built on Rust, is engineered
+                                    to handle even your most demanding data transformations
+                                    and analytical workloads with blazing speed.
                                 </div>
                             </div>
                         </div>
@@ -195,7 +207,7 @@ const Pathiq = () => {
             {/* ---- Key Features End ---- */}
 
 
-            <div className="lines turningdata"></div>
+            {/* <div className="lines turningdata"></div> */}
 
 
             {/* ---- Why-Pathdata Start ---- */}
@@ -214,36 +226,24 @@ const Pathiq = () => {
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="content">
-                            <h5 className="title">
+                            <h5 className="main-title">
                                 The Old Way
                             </h5>
 
                             <ul>
                                 <li>
                                     <div className="que">
-                                        <span className='me-2'>
-                                            {/* 🡪 */}
-                                            <img src={whyrightarrow} alt="" />
-                                        </span> 
                                         Brittle, Manual Pipelines</div>
 
                                     <p className='ans'>Hours spent writing and maintaining complex YAML and brittle scripts.</p>
                                 </li>
                                 <li>
                                     <div className="que">
-                                        <span className='me-2'>
-                                            {/* 🡪 */}
-                                            <img src={whyrightarrow} alt="" />
-                                        </span> 
                                         Slow Time-to-Insight</div>
                                     <p className='ans'>Getting from an idea to a deployable model takes weeks, not hours.</p>
                                 </li>
                                 <li>
                                     <div className="que">
-                                        <span className='me-2'>
-                                            {/* 🡪 */}
-                                            <img src={whyrightarrow} alt="" />
-                                        </span> 
                                         Silos and Complexity</div>
                                     <p className='ans'>Engineers are isolated, and leaders are disconnected from the data that drives their decisions.</p>
                                 </li>
@@ -252,36 +252,24 @@ const Pathiq = () => {
                     </div>
                     <div className="col-lg-6">
                         <div className="content">
-                            <h5 className="title">
+                            <h5 className="main-title">
                                 The Pathsdata Way
                             </h5>
 
                             <ul>
                                 <li>
                                     <div className="que">
-                                        <span className='me-2'>
-                                            {/* 🡪 */}
-                                            <img src={whyrightarrow} alt="" />
-                                        </span> 
                                         AI-Powered Orchestration</div>
 
                                     <p className='ans'>Your <span>AI Copilot</span> handles the complexity, letting you focus on the outcome.</p>
                                 </li>
                                 <li>
                                     <div className="que">
-                                        <span className='me-2'>
-                                            {/* 🡪 */}
-                                            <img src={whyrightarrow} alt="" />
-                                        </span> 
                                         Accelerated Outcomes</div>
                                     <p className='ans'>Go from idea to production in minutes, not weeks. The power of our AI Copilot delivers this speed on <span>your existing stack</span> or with a supercharged boost from our <span>Rust-native engine</span>.</p>
                                 </li>
                                 <li>
                                     <div className="que">
-                                        <span className='me-2'>
-                                            {/* 🡪 */}
-                                            <img src={whyrightarrow} alt="" />
-                                        </span> 
                                         Unified & Collaborative</div>
                                     <p className='ans'>PathsData intelligently connects your teams and tools, enabling effortless collaboration across your entire data and AI lifecycle. </p>
                                 </li>

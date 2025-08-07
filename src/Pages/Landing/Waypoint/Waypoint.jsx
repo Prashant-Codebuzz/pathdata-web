@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './Waypoint.css';
 
 import rightarrow from '../../../assets/images/home/right-arrow.png';
@@ -8,6 +8,15 @@ import whypathdata from '../../../assets/images/why_pathdata.png';
 import turningright from '../../../assets/images/turning-right.png';
 import aws_left from '../../../assets/images/aws_left.png';
 import aws_right from '../../../assets/images/aws_right.png';
+import everystep from '../../../assets/images/every-step.png';
+
+import finance from '../../../assets/images/finance.png';
+import healthcare from '../../../assets/images/healthcare.png';
+import telecommunications from '../../../assets/images/telecommunications.png';
+import manufacturing from '../../../assets/images/manufacturing.png';
+import setusleft from '../../../assets/images/setus-left.png';
+import setusright from '../../../assets/images/right-left.png';
+
 
 import { Link } from 'react-router-dom';
 
@@ -64,6 +73,50 @@ const Waypoint = () => {
 
 
 
+    const scrollRef = useRef(null);
+    const [activeIndex, setActiveIndex] = useState(1); // center one
+
+    const scrollToCard = (index) => {
+        const container = scrollRef.current;
+        const cards = container.querySelectorAll('.col-xxl-4');
+        const card = cards[index];
+
+        if (card && container) {
+            // const offsetLeft = card.offsetLeft;
+            // const containerWidth = container.clientWidth;
+            // const scrollLeft = offsetLeft - containerWidth / 2 + card.clientWidth / 2;
+
+            // container.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+
+            const offsetLeft = card.offsetLeft;
+            const containerWidth = container.clientWidth;
+            const scrollLeft = offsetLeft - containerWidth / 2 + card.clientWidth / 2;
+
+            container.scrollTo({
+                left: scrollLeft,
+                behavior: 'smooth',
+            });
+
+
+            setActiveIndex(index);
+        }
+    };
+
+    const handleScrollPrev = () => {
+        if (activeIndex > 0) scrollToCard(activeIndex - 1);
+    };
+
+    const handleScrollNext = () => {
+        const total = scrollRef.current.querySelectorAll('.box').length;
+        if (activeIndex < total - 1) scrollToCard(activeIndex + 1);
+    };
+
+    useEffect(() => {
+        scrollToCard(activeIndex);
+    }, []);
+
+
+
     return (
         <>
 
@@ -71,16 +124,17 @@ const Waypoint = () => {
             <div className="turning_banner text-center">
                 <div className="left">
                     <p className="description f">
-                        <span>WAYPOINT</span> by PATHSDATA
+                        Waypoint
+                        <br className='' />
+
+                        <div>
+                            by PATHSDATA.
+                        </div>
                     </p>
 
                     <h1 className="title">
-                        From vision to real-world impact.
+                        From strategy to production - we turn cloud, data, and AI ideas into outcomes.
                     </h1>
-
-                    <p className="description">
-                        Consulting that builds — not just advises.
-                    </p>
 
                     <div className="buttons position-relative">
                         <Link
@@ -88,7 +142,6 @@ const Waypoint = () => {
                             className="main-button book-btn discover-btn"
                         >
                             Contact Us
-                            <img src={rightarrow} className='ms-2' />
                         </Link>
                     </div>
                 </div>
@@ -97,15 +150,14 @@ const Waypoint = () => {
                 <div className="vision text-center">
                     <div>
                         <h1 className="title">
-                            Every Idea Has a Story. We Help You Build It.
+                            We Don’t Just Advise. We Build.
                         </h1>
 
                         <p className="description">
-                            You have the vision.
-                        </p>
-
-                        <p className="description">
-                            From cloud to AI, we turn your vision into scalable platforms, smarter products, and real outcomes.
+                            At <span className="px-2">Waypoint by PATHSDATA,</span> we partner with visionary companies to turn complex
+                            ideas into scalable, intelligent platforms - entirely on <span className="px-2">AWS.</span> From laying the foundation
+                            of a modern data platform to deploying production-ready AI and ML models, we bring
+                            deep technical execution aligned to real business impact.
                         </p>
 
                     </div>
@@ -123,6 +175,261 @@ const Waypoint = () => {
                 {/* ---- Square End ---- */}
             </div>
             {/* ---- Banner End ---- */}
+
+            {/* ---- Key Features Start ---- */}
+            <div className="brands sub waypoint text-center">
+                <h1 className="title m-auto">
+                    Every Step of the Way
+                </h1>
+
+                <p className="description">
+                    Building with You. Delivering for You. Every Step of the Way.
+                </p>
+
+                <div className="drives row justify-content-center g-5 g-md-5">
+                    <div className="col-xxl-6 col-lg-5 col-md-6 col-sm-6">
+                        <div className="box">
+                            <div className="content d-flex flex-column">
+                                <img src={everystep} alt="" className='every-step img-fluid' />
+
+                                <div className="title">
+                                    Data Engineering & Cloud Platforms
+                                </div>
+
+                                <div className='shortdesc'>
+                                    Design and implement modern, scalable cloud-native data platforms - from data lakes to real-time pipelines. We ensure your data is always available, reliable, and analytics-ready.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xxl-6 col-lg-5 col-md-6 col-sm-6">
+                        <div className="box">
+                            <div className="content d-flex flex-column">
+                                <img src={everystep} alt="" className='every-step img-fluid' />
+
+                                <div className="title">
+                                    Business Intelligence & Analytics
+                                </div>
+
+                                <div className='shortdesc'>
+                                    Turn raw data into actionable insights with dashboards, reporting systems, and KPI frameworks that empower decision-makers across your organization.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-xxl-6 col-lg-5 col-md-6 col-sm-6">
+                        <div className="box">
+                            <div className="content d-flex flex-column">
+                                <img src={everystep} alt="" className='every-step img-fluid' />
+
+                                <div className="title">
+                                    AI & Machine Learning
+                                </div>
+
+                                <div className='shortdesc'>
+                                    From predictive modeling to deep learning, we build, train, and deploy models that unlock business value - tailored to your
+                                    data and workflows.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xxl-6 col-lg-5 col-md-6 col-sm-6">
+                        <div className="box">
+                            <div className="content d-flex flex-column">
+                                <img src={everystep} alt="" className='every-step img-fluid' />
+
+                                <div className="title">
+                                    Generative AI & LLM Solutions
+                                </div>
+
+                                <div className='shortdesc'>
+                                    Implement secure and private Generative AI systems using Large Language Models (LLMs) for chatbots, document intelligence, summarization, and internal knowledge systems.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xxl-6 col-lg-5 col-md-6 col-sm-6">
+                        <div className="box">
+                            <div className="content d-flex flex-column">
+                                <img src={everystep} alt="" className='every-step img-fluid' />
+
+                                <div className="title">
+                                    MLOps & AI DevOps
+                                </div>
+
+                                <div className='shortdesc'>
+                                    Operationalize your ML models with scalable pipelines, version control, monitoring, and CI/CD - from notebooks to production with confidence.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xxl-6 col-lg-5 col-md-6 col-sm-6">
+                        <div className="box">
+                            <div className="content d-flex flex-column">
+                                <img src={everystep} alt="" className='every-step img-fluid' />
+
+                                <div className="title">
+                                    Strategy, Advisory & Cost Optimization
+                                </div>
+
+                                <div className='shortdesc'>
+                                    Not sure where to start? We assess your AI/data maturity, design roadmaps, and help you optimize cloud and data infrastructure for performance and cost
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* ---- Key Features End ---- */}
+
+
+            {/* ---- Industry-Experience Start ---- */}
+            <div className="brands sub waypoint s text-center">
+                <h1 className="title m-auto">
+                    Industry Experience
+                </h1>
+
+                <p className="description">
+                    Our team brings not just technical depth, but real-world domain knowledge in
+                </p>
+
+                <div className="drives row justify-content-center g-5 g-md-5">
+                    <div className="col-xxl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div className="box">
+                            <div className="content d-flex flex-column">
+                                <div>
+                                    <img src={finance} alt="" className='img-fluid' />
+                                </div>
+
+                                <div className="title m-auto">
+                                    Finance
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xxl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div className="box">
+                            <div className="content d-flex flex-column">
+                                <div>
+                                    <img src={healthcare} alt="" className='img-fluid' />
+                                </div>
+
+                                <div className="title m-auto">
+                                    Healthcare
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xxl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div className="box">
+                            <div className="content d-flex flex-column">
+                                <div>
+                                    <img src={telecommunications} alt="" className='img-fluid' />
+                                </div>
+
+                                <div className="title m-auto">
+                                    Telecommunications
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xxl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div className="box">
+                            <div className="content d-flex flex-column">
+                                <div>
+                                    <img src={manufacturing} alt="" className='img-fluid' />
+                                </div>
+
+                                <div className="title m-auto">
+                                    Manufacturing
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* ---- Industry-Experience End ---- */}
+
+
+
+            {/* ---- Sets-Us Start ---- */}
+            <div className="brands sub setsus  text-center">
+                <h1 className="title m-auto">
+                    Sets Us
+                </h1>
+
+                <p className="description">
+                    What Sets Us Apart
+                </p>
+
+                <div className="carousel-wrapper position-relative">
+                    <button className="left-arrow" onClick={handleScrollPrev}>
+                        <img src={setusleft} alt="" className='img-fluid' />
+                    </button>
+
+                    <div
+                        className="drives row justify-content-center g-5 g-md-5"
+                        ref={scrollRef}
+                        style={{
+                            scrollBehavior: 'smooth',
+                            display: 'flex',
+                            flexWrap: 'nowrap',
+                        }}
+                    >
+
+                        {[
+
+                            {
+                                title: "Every Project is Crafted Like a Product",
+                                desc: " At Waypoint by PATHSDATA, we don’t just deliver tools — we design and build solutions like products. Each project is treated with care, precision, and dedication, ensuring it’s scalable, adaptable, and built for long-term impact",
+                            },
+                            {
+                                title: "Simplifying Complex Journeys, Delivering Real Outcomes",
+                                desc: " We take you from vision to reality, simplifying even the most complex challenges. With a focus on outcomes at every step, our solutions are designed to drive measurable business results, not just technical implementations."
+                            },
+                            {
+                                title: "Cost-Conscious, Outcome-Driven",
+                                desc: " We understand the importance of efficiency. Every solution is optimized to maximize value while minimizing costs, ensuring that your investment drives meaningful, long-term business success."
+                            },
+                            {
+                                title: "Built on Ethical Principles",
+                                desc: "  At Waypoint by PATHSDATA, ethics are at the core of everything we do. From AI to cloud platforms, we prioritize transparency, fairness, and accountability in every solution we build, ensuring responsible practices and trustworthy systems across all our offerings."
+                            },
+                            {
+                                title: "AWS Experts, Delivering Scalable Solutions",
+                                desc: " As AWS-certified experts, we leverage the power of AWS to build modern, scalable platforms that seamlessly integrate into your business. From architecture to deployment, our team ensures optimized performance and long-term success with AWS solutions, aligning every detail with your strategic goals for sustainable growth."
+                            }
+                        ].map((item, index) => (
+                            <div
+                                key={index}
+                                className="col-xxl-4"
+                                style={{ flex: '0 0 auto' }}
+                            >
+                                <div className={`box ${activeIndex === index ? 'active' : 'inactive'}`}>
+                                    <div className="content d-flex flex-column">
+                                        <div className="title m-auto">{item.title}</div>
+                                        <div className='shortdesc text-center'>{item.desc}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+
+
+
+                    </div>
+
+                    <button className="right-arrow" onClick={handleScrollNext}>
+                        <img src={setusright} alt="" className='img-fluid' />
+                    </button>
+                </div>
+
+            </div>
+            {/* ---- Sets-Us End ---- */}
+
+
+
+
 
 
             {/* ---- Banner Start ---- */}
@@ -177,7 +484,7 @@ const Waypoint = () => {
 
 
             {/* ---- Content End ---- */}
-            <div className="vision turningdata text-center">
+            <div className="vision turningdata text-center d-none">
                 <div>
                     <p className="description">
                         At <span>PATHSDATA</span>, we walk alongside you on this journey - helping you <span>design, build, and scale your Data, Cloud, Machine Learning, and Generative AI initiatives</span>, entirely on AWS. From laying the foundation of a modern data platform to deploying cutting-edge AI models in production, we help transform your data into real-world business outcomes.
@@ -200,11 +507,11 @@ const Waypoint = () => {
             </div>
             {/* ---- Content End ---- */}
 
-            <div className="lines turningdata"></div>
+            {/* <div className="lines turningdata"></div> */}
 
 
             {/* ---- AWS-Service Start ---- */}
-            <div className="aws_service">
+            <div className="aws_service d-none">
                 <div className="d-flex justify-content-between align-items-center mb-3">
                     <h2 className="title mb-0">What We Do – On AWS</h2>
 
@@ -275,7 +582,7 @@ const Waypoint = () => {
 
 
             {/* ---- Why-Pathdata Start ---- */}
-            <div className="why_pathdata">
+            <div className="why_pathdata d-none">
 
                 <div className="row">
                     <div className="col-lg-8 col-md-8">
@@ -322,7 +629,7 @@ const Waypoint = () => {
 
 
             {/* ---- Inevitable Start ---- */}
-            <div className="inevitable turningdata text-center">
+            <div className="inevitable turningdata text-center d-none">
                 <h1 className="title">
                     Let’s Build Your Data Story - Together.
                 </h1>

@@ -1,11 +1,11 @@
 /* ---- Banner Start ---- */
 
 .turning_banner {
-    padding: 90px 100px 70px;
+    padding: 90px 100px 80px;
     background-image: url('../../../assets/images/home/background1.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: inherit;
+    background-position: center;
     position: relative;
     overflow: hidden;
 }
@@ -13,7 +13,7 @@
 .turning_banner::before {
     content: '';
     position: absolute;
-    top: 108%;
+    top: 106%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 106%;
@@ -75,25 +75,37 @@
 
 .turning_banner .left .title {
     font-family: var(--popping);
-    color: #fff;
-    font-size: 36px;
-    font-weight: 500;
-    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #E0E0E0;
+    margin: 0;
+    padding-bottom: 50px;
 }
 
 .turning_banner .left .description.f {
+    font-family: var(--popping);
+    color: #fff;
+    font-size: 55px;
     font-weight: 500;
-    margin-bottom: 0;
+    margin-bottom: 25px;
 }
 
-.turning_banner .left .description.f span {
-    font-weight: 600;
-    font-size: 24px;
-    background: #4C70FF;
-    color: #FFFFFF;
-    padding: 3px 15px;
-    margin-right: 2px;
-    border-radius: 100px;
+.turning_banner .left .description.f span.iq {
+    background: linear-gradient(149.9deg, #FFFFFF -38.6%, #526EF2 76.39%);
+    color: rgba(76, 112, 255, 1);
+
+    background-image: url("../../../assets/images/banner-iq.png");
+    color: #BDC9FF;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7px;
+}
+
+.turning_banner .left .description.f div {
+    background: linear-gradient(180deg, #FFFFFF 16.26%, #526EF2 122.76%);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .turning_banner .left .description {
@@ -104,18 +116,25 @@
     margin-bottom: 60px;
 }
 
+.turning_banner .left .main-button {
+    outline: 0;
+    background: linear-gradient(95.08deg, #4361ee 11.21%, #738bff 90.73%);
+    padding-inline: 40px;
+}
+
 .turning_banner .vision {
     padding: 200px 0 0;
 }
 
-.turning_banner .vision .description:first-of-type {
-    font-size: 24px;
-    font-weight: 600;
-}
 
 .turning_banner .vision .description {
-    margin-bottom: 0;
-    max-width: 100%;
+    font-family: var(--popping);
+    font-size: 26px;
+    font-weight: 400;
+    max-width: 75%;
+    margin: auto;
+    color: #FFFFFF;
+    margin-block: 25px 30px;
 }
 
 @media (max-width: 1399px) {
@@ -307,6 +326,195 @@
 .inevitable.turningdata .description:last-of-type {
     max-width: 100%;
 }
+
+
+.brands.sub.waypoint .drives .col-xxl-6:nth-child(odd) {
+    position: relative;
+}
+
+.brands.sub.waypoint .drives .col-xxl-6:nth-child(odd)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, #526EF2 0%, #B5C7FF 100%);
+
+}
+
+
+.brands.sub.waypoint .drives .content {
+    background: none;
+    border: none;
+    padding: 19px 27px 0;
+    position: relative;
+}
+
+.brands.sub.waypoint .drives .content .every-step {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.brands.sub.waypoint .drives .content .shortdesc {
+    padding-bottom: 25px;
+}
+
+
+.brands.sub.waypoint .drives .content .main-button {
+    width: fit-content;
+    outline: 0;
+    background: none;
+    padding-inline: 24px;
+
+    background:
+        linear-gradient(#0B0C1A, #0B0C1A) padding-box,
+        linear-gradient(90deg, #526EF2, #86A4FF) border-box;
+    border: 1px solid transparent;
+    border-radius: 999px;
+
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+.brands.sub.waypoint.s {
+    padding-block: 100px 100px;
+}
+
+
+.brands.sub.waypoint .drives .col-xxl-3 {
+    position: relative;
+}
+
+
+.brands.sub.waypoint .drives .col-xxl-3::after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 1px;
+    height: 65%;
+    background: linear-gradient(180deg, #526EF2 0%, #B5C7FF 100%);
+
+}
+
+.brands.sub.waypoint .drives .col-xxl-3:last-of-type:after {
+    width: 0;
+}
+
+
+.brands.sub.waypoint .drives .col-xxl-3 .content .title {
+    padding: 20px 0 10px;
+}
+
+
+
+
+
+
+
+.brands.sub.setsus {
+    padding-inline: 0;
+    padding-bottom: 60px;
+}
+
+.brands.sub.setsus .left-arrow,
+.brands.sub.setsus .right-arrow {
+    background-color: transparent;
+    border: 0;
+}
+
+.brands.sub.setsus .drives .box {
+    transition: all 0.3s ease;
+}
+
+.brands.sub.setsus .drives .box.active {}
+
+
+
+
+
+
+
+
+
+
+
+
+.brands.sub.setsus .drives {
+    display: flex;
+    flex-wrap: nowrap;
+    /* overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; */
+    padding-inline: 10px;
+    gap: 130px;
+
+    position: relative;
+}
+
+.brands.sub.setsus .drives .col-xxl-4 {
+    scroll-snap-align: center;
+}
+
+.brands.sub.setsus .box {
+    opacity: 0.3;
+    transition: all 0.3s ease;
+}
+
+.brands.sub.setsus .box.active {
+    opacity: 1;
+    /* border: 1px solid transparent; */
+    /* background: linear-gradient(#111327, #111327) padding-box,
+        linear-gradient(90deg, #526EF2, #B5C7FF) border-box; */
+}
+
+.brands.sub.setsus .box.inactive {
+    opacity: 0.3;
+}
+
+.carousel-wrapper {
+    position: relative !important;
+    /* width: 100%; */
+     overflow: hidden;
+}
+
+.brands.sub.setsus .carousel-wrapper .left-arrow,
+.brands.sub.setsus .carousel-wrapper .right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.brands.sub.setsus .carousel-wrapper .left-arrow {
+    left: 27%;
+}
+
+.brands.sub.setsus .carousel-wrapper .right-arrow {
+    right: 27%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
