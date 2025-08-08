@@ -36,20 +36,20 @@ const Header = () => {
                             </div>
                             <div className="offcanvas-body">
                                 <ul className="navbar-nav mb-2 mb-lg-0 ms-auto">
-                                    <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas">
+                                    {/* <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas">
                                         <Link className="nav-link">About Us</Link>
                                     </li>
                                     <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas">
                                         <Link className="nav-link">Our Vision</Link>
-                                    </li>
+                                    </li> */}
                                     <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas">
                                         <Link to="/meet-team" className="nav-link">Team</Link>
                                     </li>
-                                    <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas" >
+                                    {/* <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas" >
                                         <Link className="nav-link">Blog</Link>
-                                    </li>
+                                    </li> */}
                                     <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas" >
-                                        <Link to="/contact-us" className="nav-link">Contact Us</Link>
+                                        <Link to="/contact-us" className="nav-link">Contacts</Link>
                                     </li>
                                 </ul>
                             </div>

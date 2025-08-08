@@ -268,7 +268,7 @@ const Home = () => {
                         <div className="box">
                             <div className="content d-flex flex-column">
                                 <div className=''>
-                                    <img src={pathiq} alt="" className='img-fluid' />
+                                    <img src={pathiq} alt="" className='img-fluid brans-img' />
                                 </div>
 
                                 <h3>Path<span>IQ</span></h3>
@@ -289,7 +289,7 @@ const Home = () => {
                         <div className="box">
                             <div className="content d-flex flex-column">
                                 <div className=''>
-                                    <img src={waypoint} alt="" className='img-fluid' />
+                                    <img src={waypoint} alt="" className='img-fluid brans-img' />
                                 </div>
 
                                 <h3>Waypoint</h3>
@@ -305,6 +305,8 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+
+
 
 
                 {/* ---- Square Start ---- */}

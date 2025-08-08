@@ -17,6 +17,12 @@ import manufacturing from '../../../assets/images/manufacturing.png';
 import setusleft from '../../../assets/images/setus-left.png';
 import setusright from '../../../assets/images/right-left.png';
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
 
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
@@ -113,11 +119,33 @@ const Waypoint = () => {
         arrows: false,
         beforeChange: (current, next) => setActiveIndex(next),
         responsive: [
+
+            {
+                breakpoint: 1200, // large tablets / small laptops
+                settings: {
+                    slidesToShow: 2,
+                    centerPadding: "40px"
+                }
+            },
             {
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 1,
-                    centerPadding: "0px"
+                    centerPadding: "200px"
+                }
+            },
+            {
+                breakpoint: 899,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: "100px"
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: "20px"
                 }
             }
         ]
@@ -415,38 +443,9 @@ const Waypoint = () => {
                 </p>
 
                 <div className="carousel-wrapper position-relative">
-                    <button
-                        className="left-arrow"
-                        // onClick={handleScrollPrev}
-                        onClick={() => sliderRef.current.slickPrev()}
-                    >
-                        <img src={setusleft} alt="" className='img-fluid' />
-                    </button>
-
                     <div
                         className="drives row justify-content-center g-5 g-md-5"
-                    // ref={scrollRef}
-                    // style={{
-                    //     scrollBehavior: 'smooth',
-                    //     display: 'flex',
-                    //     flexWrap: 'nowrap',
-                    // }}
                     >
-
-                        {/* {SetsUSData?.map((item, index) => (
-                            <div
-                                key={index}
-                                className="col-xxl-4"
-                                style={{ flex: '0 0 auto' }}
-                            >
-                                <div className={`box ${activeIndex === index ? 'active' : 'inactive'}`}>
-                                    <div className="content d-flex flex-column">
-                                        <div className="title m-auto">{item.title}</div>
-                                        <div className='shortdesc text-center'>{item.desc}</div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))} */}
 
                         <Slider ref={sliderRef} {...settings}>
                             {SetsUSData?.map((item, index) => (
@@ -463,6 +462,16 @@ const Waypoint = () => {
 
 
                     </div>
+                </div>
+
+                <div className='d-flex justify-content-center gap-4 gap-md-5'>
+                    <button
+                        className="left-arrow"
+                        // onClick={handleScrollPrev}
+                        onClick={() => sliderRef.current.slickPrev()}
+                    >
+                        <img src={setusleft} alt="" className='img-fluid' />
+                    </button>
 
                     <button
                         className="right-arrow"
@@ -475,8 +484,6 @@ const Waypoint = () => {
 
             </div>
             {/* ---- Sets-Us End ---- */}
-
-
 
 
 

@@ -1,11 +1,13 @@
 import React from 'react'
 import './Footer.css';
 
-import logo from '../../assets/images/logo.png';
+import logos from '../../assets/images/logo.png';
 
 import sociallinkedin from '../../assets/images/social-linkedin.png';
 import socialgit from '../../assets/images/social-git.png';
 import socialm from '../../assets/images/social-m.png';
+
+import logo from '../../assets/images/logo-icon.png';
 
 import { Link, useLocation } from 'react-router-dom';
 
@@ -73,26 +75,11 @@ const Footer = () => {
                         </Link>
                     </div>
 
-                    <div className="menu d-flex my-3 my-md-4 my-lg-0 flex-wrap">
+                    <div className="menu d-flex my-3 my-md-4 my-lg-0 flex-wrap m-auto">
                         <ul className="d-flex flex-wrap justify-content-center flex-column flex-sm-row">
-                            <li className="mb-2 mb-lg-0" style={{ marginTop: '10px' }}>
-                                <Link className="px-0" >
-                                    About Us
-                                </Link>
-                            </li>
-                            <li className="mb-2 mb-lg-0" style={{ marginTop: '10px' }}>
-                                <Link className="px-0" >
-                                    Our Vision
-                                </Link>
-                            </li>
                             <li className="mb-2 mb-lg-0" style={{ marginTop: '10px' }}>
                                 <Link to="/meet-team" className="px-0" >
                                     Team
-                                </Link>
-                            </li>
-                            <li className="mb-2 mb-lg-0" style={{ marginTop: '10px' }}>
-                                <Link className="px-0" >
-                                    Blog
                                 </Link>
                             </li>
                             <li className="mb-2 mb-lg-0 " style={{ marginTop: '10px' }}>
@@ -104,11 +91,7 @@ const Footer = () => {
                     </div >
 
                     <Link
-                        // to="https://app.usemotion.com/meet/dhruvil-shah-hqmeetingvx/"
-                        // to="/sign-in"
-                        // target='_blank'    
                         className='main-button book-btn'>
-                        {/* Book a Demo */}
                         Explore PATHSDATA
                     </Link>
                 </div >

@@ -397,10 +397,10 @@
 .brands.sub.waypoint .drives .col-xxl-6:nth-child(odd)::after {
     content: '';
     position: absolute;
-    top: 0;
+    top: 12px;
     right: 0;
     width: 1px;
-    height: 100%;
+    height: 72%;
     background: linear-gradient(180deg, #526EF2 0%, #B5C7FF 100%);
 }
 
@@ -508,7 +508,7 @@
 }
 
 
-.brands.sub.waypoint .drives .col-sm-6::after {
+.brands.sub.waypoint.s .drives .col-sm-6::after {
     content: '';
     position: absolute;
     top: 35px;
@@ -518,20 +518,20 @@
     background: linear-gradient(180deg, #526EF2 0%, #B5C7FF 100%);
 }
 
-.brands.sub.waypoint .drives .col-sm-6:last-of-type:after {
+.brands.sub.waypoint.s .drives .col-sm-6:last-of-type:after {
     width: 0;
 }
 
 @media (max-width: 991px) {
-    .brands.sub.waypoint .drives .col-sm-6:nth-of-type(2)::after {
+    .brands.sub.waypoint.s .drives .col-sm-6:nth-of-type(2)::after {
         height: 0;
     }
 }
 
 @media (max-width: 575px) {
 
-    .brands.sub.waypoint .drives .col-sm-6:nth-of-type(1)::after,
-    .brands.sub.waypoint .drives .col-sm-6:nth-of-type(3)::after {
+    .brands.sub.waypoint.s .drives .col-sm-6:nth-of-type(1)::after,
+    .brands.sub.waypoint.s .drives .col-sm-6:nth-of-type(3)::after {
         height: 0;
     }
 }
@@ -592,13 +592,11 @@
 .brands.sub.setsus .drives {
     display: flex;
     flex-wrap: nowrap;
-    /* overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch; */
     padding-inline: 10px;
     gap: 130px;
-
     position: relative;
+
+    margin-bottom: 10px;
 }
 
 .brands.sub.setsus .drives .col-xxl-4 {
@@ -627,7 +625,7 @@
     overflow: hidden;
 }
 
-.brands.sub.setsus .carousel-wrapper .left-arrow,
+/* .brands.sub.setsus .carousel-wrapper .left-arrow,
 .brands.sub.setsus .carousel-wrapper .right-arrow {
     position: absolute;
     top: 50%;
@@ -644,7 +642,30 @@
 
 .brands.sub.setsus .carousel-wrapper .right-arrow {
     right: 27%;
+} */
+
+
+
+
+
+
+@media (max-width: 991px) {
+    .brands.sub.setsus .carousel-wrapper .left-arrow {
+        left: 8%;
+    }
+
+    .brands.sub.setsus .carousel-wrapper .right-arrow {
+        right: 8%;
+    }
 }
+
+
+
+
+
+
+
+
 
 
 

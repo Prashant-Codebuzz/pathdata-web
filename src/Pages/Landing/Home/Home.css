@@ -744,6 +744,7 @@
     position: relative;
 }
 
+
 .brands .drives .content h3 {
     font-family: var(--popping);
     font-weight: 500;
@@ -778,7 +779,7 @@
     font-weight: 400;
     font-size: 18px;
     color: #E0E0E0;
-    max-width: 95%;
+    max-width: 88%;
     margin-bottom: 0;
 }
 
@@ -787,7 +788,6 @@
     right: 22px;
     bottom: 30px;
 }
-
 
 .brands .drives .content .buttons {
     transform: translate(-50%, 50px);
@@ -866,8 +866,14 @@
         max-width: 100%;
         margin-bottom: 40px;
     }
+
     .brands .drives .content {
         padding: 28px;
+    }
+
+    .brands .drives .content .brans-img {
+        width: 80px;
+        height: 80px;
     }
 
     .brands .drives .content h3 {
@@ -933,6 +939,11 @@
         padding: 30px;
     }
 
+    .brands .drives .content .brans-img {
+        width: 70px;
+        height: 70px;
+    }
+
     .brands .drives .content h3 {
         font-size: 28px;
     }
@@ -948,6 +959,16 @@
     .brands .drives .content .buttons {
         transform: translate(-50%, 40px);
     }
+
+    .brands .drives .content button img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .brands .drives .content button {
+        right: 14px;
+        bottom: 14px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -957,6 +978,11 @@
 
     .brands .drives .content {
         padding: 20px;
+    }
+
+    .brands .drives .content .brans-img {
+        width: 55px;
+        height: 55px;
     }
 
     .brands .drives .content h3 {
