@@ -24,7 +24,7 @@ const Pathiq = () => {
             <div className="turning_banner sub text-center">
                 <div className="left">
                     <p className="description f">
-                        PATH <span className='iq'>IQ</span>
+                        PATH<span className='iq'>IQ</span>
                         <br className='' />
 
                         <div>
@@ -143,7 +143,7 @@ const Pathiq = () => {
                     <div className="col-xxl-6 col-lg-6 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="content d-flex flex-column">
-                                <div className="title">
+                                <div className="title text-start">
                                     AI-Native Orchestration Your AI Copilot
                                 </div>
 
@@ -159,7 +159,7 @@ const Pathiq = () => {
                     <div className="col-xxl-6 col-lg-6 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="content d-flex flex-column">
-                                <div className="title">
+                                <div className="title text-start">
                                     Universal Stack Connectivity
                                 </div>
 
@@ -173,7 +173,7 @@ const Pathiq = () => {
                     <div className="col-xxl-6 col-lg-6 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="content d-flex flex-column">
-                                <div className="title">
+                                <div className="title text-start">
                                     Business Outcome-Driven
                                 </div>
 
@@ -189,7 +189,7 @@ const Pathiq = () => {
                     <div className="col-xxl-6 col-lg-6 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="content d-flex flex-column">
-                                <div className="title">
+                                <div className="title text-start">
                                     Rust-Powered Performance
                                 </div>
 
@@ -223,8 +223,8 @@ const Pathiq = () => {
                     </p>
                 </div>
 
-                <div className="row">
-                    <div className="col-lg-6">
+                <div className="row g-4 g-md-0">
+                    <div className="col-lg-6 col-md-6 ">
                         <div className="content">
                             <h5 className="main-title">
                                 The Old Way
@@ -250,7 +250,7 @@ const Pathiq = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 col-md-6 ">
                         <div className="content">
                             <h5 className="main-title">
                                 The Pathsdata Way

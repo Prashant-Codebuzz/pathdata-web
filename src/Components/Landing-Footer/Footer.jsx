@@ -40,7 +40,7 @@ const Footer = () => {
                     </div>
 
                     <p className=''>
-                        Join our insights list and receive strategic content on <br />
+                        Join our insights list and receive strategic content on <br className='d-none d-lg-block' />
                         <span>data, cloud, and AI - straight to your inbox. </span>
                     </p>
 
@@ -65,36 +65,38 @@ const Footer = () => {
             {/* ---- Copyright End ---- */}
 
             <footer className='s'>
-                <div className='first d-flex justify-content-between align-items-center'>
+                <div className='first d-flex justify-content-center justify-content-lg-between align-items-center'>
                     <div className="logo">
-                        {/* <div className='logo'>Logo</div> */}
-                        <img src={logo} alt="" />
+                        <Link to="/">
+                            {/* <div className='logo'>Logo</div> */}
+                            <img src={logo} alt="" />
+                        </Link>
                     </div>
 
-                    <div className="menu d-flex m-md-auto flex-wrap">
-                        <ul className="d-flex flex-wrap">
+                    <div className="menu d-flex my-3 my-md-4 my-lg-0 flex-wrap">
+                        <ul className="d-flex flex-wrap justify-content-center flex-column flex-sm-row">
                             <li className="mb-2 mb-lg-0" style={{ marginTop: '10px' }}>
-                                <Link className="" >
+                                <Link className="px-0" >
                                     About Us
                                 </Link>
                             </li>
                             <li className="mb-2 mb-lg-0" style={{ marginTop: '10px' }}>
-                                <Link className="" >
+                                <Link className="px-0" >
                                     Our Vision
                                 </Link>
                             </li>
                             <li className="mb-2 mb-lg-0" style={{ marginTop: '10px' }}>
-                                <Link className="" >
+                                <Link to="/meet-team" className="px-0" >
                                     Team
                                 </Link>
                             </li>
                             <li className="mb-2 mb-lg-0" style={{ marginTop: '10px' }}>
-                                <Link className="" >
+                                <Link className="px-0" >
                                     Blog
                                 </Link>
                             </li>
                             <li className="mb-2 mb-lg-0 " style={{ marginTop: '10px' }}>
-                                <Link className="" >
+                                <Link to="/contact-us" className="px-0" >
                                     Contacts
                                 </Link>
                             </li>

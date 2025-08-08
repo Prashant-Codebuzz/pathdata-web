@@ -34,12 +34,12 @@ const JoinTeam = () => {
 
     return (
         <>
-        
+
             {/* ---- Contact Start ---- */}
             <section className='contact landing'>
                 <div className="container text-center">
-                    <h1 className="title text-white">
-                        Join Our Team
+                    <h1 className="title">
+                        Join Our Team.
                     </h1>
 
                     <p className="description">
@@ -130,13 +130,13 @@ const JoinTeam = () => {
                                                 <button
                                                     type='button'
                                                     className='close_btn bg-transparent border-0 position-absolute' style={{ top: "8px", right: "8px" }}
-                                                onClick={(e) => {
-                                                    e.stopPropagation();
-                                                    e.preventDefault();
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        e.preventDefault();
 
-                                                    setContact((prev) => ({ ...prev, image: "" }))
-                                                }
-                                                }
+                                                        setContact((prev) => ({ ...prev, image: "" }))
+                                                    }
+                                                    }
                                                 >
                                                     <img src={CloseImg} alt="Close" className='img-fluid' />
                                                 </button>

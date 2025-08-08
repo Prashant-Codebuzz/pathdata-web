@@ -16,7 +16,7 @@ const Header = () => {
                         <div className='navbar-brand py-0'>
                             <Link to="/">
                                 <div className='logo'>
-                                    <img src={logos} alt="" />
+                                    <img src={logo} alt="" />
                                 </div>
                             </Link>
                         </div>
@@ -29,7 +29,7 @@ const Header = () => {
                             <div className="offcanvas-header">
                                 <div className='navbar-brand'>
                                     <Link to="/">
-                                        <img src={logos} alt="" />
+                                        <img src={logo} alt="" />
                                     </Link>
                                 </div>
                                 <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -40,10 +40,10 @@ const Header = () => {
                                         <Link className="nav-link">About Us</Link>
                                     </li>
                                     <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas">
-                                        <Link to="/join-team" className="nav-link">Our Vision</Link>
+                                        <Link className="nav-link">Our Vision</Link>
                                     </li>
                                     <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas">
-                                        <Link to="/join-team" className="nav-link">Team</Link>
+                                        <Link to="/meet-team" className="nav-link">Team</Link>
                                     </li>
                                     <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas" >
                                         <Link className="nav-link">Blog</Link>

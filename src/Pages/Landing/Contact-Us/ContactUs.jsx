@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import contactemail from '../../../assets/images/contact-email.png';
 import contactcall from '../../../assets/images/contact-call.png';
+import { Link } from 'react-router-dom';
 
 const initialState = {
     firstname: "",
@@ -36,35 +37,36 @@ const ContactUs = () => {
 
             {/* ---- Contact Start ---- */}
             <div className="contact-info">
-                <div className="row g-5 g-lg-0">
-                    <div className="col-lg-4 text-center text-lg-start">
-                        <div className="info">
-                            <h1 className="title">
-                                Contact Us
-                            </h1>
+                <div className="info">
+                    <h1 className="title text-center">
+                        Contact Us.
+                    </h1>
 
-                            <p className="description">
-                                Give us a call or send us an email. We strive to respond to all inquiries within 24 hours on business days and are happy to answer your questions.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-sm-6">
+                    <p className="description text-center">
+                        Give us a call or send us an email. We strive to respond to all inquiries within 24 hours on business days and are happy to answer your questions.
+                    </p>
+                </div>
+
+                <div className="row justify-content-center g-5 g-lg-0">
+                    <div className="col-lg-5 col-xl-4 col-xxl-3 col-sm-6">
                         <div className="box text-center">
                             <div className="content">
 
                                 <div className="image">
                                     <img src={contactemail} alt="" className='img-fluid' />
                                 </div>
-        
+
                                 <h3>Email Us</h3>
 
                                 <span className='shortdesc'>
-                                    contact@pathsdata.com
+                                    <Link to="mailto:contact@pathsdata.com">
+                                        contact@pathsdata.com
+                                    </Link>
                                 </span>
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-sm-6">
+                    <div className="col-lg-5 col-xl-4 col-xxl-3 col-sm-6">
                         <div className="box text-center">
                             <div className="content">
 
@@ -75,23 +77,35 @@ const ContactUs = () => {
                                 <h3>Call Us</h3>
 
                                 <span className='shortdesc'>
-                                    +1 (555) 123‑4567
+                                    <Link to="tel:+1555123‑4567">
+                                        +1 (555) 123‑4567
+                                    </Link>
                                 </span>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+                {/* ---- Square Start ---- */}
+                <div className='squre s1'></div>
+                <div className='squre s2'></div>
+                <div className='squre s3'></div>
+                <div className='squre s4'></div>
+                <div className='squre s5'></div>
+                <div className='squre s6'></div>
+                {/* ---- Square End ---- */}
             </div>
             {/* ---- Contact End ---- */}
 
 
-            <div className="lines turningdata"></div>
+            {/* <div className="lines turningdata"></div> */}
 
             {/* ---- Contact-Form Start ---- */}
             <section className='contact landing'>
                 <div className="container text-center">
-                    <h1 className="title text-white">
-                        Book a Demo Today
+                    <h1 className="title">
+                        Book a Demo Today.
                     </h1>
 
                     <p className="description">

@@ -29,7 +29,7 @@ const Home = () => {
             {/* ---- Banner Start ---- */}
             <div className="new_banner">
                 <div className="row justify-content-center align-items-center">
-                    <div className="col-lg-7 col-xl-6">
+                    <div className="col-lg-8 col-xl-8">
                         <div className="left text-center">
                             {/* <Link>
                                 <div className='logo'>
@@ -133,9 +133,9 @@ const Home = () => {
 
             {/* ---- Step Start ---- */}
             <div className="step">
-                <div className="row">
-                    <div className="col-lg-4">
-                        <div className="box">
+                <div className="row g-5">
+                    <div className="col-lg-4 col-md-6">
+                        <div className="box h-100">
                             <div className="num">
                                 1
                             </div>
@@ -148,8 +148,8 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4">
-                        <div className="box">
+                    <div className="col-lg-4 col-md-6">
+                        <div className="box h-100">
                             <div className="num">
                                 2
                             </div>
@@ -163,8 +163,8 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4">
-                        <div className="box">
+                    <div className="col-lg-4 col-md-6">
+                        <div className="box h-100">
                             <div className="num">
                                 3
                             </div>
@@ -192,15 +192,15 @@ const Home = () => {
                     </h1>
 
                     <p className="description s">
-                        To empower businesses to achieve outcomes <br />
+                        To empower businesses to achieve outcomes <br className='d-none d-block' />
                         <span>
-                            effortlessly, while making their journey toward <br />
+                            effortlessly, while making their journey toward <br className='d-none d-block' />
                             success easier at every step.
                         </span>
                     </p>
 
 
-                    <div className='images d-flex gap-4 flex-wrap justify-content-center align-items-center'>
+                    <div className='images d-flex gap-2 gap-sm-3 gap-lg-4 flex-wrap justify-content-center align-items-center'>
                         <img src={ourvision1} alt="" className="company-logo img-fluid" />
                         <img src={ourvision2} alt="" className="company-logo img-fluid" />
                         <img src={ourvision5} alt="" className="company-logo img-fluid" />
@@ -245,17 +245,17 @@ const Home = () => {
                     The Two Brands
                 </h1>
 
-                <div className="row justify-content-between">
+                <div className="row justify-content-center justify-content-lg-between">
 
-                    <div className="col-lg-6">
-                        <p className="desc">
+                    <div className="col-lg-6 col-6 col-12">
+                        <p className="desc text-center text-lg-start">
                             Navigating complexity. <br />
-                            Clearing the path. Delivering <br />
+                            Clearing the path. Delivering <br className='d-none d-lg-block' />
                             results.
                         </p>
                     </div>
-                    <div className="col-lg-4 text-center text-lg-end">
-                        <p className="description">
+                    <div className="col-lg-6 col-xl-5 col-xxl-4 col-6 col-12">
+                        <p className="description text-center text-lg-end">
                             At PATHSDATA, we bring together two powerful brands under one vision - transforming how   businesses
                             harness data and AI, and making every step of
                             the journey smarter, simpler, and inevitable.
@@ -263,8 +263,8 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="drives row justify-content-center g-5 g-md-0">
-                    <div className="col-xxl-6 col-lg-5 col-md-6">
+                <div className="drives row justify-content-center g-4 g-md-0">
+                    <div className="col-xxl-6 col-lg-6 col-md-6">
                         <div className="box">
                             <div className="content d-flex flex-column">
                                 <div className=''>
@@ -285,7 +285,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xxl-6 col-lg-5 col-md-6">
+                    <div className="col-xxl-6 col-lg-6 col-md-6">
                         <div className="box">
                             <div className="content d-flex flex-column">
                                 <div className=''>

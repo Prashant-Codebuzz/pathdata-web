@@ -47,7 +47,7 @@
     background: #060820;
     border-radius: 7px;
     font-family: var(--popping);
-    width: 20%;
+    max-width: 375px;
     padding: 18px 12px;
     font-size: 16px;
     color: #DADADA;
@@ -83,7 +83,17 @@
     }
 
     .copyright p {
-        font-size: 18px;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 991px) {
+    .copyright .title {
+        font-size: 17px;
+    }
+
+    .copyright p {
+        font-size: 28px;
     }
 }
 
@@ -93,7 +103,15 @@
     }
 
     .copyright p {
-        font-size: 17px;
+        font-size: 24px;
+    }
+
+    .copyright .title {
+        padding: 13px 20px;
+    }
+
+    .copyright form .form-control {
+        max-width: 275px;
     }
 }
 
@@ -103,13 +121,39 @@
     }
 
     .copyright p {
+        font-size: 20px;
+    }
+
+    .copyright .title {
         font-size: 16px;
+    }
+
+    .copyright form .form-control {
+        padding: 14px 12px;
+        max-width: 231px;
+    }
+
+    .copyright form .main-button {
+        padding: 14px 20px;
     }
 }
 
 @media (max-width: 425px) {
     .copyright {
         padding: 65px 25px 30px;
+    }
+
+    .copyright p {
+        font-size: 18px;
+    }
+
+    .copyright form .form-control {
+        padding: 12px 12px;
+        max-width: 200px;
+    }
+
+    .copyright form .main-button {
+        padding: 12px 17px;
     }
 }
 
@@ -131,8 +175,42 @@ footer .first .book-btn:hover {
 footer .copy {
     font-family: var(--popping);
     font-weight: 300;
-    ;
     font-size: 18px;
     color: #848484;
     margin-top: 60px;
+}
+
+@media (max-width: 1399px) {}
+
+@media (max-width: 1199px) {
+    footer .copy {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 767px) {
+    footer.s {
+        padding: 35px 50px 35px
+    }
+
+    footer .copy {
+        font-size: 16px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    footer.s {
+        padding: 35px 30px 35px
+    }
+
+    footer.s .menu ul li a {
+        padding: 12px 20px 12px 20px !important;
+    }
+}
+
+@media (max-width: 425px) {
+    footer.s {
+        padding: 35px 25px 35px
+    }
 }

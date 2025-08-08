@@ -5,10 +5,13 @@
 
 .contact.landing .title {
     font-family: var(--popping);
-    font-size: 36px;
+    font-size: 55px;
     font-weight: 500;
-    color: #FFFFFF;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+
+    background: linear-gradient(180deg, #FFFFFF 16.26%, #526EF2 122.76%);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .contact.landing .description {
@@ -17,6 +20,11 @@
     font-weight: 400;
     max-width: 100%;
     color: #E0E0E0;
+}
+
+
+.contact.landing .contact-form {
+    border-radius: 16px;
 }
 
 .contact.landing .contact-form form input,
@@ -28,6 +36,7 @@
 .contact.landing .contact-form form .submit .submitreq-btn {
     width: 100%;
     max-width: 170px;
+    outline: none;
 }
 
 
@@ -83,7 +92,8 @@
     }
 
     .contact.landing .title {
-        font-size: 34px;
+        font-size: 45px;
+        margin-bottom: 20px;
     }
 
     .contact.landing .description {
@@ -97,7 +107,8 @@
     }
 
     .contact.landing .title {
-        font-size: 32px;
+        font-size: 38px;
+        margin-bottom: 15px;
     }
 
     .contact.landing .description {
@@ -113,7 +124,7 @@
     }
 
     .contact.landing .title {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .contact.landing .description {
@@ -131,7 +142,7 @@
     }
 
     .contact.landing .title {
-        font-size: 24px;
+        font-size: 28px;
     }
 }
 
@@ -140,17 +151,58 @@
 
 /* ---- Contact Start ---- */
 .contact-info {
-    padding: 80px 100px 0;
+    padding: 80px 100px 40px;
+    position: relative;
+}
+
+
+.contact-info .squre {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 1);
+    width: 4px;
+    height: 4px;
+}
+
+.contact-info .squre.s1 {
+    top: 28%;
+    left: 13%;
+}
+
+.contact-info .squre.s2 {
+    top: 28%;
+    right: 13%;
+}
+
+.contact-info .squre.s3 {
+    top: 68%;
+    left: 3%;
+}
+
+.contact-info .squre.s4 {
+    top: 68%;
+    right: 3%;
+}
+
+.contact-info .squre.s5 {
+    top: 105%;
+    left: 13%;
+}
+
+.contact-info .squre.s6 {
+    top: 105%;
+    right: 22%;
 }
 
 .contact-info .info {}
 
 .contact-info .info h1 {
     font-family: var(--popping);
-    font-size: 36px;
+    font-size: 55px;
     font-weight: 500;
-    color: #FFFFFF;
-    margin-bottom: 10px;
+    background: linear-gradient(180deg, #FFFFFF 16.26%, #526EF2 122.76%);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .contact-info .info .description {
@@ -159,6 +211,7 @@
     font-weight: 400;
     color: #E0E0E0;
     max-width: 75%;
+    margin: 25px auto 30px;
 }
 
 .contact-info .box {
@@ -170,7 +223,7 @@
 
 .contact-info .box .content {
     border-radius: 16px;
-    padding: 30px 40px;
+    padding: 30px;
     background-color: rgba(1, 3, 23, 1);
 
     max-height: 100%;
@@ -179,9 +232,9 @@
 
 .contact-info .box .content h3 {
     font-family: var(--popping);
-    font-weight: 500;
-    font-size: 24px;
-    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    color: #E0E0E0;
     margin: 10px 0 12px;
 }
 
@@ -189,8 +242,15 @@
     font-family: var(--popping);
     font-weight: 400;
     font-size: 22px;
-    color: #E0E0E0;
+    color: #FFFFFF;
+    text-decoration: underline;
+    cursor: pointer;
 }
+
+.contact-info .box .content .shortdesc:hover {
+    text-decoration: none;
+}
+
 
 @media (max-width: 1399px) {
     .contact-info {
@@ -223,11 +283,12 @@
     }
 
     .contact-info .info h1 {
-        font-size: 34px;
+        font-size: 45px;
     }
 
     .contact-info .info .description {
         font-size: 18px;
+        margin: 20px auto 30px;
     }
 }
 
@@ -253,11 +314,12 @@
     }
 
     .contact-info .info h1 {
-        font-size: 32px;
+        font-size: 38px;
     }
 
     .contact-info .info .description {
         font-size: 17px;
+        margin: 15px auto 30px;
     }
 
     .contact-info .box .content {
@@ -271,7 +333,7 @@
     }
 
     .contact-info .info h1 {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .contact-info .info .description {
@@ -298,7 +360,7 @@
     }
 
     .contact-info .info h1 {
-        font-size: 24px;
+        font-size: 28px;
     }
 }
 

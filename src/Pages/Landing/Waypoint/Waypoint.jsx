@@ -19,6 +19,7 @@ import setusright from '../../../assets/images/right-left.png';
 
 
 import { Link } from 'react-router-dom';
+import Slider from 'react-slick';
 
 const Waypoint = () => {
 
@@ -73,47 +74,97 @@ const Waypoint = () => {
 
 
 
-    const scrollRef = useRef(null);
-    const [activeIndex, setActiveIndex] = useState(1); // center one
 
-    const scrollToCard = (index) => {
-        const container = scrollRef.current;
-        const cards = container.querySelectorAll('.col-xxl-4');
-        const card = cards[index];
+    const SetsUSData = [
 
-        if (card && container) {
-            // const offsetLeft = card.offsetLeft;
-            // const containerWidth = container.clientWidth;
-            // const scrollLeft = offsetLeft - containerWidth / 2 + card.clientWidth / 2;
-
-            // container.scrollTo({ left: scrollLeft, behavior: 'smooth' });
-
-            const offsetLeft = card.offsetLeft;
-            const containerWidth = container.clientWidth;
-            const scrollLeft = offsetLeft - containerWidth / 2 + card.clientWidth / 2;
-
-            container.scrollTo({
-                left: scrollLeft,
-                behavior: 'smooth',
-            });
-
-
-            setActiveIndex(index);
+        {
+            title: "Every Project is Crafted Like a Product",
+            desc: " At Waypoint by PATHSDATA, we don’t just deliver tools — we design and build solutions like products. Each project is treated with care, precision, and dedication, ensuring it’s scalable, adaptable, and built for long-term impact",
+        },
+        {
+            title: "Simplifying Complex Journeys, Delivering Real Outcomes",
+            desc: " We take you from vision to reality, simplifying even the most complex challenges. With a focus on outcomes at every step, our solutions are designed to drive measurable business results, not just technical implementations."
+        },
+        {
+            title: "Cost-Conscious, Outcome-Driven",
+            desc: " We understand the importance of efficiency. Every solution is optimized to maximize value while minimizing costs, ensuring that your investment drives meaningful, long-term business success."
+        },
+        {
+            title: "Built on Ethical Principles",
+            desc: "  At Waypoint by PATHSDATA, ethics are at the core of everything we do. From AI to cloud platforms, we prioritize transparency, fairness, and accountability in every solution we build, ensuring responsible practices and trustworthy systems across all our offerings."
+        },
+        {
+            title: "AWS Experts, Delivering Scalable Solutions",
+            desc: " As AWS-certified experts, we leverage the power of AWS to build modern, scalable platforms that seamlessly integrate into your business. From architecture to deployment, our team ensures optimized performance and long-term success with AWS solutions, aligning every detail with your strategic goals for sustainable growth."
         }
+    ];
+
+
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    const sliderRef = React.useRef(null);
+
+    const settings = {
+        centerMode: true,
+        centerPadding: "0px",
+        slidesToShow: 3,
+        infinite: true,
+        speed: 500,
+        arrows: false,
+        beforeChange: (current, next) => setActiveIndex(next),
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: "0px"
+                }
+            }
+        ]
     };
 
-    const handleScrollPrev = () => {
-        if (activeIndex > 0) scrollToCard(activeIndex - 1);
-    };
 
-    const handleScrollNext = () => {
-        const total = scrollRef.current.querySelectorAll('.box').length;
-        if (activeIndex < total - 1) scrollToCard(activeIndex + 1);
-    };
+    // const scrollRef = useRef(null);
+    // const [activeIndex, setActiveIndex] = useState(1); // center one
 
-    useEffect(() => {
-        scrollToCard(activeIndex);
-    }, []);
+    // const scrollToCard = (index) => {
+    //     const container = scrollRef.current;
+    //     const cards = container.querySelectorAll('.col-xxl-4');
+    //     const card = cards[index];
+
+    //     if (card && container) {
+    //         // const offsetLeft = card.offsetLeft;
+    //         // const containerWidth = container.clientWidth;
+    //         // const scrollLeft = offsetLeft - containerWidth / 2 + card.clientWidth / 2;
+
+    //         // container.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+
+    //         const offsetLeft = card.offsetLeft;
+    //         const containerWidth = container.clientWidth;
+    //         const scrollLeft = offsetLeft - containerWidth / 2 + card.clientWidth / 2;
+
+    //         container.scrollTo({
+    //             left: scrollLeft,
+    //             behavior: 'smooth',
+    //         });
+
+
+    //         setActiveIndex(index);
+    //     }
+    // };
+
+    // const handleScrollPrev = () => {
+    //     if (activeIndex > 0) scrollToCard(activeIndex - 1);
+    // };
+
+    // const handleScrollNext = () => {
+    //     const total = scrollRef.current.querySelectorAll('.box').length;
+    //     if (activeIndex < total - 1) scrollToCard(activeIndex + 1);
+    // };
+
+    // useEffect(() => {
+    //     scrollToCard(activeIndex);
+    // }, []);
 
 
 
@@ -121,7 +172,7 @@ const Waypoint = () => {
         <>
 
             {/* ---- Banner Start ---- */}
-            <div className="turning_banner text-center">
+            <div className="turning_banner w text-center">
                 <div className="left">
                     <p className="description f">
                         Waypoint
@@ -186,13 +237,13 @@ const Waypoint = () => {
                     Building with You. Delivering for You. Every Step of the Way.
                 </p>
 
-                <div className="drives row justify-content-center g-5 g-md-5">
+                <div className="drives row justify-content-center g-4 g-md-4">
                     <div className="col-xxl-6 col-lg-5 col-md-6 col-sm-6">
                         <div className="box">
                             <div className="content d-flex flex-column">
                                 <img src={everystep} alt="" className='every-step img-fluid' />
 
-                                <div className="title">
+                                <div className="title text-start">
                                     Data Engineering & Cloud Platforms
                                 </div>
 
@@ -207,7 +258,7 @@ const Waypoint = () => {
                             <div className="content d-flex flex-column">
                                 <img src={everystep} alt="" className='every-step img-fluid' />
 
-                                <div className="title">
+                                <div className="title text-start">
                                     Business Intelligence & Analytics
                                 </div>
 
@@ -223,7 +274,7 @@ const Waypoint = () => {
                             <div className="content d-flex flex-column">
                                 <img src={everystep} alt="" className='every-step img-fluid' />
 
-                                <div className="title">
+                                <div className="title text-start">
                                     AI & Machine Learning
                                 </div>
 
@@ -239,7 +290,7 @@ const Waypoint = () => {
                             <div className="content d-flex flex-column">
                                 <img src={everystep} alt="" className='every-step img-fluid' />
 
-                                <div className="title">
+                                <div className="title text-start">
                                     Generative AI & LLM Solutions
                                 </div>
 
@@ -254,7 +305,7 @@ const Waypoint = () => {
                             <div className="content d-flex flex-column">
                                 <img src={everystep} alt="" className='every-step img-fluid' />
 
-                                <div className="title">
+                                <div className="title text-start">
                                     MLOps & AI DevOps
                                 </div>
 
@@ -269,7 +320,7 @@ const Waypoint = () => {
                             <div className="content d-flex flex-column">
                                 <img src={everystep} alt="" className='every-step img-fluid' />
 
-                                <div className="title">
+                                <div className="title text-start">
                                     Strategy, Advisory & Cost Optimization
                                 </div>
 
@@ -364,43 +415,25 @@ const Waypoint = () => {
                 </p>
 
                 <div className="carousel-wrapper position-relative">
-                    <button className="left-arrow" onClick={handleScrollPrev}>
+                    <button
+                        className="left-arrow"
+                        // onClick={handleScrollPrev}
+                        onClick={() => sliderRef.current.slickPrev()}
+                    >
                         <img src={setusleft} alt="" className='img-fluid' />
                     </button>
 
                     <div
                         className="drives row justify-content-center g-5 g-md-5"
-                        ref={scrollRef}
-                        style={{
-                            scrollBehavior: 'smooth',
-                            display: 'flex',
-                            flexWrap: 'nowrap',
-                        }}
+                    // ref={scrollRef}
+                    // style={{
+                    //     scrollBehavior: 'smooth',
+                    //     display: 'flex',
+                    //     flexWrap: 'nowrap',
+                    // }}
                     >
 
-                        {[
-
-                            {
-                                title: "Every Project is Crafted Like a Product",
-                                desc: " At Waypoint by PATHSDATA, we don’t just deliver tools — we design and build solutions like products. Each project is treated with care, precision, and dedication, ensuring it’s scalable, adaptable, and built for long-term impact",
-                            },
-                            {
-                                title: "Simplifying Complex Journeys, Delivering Real Outcomes",
-                                desc: " We take you from vision to reality, simplifying even the most complex challenges. With a focus on outcomes at every step, our solutions are designed to drive measurable business results, not just technical implementations."
-                            },
-                            {
-                                title: "Cost-Conscious, Outcome-Driven",
-                                desc: " We understand the importance of efficiency. Every solution is optimized to maximize value while minimizing costs, ensuring that your investment drives meaningful, long-term business success."
-                            },
-                            {
-                                title: "Built on Ethical Principles",
-                                desc: "  At Waypoint by PATHSDATA, ethics are at the core of everything we do. From AI to cloud platforms, we prioritize transparency, fairness, and accountability in every solution we build, ensuring responsible practices and trustworthy systems across all our offerings."
-                            },
-                            {
-                                title: "AWS Experts, Delivering Scalable Solutions",
-                                desc: " As AWS-certified experts, we leverage the power of AWS to build modern, scalable platforms that seamlessly integrate into your business. From architecture to deployment, our team ensures optimized performance and long-term success with AWS solutions, aligning every detail with your strategic goals for sustainable growth."
-                            }
-                        ].map((item, index) => (
+                        {/* {SetsUSData?.map((item, index) => (
                             <div
                                 key={index}
                                 className="col-xxl-4"
@@ -413,13 +446,29 @@ const Waypoint = () => {
                                     </div>
                                 </div>
                             </div>
-                        ))}
+                        ))} */}
 
+                        <Slider ref={sliderRef} {...settings}>
+                            {SetsUSData?.map((item, index) => (
+                                <div key={index} >
+                                    <div className={`box ${activeIndex === index ? 'active' : 'inactive'}`} >
+                                        <div className="content d-flex flex-column">
+                                            <div className="title m-auto">{item.title}</div>
+                                            <div className="shortdesc text-center">{item.desc}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </Slider>
 
 
                     </div>
 
-                    <button className="right-arrow" onClick={handleScrollNext}>
+                    <button
+                        className="right-arrow"
+                        // onClick={handleScrollNext}
+                        onClick={() => sliderRef.current.slickNext()}
+                    >
                         <img src={setusright} alt="" className='img-fluid' />
                     </button>
                 </div>
