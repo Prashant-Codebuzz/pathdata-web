@@ -1,5 +1,5 @@
 .contact.landing {
-    padding: 80px 100px 120px;
+    padding: 80px 100px 60px;
     background: none;
 }
 
@@ -82,13 +82,13 @@
 
 @media (max-width: 1399px) {
     .contact.landing {
-        padding: 60px 80px 120px;
+        padding: 60px 80px 60px;
     }
 }
 
 @media (max-width: 1199px) {
     .contact.landing {
-        padding: 60px 60px 110px;
+        padding: 60px 60px 60px;
     }
 
     .contact.landing .title {
@@ -103,7 +103,7 @@
 
 @media (max-width: 767px) {
     .contact.landing {
-        padding: 50px 50px 100px;
+        padding: 50px 50px 50px;
     }
 
     .contact.landing .title {
@@ -120,7 +120,7 @@
 
 @media (max-width: 575px) {
     .contact.landing {
-        padding: 40px 30px 90px;
+        padding: 40px 30px 30px;
     }
 
     .contact.landing .title {
@@ -138,7 +138,7 @@
 
 @media (max-width: 425px) {
     .contact.landing {
-        padding: 40px 25px 80px;
+        padding: 40px 25px 30px;
     }
 
     .contact.landing .title {
@@ -365,3 +365,21 @@
 }
 
 /* ---- Contact End ---- */
+
+
+.join_team.s {
+    max-width: 990px;
+    margin: auto;
+}
+
+@media (max-width: 1399px) {
+    .join_team.s {
+        max-width: 930px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .join_team.s {
+        max-width: 900px;
+    }
+}

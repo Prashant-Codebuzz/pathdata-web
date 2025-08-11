@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import contactemail from '../../../assets/images/contact-email.png';
 import contactcall from '../../../assets/images/contact-call.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AxiosWeb } from '../../../helper/Axios';
 import { toast } from 'react-toastify';
 
@@ -15,6 +15,8 @@ const initialState = {
 
 
 const ContactUs = () => {
+
+    const navigate = useNavigate();
 
     const [loading, setLoading] = useState(false);
     const [contact, setContact] = useState(initialState);
@@ -58,7 +60,7 @@ const ContactUs = () => {
         <>
 
             {/* ---- Contact Start ---- */}
-            <div className="contact-info">
+            <div className="contact-info d-none">
                 <div className="info">
                     <h1 className="title text-center">
                         Contact Us.
@@ -127,7 +129,7 @@ const ContactUs = () => {
             <section className='contact landing'>
                 <div className="container text-center">
                     <h1 className="title">
-                        Book a Demo Today.
+                        Contact Us.
                     </h1>
 
                     <p className="description">
@@ -242,6 +244,32 @@ const ContactUs = () => {
                 </div>
             </section>
             {/* ---- Contact-Form End ---- */}
+
+
+            {/* ---- Join Start ---- */}
+            <div className="join_team s">
+                <div className="row align-items-center">
+                    <div className="col-lg-9 text-center text-lg-start">
+                        <div className="title">
+                            Talk to us about your needs
+                        </div>
+                        <div className="description text-decoration-underline">
+                            contact@pathsdata.com
+                        </div>
+                    </div>
+                    <div className="col-lg-3 text-center text-lg-end mt-4 mt-lg-4">
+                        <button
+                            type='button'
+                            className={`main-button book-btn`}
+                            onClick={() => window.location.href = "mailto:contact@pathsdata.com"}
+                        >
+                            Email Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {/* ---- Join End ---- */}
+
 
         </>
     )
