@@ -103,7 +103,7 @@
     font-size: 22px;
 }
 
-.brands .drives .content {
+.brands.sub .drives .content {
     background: #060820;
     border: 1px solid #526EF21A;
 }

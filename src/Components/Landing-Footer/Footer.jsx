@@ -75,7 +75,7 @@ const Footer = () => {
                         </Link>
                     </div>
 
-                    <div className="menu d-flex my-3 my-md-4 my-lg-0 flex-wrap m-auto">
+                    <div className="menu d-flex my-3 my-md-4 my-lg-0 flex-wrap ms-auto">
                         <ul className="d-flex flex-wrap justify-content-center flex-column flex-sm-row">
                             <li className="mb-2 mb-lg-0" style={{ marginTop: '10px' }}>
                                 <Link to="/meet-team" className="px-0" >
@@ -90,10 +90,10 @@ const Footer = () => {
                         </ul>
                     </div >
 
-                    <Link
+                    {/* <Link
                         className='main-button book-btn'>
                         Explore PATHSDATA
-                    </Link>
+                    </Link> */}
                 </div >
 
                 <p className='copy text-center'>

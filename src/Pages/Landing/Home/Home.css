@@ -1,11 +1,10 @@
 /* ---- Banner Start ---- */
 
 .new_banner {
-    /* padding: 120px 100px 105px; */
-    padding: 80px 100px 70px;
+    padding: 80px 100px 60px;
     background-image: url('../../../assets/images/home/background1.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     position: relative;
     overflow: hidden;
@@ -112,7 +111,7 @@
 }
 
 .new_banner .vision {
-    padding: 130px 0 0;
+    padding: 200px 0 0;
 }
 
 .new_banner .vision .description {
@@ -132,7 +131,7 @@
     }
 
     .new_banner .vision {
-        padding: 160px 0 0;
+        padding: 200px 0 0;
     }
 
     .new_banner .vision .description {
@@ -150,7 +149,7 @@
     }
 
     .new_banner .vision {
-        padding: 130px 0 0;
+        padding: 200px 0 0;
     }
 
     .book-btn {
@@ -645,7 +644,7 @@
 .brands {
     background-image: url("../../../assets/images/board-bg.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 90%;
 
     padding: 20px 100px 160px;
     position: relative;

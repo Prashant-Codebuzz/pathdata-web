@@ -1,10 +1,10 @@
 /* ---- Banner Start ---- */
 
 .turning_banner {
-    padding: 90px 100px 80px;
+    padding: 80px 100px 90px;
     background-image: url('../../../assets/images/home/background1.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     position: relative;
     overflow: hidden;
