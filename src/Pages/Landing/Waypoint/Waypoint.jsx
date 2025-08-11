@@ -488,6 +488,8 @@ const Waypoint = () => {
 
 
 
+
+
             {/* ---- Banner Start ---- */}
             <div className="new_banner turningdata d-none">
                 <div className="row align-items-center">

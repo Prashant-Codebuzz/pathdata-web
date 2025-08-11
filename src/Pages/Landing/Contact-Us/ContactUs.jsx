@@ -2,15 +2,17 @@ import React, { useState } from 'react'
 import contactemail from '../../../assets/images/contact-email.png';
 import contactcall from '../../../assets/images/contact-call.png';
 import { Link } from 'react-router-dom';
+import { AxiosWeb } from '../../../helper/Axios';
+import { toast } from 'react-toastify';
 
 const initialState = {
-    firstname: "",
-    lastname: "",
-    work_email: "",
-    image: "",
+    first_name: "",
+    last_name: "",
+    email: "",
     organization: "",
     message: ""
 }
+
 
 const ContactUs = () => {
 
@@ -18,11 +20,11 @@ const ContactUs = () => {
     const [contact, setContact] = useState(initialState);
 
     const handleChange = (e) => {
-        const { name, value, files } = e.target;
+        const { name, value } = e.target;
 
         setContact((prev) => ({
             ...prev,
-            [name]: files ? files[0] : value,
+            [name]: value,
         }));
     }
 
@@ -31,7 +33,27 @@ const ContactUs = () => {
 
         setLoading(true);
 
+        try {
+            const res = await AxiosWeb.post("/contact_us", contact, {
+                headers: {
+                    "Content-Type": 'application/json'
+                }
+            });
+
+            if (res.data?.statusCode) {
+                toast.success(res.data?.message);
+
+                setContact(initialState);
+            }
+        }
+        catch (err) {
+            console.error(err);
+        }
+        finally {
+            setLoading(false);
+        }
     }
+
     return (
         <>
 
@@ -116,48 +138,48 @@ const ContactUs = () => {
                 <div className="contact-form">
                     <form className="row" onSubmit={handleSubmit}>
                         <div className='col-lg-6 group'>
-                            <label htmlFor="firstname" className='mb-2'>
+                            <label htmlFor="first_name" className='mb-2'>
                                 First Name
                             </label>
                             <input
                                 type="text"
-                                name="firstname"
-                                id="firstname"
+                                name="first_name"
+                                id="first_name"
                                 placeholder='Enter first name'
-                                // autoComplete='off'
-                                value={contact.firstname}
+                                autoComplete='off'
+                                value={contact.first_name}
                                 onChange={handleChange}
                                 required
                             />
                         </div>
 
                         <div className='col-lg-6 group'>
-                            <label htmlFor="lastname" className='mb-2'>
+                            <label htmlFor="last_name" className='mb-2'>
                                 Last Name
                             </label>
                             <input
                                 type="text"
-                                name="lastname"
-                                id="lastname"
+                                name="last_name"
+                                id="last_name"
                                 placeholder='Enter last name'
-                                // autoComplete='off'
-                                value={contact.lastname}
+                                autoComplete='off'
+                                value={contact.last_name}
                                 onChange={handleChange}
                                 required
                             />
                         </div>
 
                         <div className='col-lg-6 group'>
-                            <label htmlFor="work_email" className='mb-2'>
+                            <label htmlFor="email" className='mb-2'>
                                 Email
                             </label>
                             <input
                                 type="email"
-                                name="work_email"
-                                id="work_email"
+                                name="email"
+                                id="email"
                                 placeholder='Enter email'
-                                // autoComplete='off'
-                                value={contact.work_email}
+                                autoComplete='off'
+                                value={contact.email}
                                 onChange={handleChange}
                                 required
                             />
@@ -172,7 +194,7 @@ const ContactUs = () => {
                                 name="organization"
                                 id="organization"
                                 placeholder='Enter organization name'
-                                // autoComplete='off'
+                                autoComplete='off'
                                 value={contact.organization}
                                 onChange={handleChange}
                                 required
@@ -188,7 +210,7 @@ const ContactUs = () => {
                                 name="message"
                                 id="message"
                                 placeholder='Enter short message'
-                                // autoComplete='off'
+                                autoComplete='off'
                                 value={contact.message}
                                 onChange={handleChange}
                                 required

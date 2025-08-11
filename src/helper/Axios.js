@@ -24,3 +24,8 @@ export const authorizationHeaders = () => {
 export const Axios = axios.create({
     baseURL: import.meta.env.VITE_APP_ADMIN_API
 });
+
+
+export const AxiosWeb = axios.create({
+    baseURL: import.meta.env.VITE_APP_WEB_API
+});

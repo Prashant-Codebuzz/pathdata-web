@@ -53,7 +53,7 @@ const Home = () => {
 
                             <div className="buttons">
                                 <Link
-                                    // to=""
+                                    to="/contact-us"
                                     className="main-button book-btn discover-btn"
                                 >
                                     Contact Us
@@ -191,7 +191,7 @@ const Home = () => {
                         Our Vision
                     </h1>
 
-                    <p className="description s">
+                    <p className="description   s">
                         To empower businesses to achieve outcomes <br className='d-none d-block' />
                         <span>
                             effortlessly, while making their journey toward <br className='d-none d-block' />
