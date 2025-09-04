@@ -298,6 +298,14 @@
         font-size: 24px;
     }
 
+    .turning_banner.engine .left .title {
+        font-size: 16px;
+    }
+
+      .turning_banner.wd .left .title {
+        font-size: 16px;
+    }
+
     .turning_banner .left .description.f {
         font-size: 28px;
     }
@@ -368,6 +376,95 @@
 @media (min-width: 1400px) {
     .new_banner.turningdata {
         padding: 60px 100px 100px;
+    }
+}
+
+
+
+.step.waypoint .intro {
+    padding: 30px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.step.waypoint .intro .title {
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 30px;
+    width: fit-content;
+    padding: 15px 25px;
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.step.waypoint .intro .description {
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 26px;
+    margin: 25px auto 0;
+    color: #E0E0E0;
+    text-align: center;
+}
+
+
+.step.waypoint .box .description {
+    margin-bottom: 35px;
+}
+
+.step.waypoint .box .main-button.new {
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    outline: 0;
+}
+
+.step.waypoint .box .main-button.new:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    padding: 2px;
+    /* border thickness */
+    background: linear-gradient(95.08deg, #4361ee 11.21%, #738bff 90.73%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+
+@media (max-width: 1199px) {
+    .step.waypoint .intro .description {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .step.waypoint .intro .title {
+        font-size: 17px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .step.waypoint .intro .description {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 575px) {
+    .step.waypoint .intro .title {
+        font-size: 16px;
+    }
+
+    .step.waypoint .intro .description {
+        font-size: 16px;
+        margin: 20px auto 0;
     }
 }
 

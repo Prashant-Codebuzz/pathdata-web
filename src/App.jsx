@@ -74,6 +74,8 @@ import JoinTeam from './Pages/Landing/Join-Team/JoinTeam';
 import Contact from './Pages/Landing/Contact-Us/ContactUs';
 
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
+import PathiqEngine from './Pages/Landing/Pathiq-Engine/PathiqEngine';
+import WaypointDetails from './Pages/Landing/Waypoint-Details/WaypointDetails';
 
 function App() {
 
@@ -92,7 +94,16 @@ function App() {
                 <Route element={<LandingLayout />}>
                     <Route path='/' element={<LandingHome />} />
                     <Route path='/waypoint' element={<Waypoint />} />
+                    <Route path='/waypoint/:name' element={<WaypointDetails />} />
+
+                    {/* <Route path='/waypoint/data-analytics-platforms' />
+                    <Route path='/waypoint/ai-machine-learning-ai-ops-mlops' />
+                    <Route path='/waypoint/generative-al-llm-solutions' />
+                    <Route path='/waypoint/it-product-engineering' />
+                    <Route path='/waypoint/strategy-advisory' /> */}
+
                     <Route path='/pathiq' element={<Pathiq />} />
+                    <Route path='/pathiq-engine' element={<PathiqEngine />} />
                     <Route path='/meet-team' element={<MeetTeam />} />
                     <Route path='/join-team' element={<JoinTeam />} />
                     <Route path='/contact-us' element={<Contact />} />
@@ -103,7 +114,7 @@ function App() {
 
                 {/* --------------- Web-Site --------------- */}
                 <Route element={<WebLayout />}>
-                    {/* Home */}    
+                    {/* Home */}
                     <Route path='/explore-pathdata' element={<WebHome />} />
                     {/* Blog */}
                     <Route path='/blog' element={<Blog />} />

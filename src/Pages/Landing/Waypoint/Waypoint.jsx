@@ -147,6 +147,13 @@ const Waypoint = () => {
                     slidesToShow: 1,
                     centerPadding: "20px"
                 }
+            },
+            {
+                breakpoint: 475,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: "20px"
+                }
             }
         ]
     };
@@ -256,7 +263,7 @@ const Waypoint = () => {
             {/* ---- Banner End ---- */}
 
             {/* ---- Key Features Start ---- */}
-            <div className="brands sub waypoint text-center">
+            <div className="brands sub waypoint text-center d-none ">
                 <h1 className="title m-auto">
                     Every Step of the Way
                 </h1>
@@ -356,6 +363,135 @@ const Waypoint = () => {
                                     Not sure where to start? We assess your AI/data maturity, design roadmaps, and help you optimize cloud and data infrastructure for performance and cost
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="step waypoint pb-5 pb-md-2 pb-lg-0">
+                <div className="row g-5">
+                    <div className="col-lg-4 col-md-6 d-block d-md-none">
+                        <div className="intro">
+                            <h1 className="title">
+                                Every Step of the Way
+                            </h1>
+
+                            <p className="description">
+                                Building with You. <br className='d-none d-md-block' />
+                                Delivering for You. <br className='d-none d-md-block' />
+                                Every Step of the Way.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6">
+                        <div className="box h-100">
+                            <div className="title pt-0">
+                                Data & Analytics
+                                Platforms
+                            </div>
+                            <div className="description">
+                                We turn your data into products. From data lakes and data warehouses to ETL pipelines, dashboards, and analytics tools, we ensure your data is reliable, accessible, and ready for insights. Our end-to-end solutions help teams make smarter decisions faster, providing a
+                                solid foundation for analytics, AI, and business growth.
+                            </div>
+
+                            <Link
+                                to="/waypoint/data-analytics-platforms"
+                                className="main-button book-btn discover-btn new mt-auto"
+                            >
+                                Learn more
+                                <img src={rightarrow} className='ms-2' />
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 d-none d-md-block">
+                        <div className="intro h-100">
+                            <h1 className="title">
+                                Every Step of the Way
+                            </h1>
+
+                            <p className="description">
+                                Building with You. <br />
+                                Delivering for You. <br />
+                                Every Step of the Way.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6">
+                        <div className="box h-100">
+                            <div className="title pt-0">
+                                AI, Machine Learning,
+                                AI Ops & MLOps
+                            </div>
+                            <div className="description">
+                                We create AI solutions that work in the real world. From predictive models to advanced automation, we make AI scalable, reliable,
+                                and easy to integrate into your business processes. With AI Ops and MLOps best practices, we ensure your AI products are production-ready, monitored, and
+                                continuously improving.
+                            </div>
+                            <Link
+                                to="/waypoint/ai-machine-learning-ai-ops-mlops"
+                                className="main-button book-btn discover-btn new mt-auto"
+                            >
+                                Learn more
+                                <img src={rightarrow} className='ms-2' />
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6">
+                        <div className="box h-100">
+                            <div className="title pt-0">
+                                Generative AI &
+                                LLM Solutions
+                            </div>
+                            <div className="description">
+                                We build intelligent AI products that understand and generate content. Using Large Language Models (LLMs), we develop chatbots, document summarizers, and knowledge assistants that help teams work faster and smarter. Our solutions are secure, enterprise-ready, and designed to augment workflows.
+                            </div>
+                            <Link
+                                to="/waypoint/generative-al-llm-solutions"
+                                className="main-button book-btn discover-btn new mt-auto"
+                            >
+                                Learn more
+                                <img src={rightarrow} className='ms-2' />
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6">
+                        <div className="box h-100">
+                            <div className="title pt-0">
+                                IT & Product
+                                Engineering
+                            </div>
+                            <div className="description">
+                                We design and build technology products
+                                from idea to deployment. This includes
+                                cloud architecture, software integration, platform development, and product enablement—ensuring your digital initiatives are robust, scalable, and aligned with
+                                business goals.
+                            </div>
+                            <Link
+                                to="/waypoint/it-product-engineering"
+                                className="main-button book-btn discover-btn new mt-auto"
+                            >
+                                Learn more
+                                <img src={rightarrow} className='ms-2' />
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6">
+                        <div className="box h-100">
+                            <div className="title pt-0">
+                                Strategy &
+                                Advisory
+                            </div>
+                            <div className="description">
+                                We help companies turn ideas into actionable technology strategies. By assessing your
+                                data, AI, and IT capabilities, we design roadmaps that guide your product, platform, and AI investments, helping you prioritize initiatives and accelerate digital transformation.
+                            </div>
+                            <Link
+                                to="/waypoint/strategy-advisory"
+                                className="main-button book-btn discover-btn new mt-auto"
+                            >
+                                Learn more
+                                <img src={rightarrow} className='ms-2' />
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -21,9 +21,12 @@ const Footer = () => {
 
             {/* ---- Copyright Start ---- */}
             {
-                (pathname === "/" ||
+                (
+                    pathname === "/" ||
                     pathname === "/pathiq" ||
-                    pathname === "/waypoint") &&
+                    pathname === "/pathiq-engine" ||
+                    pathname === "/waypoint"
+                ) &&
                 <div className="copyright text-center">
                     {/* <div className="social d-flex justify-content-center gap-4">
                     <Link>
@@ -66,6 +69,11 @@ const Footer = () => {
 
             {/* ---- Copyright End ---- */}
 
+
+
+
+
+
             <footer className='s'>
                 <div className='first d-flex justify-content-center justify-content-lg-between align-items-center'>
                     <div className="logo">
@@ -75,18 +83,28 @@ const Footer = () => {
                         </Link>
                     </div>
 
-                    <div className="menu d-flex my-3 my-md-4 my-lg-0 flex-wrap ms-auto">
+                    <div className={`menu d-flex my-3 my-md-4 my-lg-0 flex-wrap ${pathname === "/pathiq" ? 'm-md-auto' : 'ms-md-auto'}`}>
                         <ul className="d-flex flex-wrap justify-content-center flex-column flex-sm-row">
-                            <li className="mb-2 mb-lg-0" style={{ marginTop: '10px' }}>
+                            <li className={`mb-2 mb-lg-0  ${pathname === "/pathiq" ? 'text-center text-sm-start' : ''}`} style={{ marginTop: '10px' }}>
                                 <Link to="/meet-team" className="px-0" >
                                     Team
                                 </Link>
                             </li>
-                            <li className="mb-2 mb-lg-0 " style={{ marginTop: '10px' }}>
+                            <li className={`mb-2 mb-lg-0 ${pathname === "/pathiq" ? 'text-center text-sm-start mb-4 mb-sm-0' : ''}`} style={{ marginTop: '10px' }}>
                                 <Link to="/contact-us" className="px-0" >
                                     Contacts
                                 </Link>
                             </li>
+
+                            {
+                                location.pathname === "/pathiq" &&
+                                <Link
+                                    to="/pathiq-engine"
+                                    className="main-button book-btn discover-btn new"
+                                >
+                                    PATHIQ ENGINE
+                                </Link>
+                            }
                         </ul>
                     </div >
 

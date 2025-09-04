@@ -1,10 +1,13 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import './Header.css';
 import logos from '../../assets/images/logo.png';
 import logo from '../../assets/images/logo-icon.png';
 
 const Header = () => {
+
+    const location = useLocation();
+
     return (
         <>
 
@@ -28,7 +31,7 @@ const Header = () => {
                         <div className="offcanvas offcanvas-start" data-bs-scroll="true" tabIndex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                             <div className="offcanvas-header">
                                 <div className='navbar-brand'>
-                                    <Link to="/">
+                                    <Link to="/" >
                                         <img src={logo} alt="" />
                                     </Link>
                                 </div>
@@ -51,6 +54,19 @@ const Header = () => {
                                     <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas" >
                                         <Link to="/contact-us" className="nav-link">Contacts</Link>
                                     </li>
+
+                                    {
+                                        location.pathname === "/pathiq" &&
+
+                                        <Link
+                                            to="/pathiq-engine"
+                                            className="main-button book-btn discover-btn new"
+                                            style={{ width: 'fit-content' }}
+                                            data-bs-dismiss="offcanvas"
+                                        >
+                                            PATHIQ ENGINE
+                                        </Link>
+                                    }
                                 </ul>
                             </div>
                         </div>

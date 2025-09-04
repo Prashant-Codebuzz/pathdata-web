@@ -136,7 +136,7 @@ const Home = () => {
                 <div className="row g-5">
                     <div className="col-lg-4 col-md-6">
                         <div className="box h-100">
-                            <div className="num">
+                            <div className="num">   
                                 1
                             </div>
                             <div className="title">
@@ -180,7 +180,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            {/* ---- Step End ---- */}
+            {/* ---- Step End ---- */}  
 
 
 

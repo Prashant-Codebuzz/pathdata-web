@@ -25,6 +25,31 @@
     font-size: 20px;
 }
 
+.turning_banner.sub .left .buttons .new {
+    /* outline: 0; */
+    /* background: linear-gradient(95.08deg, #4361ee 11.21%, #738bff 90.73%); */
+    /* padding-inline: 40px; */
+    background: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.turning_banner.sub .left .buttons .new::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    padding: 2px;
+    /* border thickness */
+    background: linear-gradient(95.08deg, #4361ee 11.21%, #738bff 90.73%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
 
 @media (max-width: 1399px) {
     .turning_banner.sub .company {

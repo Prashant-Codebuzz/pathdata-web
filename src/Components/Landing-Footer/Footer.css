@@ -214,3 +214,38 @@ footer .copy {
         padding: 35px 25px 35px
     }
 }
+
+
+/* ---- Contact-Us Start ---- */
+.copyright.contact p {
+    margin-top: 0;
+}
+
+
+.copyright.contact .description {
+    max-width: 80%;
+    line-height: 30px;
+}
+
+.copyright.contact .description a {
+    text-decoration: underline;
+    color: #4361EE !important;
+}
+
+.copyright.contact .description:nth-of-type(1) {
+    margin-bottom: 25px;
+}
+
+.copyright.contact .description:nth-of-type(2) {
+    margin-bottom: 55px;
+}
+
+.copyright.contact .book-btn.wd {
+    outline: 0;
+    background: linear-gradient(95.08deg, #4361ee 11.21%, #738bff 90.73%);
+    padding-inline: 40px;
+    margin-top: 40px;
+}
+
+
+/* ---- Contact-Us End ---- */

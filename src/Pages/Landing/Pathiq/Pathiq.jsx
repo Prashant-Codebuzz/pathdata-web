@@ -36,10 +36,17 @@ const Pathiq = () => {
                         Your AI Data Copilot.
                     </h1>
 
-                    <div className="buttons position-relative">
+                    <div className="buttons position-relative d-flex justify-content-center flex-wrap gap-4 d-sm-block">
+                        <Link
+                            to="/pathiq-engine"
+                            className="main-button book-btn discover-btn me-sm-4 me-xl-5"
+                        >
+                            PATHIQ ENGINE
+                        </Link>
+
                         <Link
                             to="/contact-us"
-                            className="main-button book-btn discover-btn"
+                            className="main-button book-btn discover-btn new"
                         >
                             Contact Us
                         </Link>

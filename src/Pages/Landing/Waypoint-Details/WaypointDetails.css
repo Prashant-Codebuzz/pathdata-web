@@ -1,0 +1,361 @@
+/* ---- Banner Start ---- */
+.turning_banner.wd {
+    background-image: none !important;
+}
+
+.turning_banner.wd::before {
+    background-image: none;
+    content: none;
+}
+
+.turning_banner.wd .left .title.top {
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 30px;
+    width: fit-content;
+    padding: 15px 25px;
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0 auto 40px;
+}
+
+@media (max-width: 991px) {
+    .turning_banner.wd .left .title.top {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 767px) {
+    .turning_banner.wd .left .title.top {
+        padding: 13px 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .turning_banner.wd .left .title.top {
+        font-size: 16px;
+    }
+}
+
+/* ---- Banner End ---- */
+
+
+
+
+.brands.sub.wd .description {
+    font-size: 38px;
+    background: linear-gradient(178.68deg, #FFFFFF 10.37%, #526EF2 146.85%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.brands.sub.waypoint.wd {
+    background-image: url("../../../assets/images/board-bg.png");
+    background-size: 100% 100%;
+}
+
+.brands.sub.waypoint.wd .drives .col-xxl-6:nth-child(odd)::after {
+    background: linear-gradient(90deg, #526EF2 0%, #B5C7FF 100%);
+}
+
+.brands.sub.waypoint.wd .drives .col-xxl-6:nth-child(5)::after {
+    height: 0;
+}
+
+@media (max-width: 1199px) {
+    .brands.sub.wd .description {
+        font-size: 32px;
+
+    }
+}
+
+@media (max-width: 991px) {
+    .brands.sub.wd .description {
+        font-size: 28px;
+    }
+
+    .turning_banner.wd .left .title {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .brands.sub.wd .description {
+        font-size: 24px;
+    }
+
+    .turning_banner.wd .left .title {
+        padding-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .brands.sub.wd .description {
+        font-size: 20px;
+    }
+
+    .turning_banner.wd .left .title {
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 425px) {}
+
+
+
+.step.wd {
+    padding-block: 90px 50px;
+}
+
+.step.wd .top {
+    margin-bottom: 60px;
+}
+
+.step.wd .top h1 {
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 36px;
+    /* line-height: 30px; */
+    background: linear-gradient(178.68deg, #FFFFFF 10.37%, #526EF2 146.85%);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+.step.wd .top p {
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #E0E0E0;
+}
+
+
+
+/*  it-product-engineering */
+.step.wd .details .box .description ul {
+    padding-left: 20px;
+}
+
+.step.wd .details .box .description ul li {
+    list-style: disc;
+}
+
+.step.wd .details .box .description ul li b {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+
+
+.step.wd .details {
+    position: relative;
+    z-index: 2;
+}
+
+.step.wd .row.ai-machine-learning-ai-ops-mlops .col-sm-6:nth-of-type(2) .box {
+    position: relative;
+}
+
+.step.wd .row.ai-machine-learning-ai-ops-mlops .col-sm-6:nth-of-type(2) .box::before {
+    content: "CENTRIC METHODOLOGY";
+    position: absolute;
+    top: -84%;
+    /* left: 50%; */
+    /* transform: translate(-20%, -50%); */
+    font-family: var(--popping);
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 80px;
+    background: linear-gradient(180deg, #FFFFFF 16.26%, #526EF2 122.76%);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 10%;
+    z-index: -1;
+    pointer-events: none;
+    white-space: normal;
+    text-align: right;
+}
+
+
+
+.step.wd .row.generative-al-llm-solutions .col-sm-6:nth-of-type(2) .box {
+    position: relative;
+}
+
+.step.wd .row.generative-al-llm-solutions .col-sm-6:nth-of-type(2) .box::before {
+    content: "AI DEVELOPMENT";
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--popping);
+    font-weight: 500;
+    font-size: 78px;
+    line-height: normal;
+    background: linear-gradient(180deg, #FFFFFF 16.26%, #526EF2 122.76%);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 10%;
+    z-index: -1;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+
+
+
+@media (max-width: 1399px) {
+    .step.wd {
+        padding-block: 90px 40px;
+    }
+
+    .step.wd .row.generative-al-llm-solutions .col-sm-6:nth-of-type(2) .box::before {
+        font-size: 65px;
+    }
+
+    .step.wd .row.ai-machine-learning-ai-ops-mlops .col-sm-6:nth-of-type(2) .box::before {
+        font-size: 60px;
+        line-height: 70px;
+        top: -65%;
+    }
+}
+
+@media (max-width: 1299px) {
+    .step.wd .row.ai-machine-learning-ai-ops-mlops .col-sm-6:nth-of-type(2) .box::before {
+        top: -59%;
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .step.wd {
+        padding-block: 70px 40px;
+    }
+
+    .step.wd .top h1 {
+        font-size: 32px;
+    }
+
+    .step.wd .top p {
+        font-size: 18px;
+    }
+
+    .step.wd .row.generative-al-llm-solutions .col-sm-6:nth-of-type(2) .box::before {
+        font-size: 55px;
+    }
+
+    .step.wd .row.ai-machine-learning-ai-ops-mlops .col-sm-6:nth-of-type(2) .box::before {
+        font-size: 55px;
+        line-height: 65px;
+        top: -65%;
+    }
+}
+
+@media (max-width: 991px) {
+    .step.wd {
+        padding-block: 50px 25px;
+    }
+
+    .step.wd .top {
+        margin-bottom: 50px;
+    }
+
+    .step.wd .top h1 {
+        font-size: 28px;
+    }
+
+    .step.wd .row.generative-al-llm-solutions .col-sm-6:nth-of-type(2) .box::before {
+        font-size: 50px;
+        top: -5%;
+    }
+
+    .step.wd .row.ai-machine-learning-ai-ops-mlops .col-sm-6:nth-of-type(2) .box::before {
+        font-size: 50px;
+        line-height: 60px;
+        top: -53%;
+    }
+}
+
+@media (max-width: 900px) {
+    .step.wd .row.ai-machine-learning-ai-ops-mlops .col-sm-6:nth-of-type(2) .box::before {
+        font-size: 48px;
+        line-height: 56px;
+        top: -50%;
+        left: 0;
+    }
+}
+
+
+@media (max-width: 899px) {
+    .step.wd .row.generative-al-llm-solutions .col-sm-6:nth-of-type(2) .box::before {
+        font-size: 45px;
+        top: -5%;
+    }
+}
+
+@media (max-width: 830px) {
+    .step.wd .row.ai-machine-learning-ai-ops-mlops .col-sm-6:nth-of-type(2) .box::before {
+        font-size: 43px;
+        line-height: 55px;
+        top: -40%;
+    }
+}
+
+@media (max-width: 767px) {
+    .step.wd {
+        padding-block: 40px 0;
+    }
+
+    .step.wd .top {
+        margin-bottom: 40px;
+    }
+
+    .step.wd .top h1 {
+        font-size: 24px;
+    }
+
+    .step.wd .top p {
+        font-size: 17px;
+    }
+
+    .step.wd .row.generative-al-llm-solutions .col-sm-6:nth-of-type(2) .box::before {
+        content: none;
+    }
+
+    .step.wd .row.ai-machine-learning-ai-ops-mlops .col-sm-6:nth-of-type(2) .box::before {
+        content: none;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .step.wd {
+        padding-block: 25px 0;
+    }
+
+    .step.wd .top {
+        margin-bottom: 40px;
+    }
+
+    .step.wd .top h1 {
+        font-size: 20px;
+    }
+
+    .step.wd .top p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 475px) {
+    .step.wd {
+        padding-block: 15px 0;
+    }
+
+    .step.wd .top {
+        margin-bottom: 30px;
+    }
+}
