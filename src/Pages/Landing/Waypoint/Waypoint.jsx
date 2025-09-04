@@ -396,7 +396,7 @@ const Waypoint = () => {
 
                             <Link
                                 to="/waypoint/data-analytics-platforms"
-                                className="main-button book-btn discover-btn new mt-auto"
+                                className="main-button book-btn discover-btn new mt-auto learn_more"
                             >
                                 Learn more
                                 <img src={rightarrow} className='ms-2' />
@@ -429,7 +429,7 @@ const Waypoint = () => {
                             </div>
                             <Link
                                 to="/waypoint/ai-machine-learning-ai-ops-mlops"
-                                className="main-button book-btn discover-btn new mt-auto"
+                                className="main-button book-btn discover-btn new mt-auto learn_more"
                             >
                                 Learn more
                                 <img src={rightarrow} className='ms-2' />
@@ -447,7 +447,7 @@ const Waypoint = () => {
                             </div>
                             <Link
                                 to="/waypoint/generative-al-llm-solutions"
-                                className="main-button book-btn discover-btn new mt-auto"
+                                className="main-button book-btn discover-btn new mt-auto learn_more"
                             >
                                 Learn more
                                 <img src={rightarrow} className='ms-2' />
@@ -468,7 +468,7 @@ const Waypoint = () => {
                             </div>
                             <Link
                                 to="/waypoint/it-product-engineering"
-                                className="main-button book-btn discover-btn new mt-auto"
+                                className="main-button book-btn discover-btn new mt-auto learn_more"
                             >
                                 Learn more
                                 <img src={rightarrow} className='ms-2' />
@@ -487,7 +487,7 @@ const Waypoint = () => {
                             </div>
                             <Link
                                 to="/waypoint/strategy-advisory"
-                                className="main-button book-btn discover-btn new mt-auto"
+                                className="main-button book-btn discover-btn new mt-auto learn_more"
                             >
                                 Learn more
                                 <img src={rightarrow} className='ms-2' />

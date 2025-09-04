@@ -421,6 +421,11 @@
     outline: 0;
 }
 
+.step.waypoint .box .main-button.learn_more {
+    font-size: 16px;
+}
+
+
 .step.waypoint .box .main-button.new:before {
     content: "";
     position: absolute;

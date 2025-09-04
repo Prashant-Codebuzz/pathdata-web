@@ -83,7 +83,7 @@ const Footer = () => {
                         </Link>
                     </div>
 
-                    <div className={`menu d-flex my-3 my-md-4 my-lg-0 flex-wrap ${pathname === "/pathiq" ? 'm-md-auto' : 'ms-md-auto'}`}>
+                    <div className={`menu d-flex my-3 my-md-4 my-lg-0 flex-wrap ${pathname === "/pathiq" ? 'ms-md-auto' : 'ms-md-auto'}`}>
                         <ul className="d-flex flex-wrap justify-content-center flex-column flex-sm-row">
                             <li className={`mb-2 mb-lg-0  ${pathname === "/pathiq" ? 'text-center text-sm-start' : ''}`} style={{ marginTop: '10px' }}>
                                 <Link to="/meet-team" className="px-0" >
