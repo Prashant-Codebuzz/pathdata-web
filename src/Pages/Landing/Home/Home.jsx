@@ -47,7 +47,7 @@ const Home = () => {
                             </h1>
 
                             <p className="description">
-                                Pathsdata transforms complexity into clarity - <br className='d-none d-md-block' />
+                                PATHSDATA transforms complexity into clarity - <br className='d-none d-md-block' />
                                 helping you move forward with confidence.
                             </p>
 

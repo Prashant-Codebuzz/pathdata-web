@@ -26,6 +26,9 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useMediaQuery } from "react-responsive";
 
 const Waypoint = () => {
 
@@ -79,7 +82,11 @@ const Waypoint = () => {
     };
 
 
+    const isMobile = useMediaQuery({ maxWidth: 576 });
+    const isTablet = useMediaQuery({ minWidth: 577, maxWidth: 991 });
+    const isLaptop = useMediaQuery({ minWidth: 992, maxWidth: 1199 });
 
+    const slidesToShow = isMobile ? 1 : isTablet ? 1 : isLaptop ? 2.3 : 3;
 
     const SetsUSData = [
 
@@ -112,50 +119,38 @@ const Waypoint = () => {
 
     const settings = {
         centerMode: true,
-        centerPadding: "0px",
-        slidesToShow: 3,
+        // centerPadding: "0px",
+        // slidesToShow: 3,
+        centerPadding: isMobile ? "20px" : isTablet ? "80px" : isLaptop ? "40px" : "0px",
+        slidesToShow,
+        slidesToScroll: 1,
         infinite: true,
         speed: 500,
         arrows: false,
         beforeChange: (current, next) => setActiveIndex(next),
-        responsive: [
+        // responsive: [
+        //     {
+        //         breakpoint: 1200, // large tablets / small laptops
+        //         settings: { slidesToShow: 2, centerPadding: "40px" }
+        //     },
+        //     {
+        //         breakpoint: 992,
+        //         settings: { slidesToShow: 1, centerPadding: "200px" }
+        //     },
+        //     {
+        //         breakpoint: 899,
+        //         settings: { slidesToShow: 1, centerPadding: "100px" }
+        //     },
+        //     {
+        //         breakpoint: 576,
+        //         settings: { slidesToShow: 1, centerPadding: "20px" }
+        //     },
+        //     {
+        //         breakpoint: 475,
+        //         settings: { slidesToShow: 1, centerPadding: "20px" }
+        //     }
+        // ]
 
-            {
-                breakpoint: 1200, // large tablets / small laptops
-                settings: {
-                    slidesToShow: 2,
-                    centerPadding: "40px"
-                }
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 1,
-                    centerPadding: "200px"
-                }
-            },
-            {
-                breakpoint: 899,
-                settings: {
-                    slidesToShow: 1,
-                    centerPadding: "100px"
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
-                    centerPadding: "20px"
-                }
-            },
-            {
-                breakpoint: 475,
-                settings: {
-                    slidesToShow: 1,
-                    centerPadding: "20px"
-                }
-            }
-        ]
     };
 
 

@@ -4,6 +4,7 @@ import './WaypointDetails.css';
 import Slider from 'react-slick';
 
 import { Link, useParams } from 'react-router-dom';
+import { useMediaQuery } from "react-responsive";
 
 import finance from '../../../assets/images/finance.png';
 import healthcare from '../../../assets/images/healthcare.png';
@@ -17,8 +18,11 @@ const WaypointDetails = () => {
 
     const { name } = useParams();
 
-    console.log(name);
+    const isMobile = useMediaQuery({ maxWidth: 576 });
+    const isTablet = useMediaQuery({ minWidth: 577, maxWidth: 991 });
+    const isLaptop = useMediaQuery({ minWidth: 992, maxWidth: 1199 });
 
+    const slidesToShow = isMobile ? 1 : isTablet ? 1 : isLaptop ? 2.3 : 3;
 
     const DeliverDataMap = {
         'data-analytics-platforms': [
@@ -142,50 +146,51 @@ const WaypointDetails = () => {
 
     const settings = {
         centerMode: true,
-        centerPadding: "0px",
-        slidesToShow: 3,
+        // centerPadding: "0px",
+        // slidesToShow: 3,
+        centerPadding: isMobile ? "20px" : isTablet ? "80px" : isLaptop ? "40px" : "0px",
+        slidesToShow,
         infinite: true,
         speed: 500,
         arrows: false,
         beforeChange: (current, next) => setActiveIndex(next),
-        responsive: [
-
-            {
-                breakpoint: 1200, // large tablets / small laptops
-                settings: {
-                    slidesToShow: 2,
-                    centerPadding: "40px"
-                }
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 1,
-                    centerPadding: "200px"
-                }
-            },
-            {
-                breakpoint: 899,
-                settings: {
-                    slidesToShow: 1,
-                    centerPadding: "100px"
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
-                    centerPadding: "20px"
-                }
-            },
-            {
-                breakpoint: 475,
-                settings: {
-                    slidesToShow: 1,
-                    centerPadding: "20px"
-                }
-            }
-        ]
+        // responsive: [
+        //     {
+        //         breakpoint: 1200, // large tablets / small laptops
+        //         settings: {
+        //             slidesToShow: 2,
+        //             centerPadding: "40px"
+        //         }
+        //     },
+        //     {
+        //         breakpoint: 992,
+        //         settings: {
+        //             slidesToShow: 1,
+        //             centerPadding: "200px"
+        //         }
+        //     },
+        //     {
+        //         breakpoint: 899,
+        //         settings: {
+        //             slidesToShow: 1,
+        //             centerPadding: "100px"
+        //         }
+        //     },
+        //     {
+        //         breakpoint: 576,
+        //         settings: {
+        //             slidesToShow: 1,
+        //             centerPadding: "20px"
+        //         }
+        //     },
+        //     {
+        //         breakpoint: 475,
+        //         settings: {
+        //             slidesToShow: 1,
+        //             centerPadding: "20px"
+        //         }
+        //     }
+        // ]
     };
 
 

@@ -96,7 +96,7 @@ const Pathiq = () => {
                             </h1>
 
                             <p className="description">
-                                PATHSDATA is the AI-native platform where your AI Copilot intelligently orchestrates your entire data, ML, and AI lifecycle. It understands your business goals and automates complex workflows, allowing you to execute seamlessly on your existing stack—or our blazing-fast, Rust-native PathsData Engine for a performance boost.
+                                PATHSDATA is the AI-native platform where your AI Copilot intelligently orchestrates your entire data, ML, and AI lifecycle. It understands your business goals and automates complex workflows, allowing you to execute seamlessly on your existing stack—or our blazing-fast, Rust-native PATHSDATA Engine for a performance boost.
                             </p>
 
                             <div className="buttons">
@@ -171,8 +171,8 @@ const Pathiq = () => {
                                 </div>
 
                                 <div className='shortdesc'>
-                                    PathsData integrates seamlessly with your existing data lakes, warehouses, and ML platforms. You can choose to run on your infrastructure or on our high-performance, Rust-native
-                                    PathsData Engine for maximum speed
+                                    PATHSDATA integrates seamlessly with your existing data lakes, warehouses, and ML platforms. You can choose to run on your infrastructure or on our high-performance, Rust-native
+                                    PATHSDATA Engine for maximum speed
                                 </div>
                             </div>
                         </div>
@@ -260,7 +260,7 @@ const Pathiq = () => {
                     <div className="col-lg-6 col-md-6 ">
                         <div className="content">
                             <h5 className="main-title">
-                                The Pathsdata Way
+                                The PATHSDATA Way
                             </h5>
 
                             <ul>
@@ -278,7 +278,7 @@ const Pathiq = () => {
                                 <li>
                                     <div className="que">
                                         Unified & Collaborative</div>
-                                    <p className='ans'>PathsData intelligently connects your teams and tools, enabling effortless collaboration across your entire data and AI lifecycle. </p>
+                                    <p className='ans'>PATHSDATA intelligently connects your teams and tools, enabling effortless collaboration across your entire data and AI lifecycle. </p>
                                 </li>
                             </ul>
                         </div>

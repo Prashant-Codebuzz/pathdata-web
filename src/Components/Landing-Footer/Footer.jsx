@@ -115,7 +115,7 @@ const Footer = () => {
                 </div >
 
                 <p className='copy text-center'>
-                    © Copyright 2025 - Pathdata. All rights reserved
+                    © Copyright 2025 - PATHSDATA. All rights reserved
                 </p>
             </footer >
         </>

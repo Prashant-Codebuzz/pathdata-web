@@ -7,6 +7,7 @@ import logo from '../../assets/images/logo-icon.png';
 const Header = () => {
 
     const location = useLocation();
+    const navigate = useNavigate();
 
     return (
         <>
@@ -57,15 +58,25 @@ const Header = () => {
 
                                     {
                                         location.pathname === "/pathiq" &&
+                                        <>
+                                            <Link
+                                                // to="/pathiq-engine"
+                                                className="main-button book-btn discover-btn new d-lg-none"
+                                                style={{ width: 'fit-content' }}
+                                                data-bs-dismiss="offcanvas"
+                                                onClick={() => navigate("/pathiq-engine")}
+                                            >
+                                                PATHIQ ENGINE
+                                            </Link>
 
-                                        <Link
-                                            to="/pathiq-engine"
-                                            className="main-button book-btn discover-btn new"
-                                            style={{ width: 'fit-content' }}
-                                            data-bs-dismiss="offcanvas"
-                                        >
-                                            PATHIQ ENGINE
-                                        </Link>
+                                            <Link
+                                                to="/pathiq-engine"
+                                                className="main-button book-btn discover-btn new d-none d-lg-block"
+                                                style={{ width: 'fit-content' }}
+                                            >
+                                                PATHIQ ENGINE
+                                            </Link>
+                                        </>
                                     }
                                 </ul>
                             </div>

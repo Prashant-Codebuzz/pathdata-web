@@ -56,7 +56,7 @@ const PathiqEngine = () => {
 
                 <section className='company'>
                     <div className="container text-center">
-                        <h5 className="text-white">Trusted by 30+ Companies</h5>
+                        {/* <h5 className="text-white">Trusted by 30+ Companies</h5> */}
 
                         <div className="slider-container">
                             <div className='images d-flex flex-wrap justify-content-center align-items-center'>
