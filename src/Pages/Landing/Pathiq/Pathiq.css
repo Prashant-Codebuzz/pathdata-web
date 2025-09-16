@@ -8,6 +8,10 @@
     top: 113%;
 }
 
+.turning_banner.sub.pathiq::before {
+    top: 118%;
+}
+
 .turning_banner.sub .description span {
     color: rgba(76, 112, 255, 1);
 }
@@ -109,6 +113,10 @@
     background: linear-gradient(90deg, rgb(82 110 242 / 1%) 0%, rgb(134 164 255 / 1%) 100%);
 }
 
+.brands.sub.pathiq {
+    margin-top: -145px;
+}
+
 .brands.sub .description {
     font-family: var(--popping);
     font-weight: 400;
@@ -118,10 +126,25 @@
     max-width: 65% !important;
 }
 
+.brands.sub.startup-program .description {
+    margin: 25px auto 30px;
+}
+
+.brands.sub.startup-program .short-description {
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 19px;
+    color: #E0E0E0;
+    margin: auto;
+    max-width: 70% !important;
+}
+
+
 .brands.sub .description,
 .brands.sub .desc {
     max-width: 100%;
 }
+
 
 .brands.sub .desc {
     font-weight: 600;

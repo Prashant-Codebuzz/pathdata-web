@@ -164,6 +164,10 @@ footer.s {
     padding: 35px 60px 35px
 }
 
+footer.s .menu ul li:last-child a {
+    padding: 12px 0 12px 20px !important;
+}
+
 footer .first .book-btn {
     background: transparent;
 }
@@ -271,6 +275,7 @@ footer .copy {
     padding-inline: 40px;
     margin-top: 40px;
 }
+
 
 
 /* ---- Contact-Us End ---- */

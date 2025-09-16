@@ -27,6 +27,94 @@
     border-radius: 16px;
 }
 
+
+.contact.landing.application .contact-form {
+    border-radius: 16px;
+}
+
+.contact.landing.application .contact-form .group.main-title {
+    font-family: var(--popping);
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-block: 30px 22px;
+}
+
+.contact.landing.application .contact-form ul {
+    padding-left: 45px;
+}
+
+.contact.landing.application .contact-form ul li {
+    list-style: disc;
+    font-family: var(--popping);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 154%;
+    color: #E0E0E0;
+}
+
+
+.contact.landing.privacy-policy {
+    padding: 80px 60px 60px;
+}
+
+.contact.landing.privacy-policy .description.mb-20 {
+    margin-bottom: 20px;
+}
+
+.contact.landing.privacy-policy .description.mb-30 {
+    margin-bottom: 30px;
+}
+
+.contact.landing.privacy-policy .description.mb-60 {
+    margin-bottom: 60px;
+}
+
+.contact.landing.privacy-policy .policy-title.mb-10,
+.contact.landing.privacy-policy .sub-title.mb-10 {
+    margin-bottom: 10px;
+}
+
+
+.contact.landing.privacy-policy .policy-title {
+    font-family: var(--popping);
+    font-size: 25px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.contact.landing.privacy-policy .sub-title {
+    font-family: var(--popping);
+    font-size: 22px;
+    font-weight: 500;
+    color: #E0E0E0;
+}
+
+.contact.landing.privacy-policy .description {
+    font-size: 19px;
+}
+
+.contact.landing.privacy-policy .description ul {
+    padding-left: 35px;
+}
+
+.contact.landing.privacy-policy .description ul li {
+    list-style: disc;
+    line-height: 154%;
+}
+
+.contact.landing.privacy-policy .description ul li span {
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.contact.landing.privacy-policy .description span {
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+
+
 .contact.landing .contact-form form input,
 .contact.landing .contact-form form textarea {
     font-weight: 400;

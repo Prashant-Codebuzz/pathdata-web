@@ -21,14 +21,16 @@ const Pathiq = () => {
         <>
 
             {/* ---- Banner Start ---- */}
-            <div className="turning_banner sub text-center">
+            <div className="turning_banner sub pathiq text-center">
                 <div className="left">
                     <p className="description f">
-                        PATH<span className='iq'>IQ</span>
+                        {/* PATH<span className='iq'>IQ</span> */}
+                        Outcomes,
                         <br className='' />
 
                         <div>
-                            by PATHSDATA.
+                            {/* by PATHSDATA. */}
+                            Not Obstacles.
                         </div>
                     </p>
 
@@ -53,8 +55,8 @@ const Pathiq = () => {
                     </div>
                 </div>
 
-                <section className='company'>
-                    <div className="container text-center">
+                <section className='company '>
+                    <div className="container text-center d-none">
                         <h5 className="text-white">Powered By</h5>
 
                         <div className="slider-container">
@@ -136,7 +138,7 @@ const Pathiq = () => {
 
 
             {/* ---- Key Features Start ---- */}
-            <div className="brands sub text-center">
+            <div className="brands sub pathiq text-center">
                 <h1 className="title m-auto">
                     Key Features
                 </h1>

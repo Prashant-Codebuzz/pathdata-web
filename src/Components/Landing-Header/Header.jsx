@@ -49,11 +49,16 @@ const Header = () => {
                                     <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas">
                                         <Link to="/meet-team" className="nav-link">Team</Link>
                                     </li>
-                                    {/* <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas" >
-                                        <Link className="nav-link">Blog</Link>
-                                    </li> */}
+                                    {
+                                        (
+                                            location.pathname.startsWith("/waypoint")
+                                        ) &&
+                                        <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas" >
+                                            <Link to="/startup-program" className="nav-link">Startup Program</Link>
+                                        </li>
+                                    }
                                     <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas" >
-                                        <Link to="/contact-us" className="nav-link">Contacts</Link>
+                                        <Link to="/contact-us" className="nav-link">Contact Us</Link>
                                     </li>
 
                                     {
@@ -83,7 +88,7 @@ const Header = () => {
                         </div>
                     </div>
                 </nav >
-            </header>
+            </header >
             {/* ---- Header Start ---- */}
 
         </>

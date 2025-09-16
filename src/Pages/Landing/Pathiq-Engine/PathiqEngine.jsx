@@ -13,6 +13,10 @@ import company2 from '../../../assets/images/home/company2-2.png';
 import company3 from '../../../assets/images/home/company3-2.png';
 import company4 from '../../../assets/images/home/company4-2.png';
 import company5 from '../../../assets/images/home/company5-2.png';
+import powerby_1 from '../../../assets/images/powerby_1.png';
+import powerby_2 from '../../../assets/images/powerby_2.png';
+import powerby_3 from '../../../assets/images/powerby_3.png';
+import powerby_4 from '../../../assets/images/powerby_4.png';
 import featureicon1 from '../../../assets/images/home/feature-icon1-2.png';
 import featureicon2 from '../../../assets/images/home/feature-icon2-2.png';
 import featureicon3 from '../../../assets/images/home/feature-icon3-2.png';
@@ -54,7 +58,7 @@ const PathiqEngine = () => {
                     </div>
                 </div>
 
-                <section className='company'>
+                <section className='company d-none'>
                     <div className="container text-center">
                         {/* <h5 className="text-white">Trusted by 30+ Companies</h5> */}
 
@@ -65,6 +69,21 @@ const PathiqEngine = () => {
                                 <img src={company3} alt="Company 3" className="company-logo img-fluid" />
                                 <img src={company4} alt="Company 4" className="company-logo img-fluid" />
                                 <img src={company5} alt="Company 5" className="company-logo img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className='company'>
+                    <div className="container text-center">
+                        <h5 className="text-white">Powered By</h5>
+
+                        <div className="slider-container">
+                            <div className='images d-flex flex-wrap justify-content-center align-items-center'>
+                                <img src={powerby_1} alt="Company 1" className="company-logo img-fluid" />
+                                <img src={powerby_2} alt="Company 2" className="company-logo img-fluid" />
+                                <img src={powerby_3} alt="Company 3" className="company-logo img-fluid" />
+                                <img src={powerby_4} alt="Company 4" className="company-logo img-fluid" />
                             </div>
                         </div>
                     </div>

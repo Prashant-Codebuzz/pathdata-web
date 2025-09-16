@@ -13,7 +13,6 @@ const initialState = {
     message: ""
 }
 
-
 const ContactUs = () => {
 
     const navigate = useNavigate();

@@ -535,6 +535,55 @@
 
 
 
+.brands.sub.waypoint .drives .col-xxl-6:nth-child(odd) {
+    position: relative;
+}
+
+.brands.sub.waypoint .drives .col-xxl-4::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 1px;
+    height: 72%;
+    background: linear-gradient(180deg, #526EF2 0%, #B5C7FF 100%);
+}
+
+.brands.sub.waypoint .drives .col-xxl-4:nth-child(3)::after,
+.brands.sub.waypoint .drives .col-xxl-4:nth-child(5)::after,
+.brands.sub.waypoint .drives .col-xxl-4:nth-child(6)::after {
+    content: none;
+}
+
+@media (max-width: 991px) {
+
+    .brands.sub.waypoint .drives .col-xxl-4:nth-child(2)::after,
+    .brands.sub.waypoint .drives .col-xxl-4:nth-child(4)::after,
+    .brands.sub.waypoint .drives .col-xxl-4:nth-child(6)::after {
+        content: none;
+    }
+
+    .brands.sub.waypoint .drives .col-xxl-4:nth-child(3)::after {
+        content: "";
+    }
+
+    .brands.sub.waypoint .title {
+        font-size: 17px;
+        margin: inherit;
+    }
+}
+
+
+@media (max-width: 575px) {
+
+    .brands.sub.waypoint .drives .col-xxl-4:nth-child(1)::after,
+    .brands.sub.waypoint .drives .col-xxl-4:nth-child(3)::after {
+        content: none;
+    }
+}
+
+
+
 .brands.sub.waypoint .drives .content {
     background: none;
     border: none;

@@ -76,6 +76,9 @@ import Contact from './Pages/Landing/Contact-Us/ContactUs';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 import PathiqEngine from './Pages/Landing/Pathiq-Engine/PathiqEngine';
 import WaypointDetails from './Pages/Landing/Waypoint-Details/WaypointDetails';
+import Application from './Pages/Landing/Application/Application';
+import PathdataPrivacyPolicy from './Pages/Landing/Privacy-Policy/PathdataPrivacyPolicy';
+import StartupProgram from './Pages/Landing/Startup-Program/StartupProgram';
 
 function App() {
 
@@ -107,6 +110,11 @@ function App() {
                     <Route path='/meet-team' element={<MeetTeam />} />
                     <Route path='/join-team' element={<JoinTeam />} />
                     <Route path='/contact-us' element={<Contact />} />
+
+                    <Route path='/startup-program' element={<StartupProgram />} />
+                    <Route path='/application' element={<Application />} />
+                    <Route path='/pathdata-privacy-policy' element={<PathdataPrivacyPolicy />} />
+
                 </Route>
 
 

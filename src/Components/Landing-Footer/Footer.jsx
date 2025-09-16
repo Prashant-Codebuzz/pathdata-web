@@ -9,11 +9,12 @@ import socialm from '../../assets/images/social-m.png';
 
 import logo from '../../assets/images/logo-icon.png';
 
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
 
     const { pathname } = useLocation();
+    const navigate = useNavigate();
 
 
     return (
@@ -90,9 +91,17 @@ const Footer = () => {
                                     Team
                                 </Link>
                             </li>
+                            {
+                                (
+                                    pathname.startsWith("/waypoint")
+                                ) &&
+                                <li className="nav-item mb-2 mb-lg-0" data-bs-dismiss="offcanvas" >
+                                    <Link to="/startup-program" className="nav-link">Startup Program</Link>
+                                </li>
+                            }
                             <li className={`mb-2 mb-lg-0 ${pathname === "/pathiq" ? 'text-center text-sm-start mb-4 mb-sm-0' : ''}`} style={{ marginTop: '10px' }}>
                                 <Link to="/contact-us" className="px-0" >
-                                    Contacts
+                                    Contact Us
                                 </Link>
                             </li>
 
@@ -114,9 +123,19 @@ const Footer = () => {
                     </Link> */}
                 </div >
 
-                <p className='copy text-center'>
-                    © Copyright 2025 - PATHSDATA. All rights reserved
-                </p>
+                <div className="d-md-flex justify-content-md-between">
+                    <p className='copy text-center'>
+                        © Copyright 2025 - PATHSDATA. All rights reserved
+                    </p>
+
+                    <p className='copy text-center cursor-pointer mt-3 d-md-none' onClick={() => navigate("/pathdata-privacy-policy")}>
+                        Privacy Policy
+                    </p>
+
+                    <p className='copy text-center cursor-pointer d-none d-md-block' onClick={() => navigate("/pathdata-privacy-policy")}>
+                        Privacy Policy
+                    </p>
+                </div>
             </footer >
         </>
     )
