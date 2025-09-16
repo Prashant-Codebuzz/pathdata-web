@@ -256,17 +256,17 @@ const StartupProgram = () => {
                 </div>
 
 
-                <div className='pt-4'>
+                <div className='d-flex gap-3 flex-wrap justify-content-center d-sm-block pt-sm-4 '>
                     <Link
                         to="/application"
-                        className="main-button book-btn discover-btn wd me-3 me-md-4 me-lg-5"
+                        className="main-button book-btn discover-btn wd me-sm-3 me-md-4 me-lg-5 mt-0"
                     >
                         Apply Now
                     </Link>
 
                     <Link
                         to="/contact-us"
-                        className="main-button book-btn discover-btn wd"
+                        className="main-button book-btn discover-btn wd mt-0"
                     >
                         Book a Call
                     </Link>
