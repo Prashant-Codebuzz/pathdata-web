@@ -320,6 +320,37 @@
     color: #C2C2C2;
 }
 
+.step .box .description ul {
+    padding-left: 30px;
+}
+
+.step .box .description ul li {
+    list-style: disc;
+}
+
+
+.step .step-tabs {
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.step .step-tabs .step-tab {
+    padding: 15px 25px;
+    background: transparent;
+    outline: 1px solid #FFFFFF24;
+    cursor: pointer;
+    border-radius: 100px;
+    font-family: var(--popping);
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.step .step-tabs .step-tab.active {
+    background: linear-gradient(90deg, #526EF2 0%, #86A4FF 100%);
+}
+
+
 @media (max-width: 1399px) {
     .step {
         padding: 0px 80px 90px;

@@ -412,7 +412,7 @@
 }
 
 @media (max-width: 991px) {
-    .features { 
+    .features {
         padding: 85px 30px 45px;
     }
 
@@ -989,6 +989,8 @@
     .contact .contact-form form label {
         font-size: 17px;
     }
+
+ 
 
     .contact .contact-form form .submit .submitreq-btn {
         font-size: 17px !important;

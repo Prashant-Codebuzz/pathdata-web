@@ -187,11 +187,35 @@
     .contact.landing .description {
         font-size: 18px;
     }
+
+    .contact.landing.privacy-policy .description {
+        font-size: 18px;
+    }
+
+    .contact.landing.privacy-policy .policy-title {
+        font-size: 23px;
+    }
+
+    .contact.landing.privacy-policy .sub-title {
+        font-size: 20px;
+    }
+
 }
+
+@media (max-width: 991px) {
+    .contact.landing.application .contact-form ul li {
+        font-size: 17px;
+    }
+}
+
 
 @media (max-width: 767px) {
     .contact.landing {
         padding: 50px 50px 50px;
+    }
+
+    .contact.landing.privacy-policy {
+        padding: 70px 50px 50px;
     }
 
     .contact.landing .title {
@@ -202,6 +226,23 @@
     .contact.landing .description {
         font-size: 17px;
     }
+
+    .contact.landing.privacy-policy .description {
+        font-size: 16px;
+    }
+
+    .contact.landing.application .contact-form ul li {
+        font-size: 16px;
+    }
+
+
+    .contact.landing.privacy-policy .policy-title {
+        font-size: 21px;
+    }
+
+    .contact.landing.privacy-policy .sub-title {
+        font-size: 19px;
+    }
 }
 
 @media (max-width: 991px) {}
@@ -209,6 +250,10 @@
 @media (max-width: 575px) {
     .contact.landing {
         padding: 40px 30px 30px;
+    }
+
+    .contact.landing.privacy-policy {
+        padding: 50px 30px 40px;
     }
 
     .contact.landing .title {
@@ -219,6 +264,18 @@
         font-size: 16px;
     }
 
+    .contact.landing.privacy-policy .description {
+        font-size: 16px;
+    }
+
+    .contact.landing.privacy-policy .policy-title {
+        font-size: 20px;
+    }
+
+    .contact.landing.privacy-policy .sub-title {
+        font-size: 18px;
+    }
+
     .contact.landing .contact-form {
         margin: 40px auto 0;
     }
@@ -227,6 +284,10 @@
 @media (max-width: 425px) {
     .contact.landing {
         padding: 40px 25px 30px;
+    }
+
+    .contact.landing.privacy-policy {
+        padding: 40px 30px 30px;
     }
 
     .contact.landing .title {

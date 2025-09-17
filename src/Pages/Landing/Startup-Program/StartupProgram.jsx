@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import everystep from '../../../assets/images/every-step.png';
 import stage from '../../../assets/images/stage.png';
 import focusareas from '../../../assets/images/focus-areas.png';
@@ -7,6 +7,69 @@ import technology from '../../../assets/images/technology.png';
 import { Link } from 'react-router-dom';
 
 const StartupProgram = () => {
+
+    const [activeProgram, setActiveProgram] = useState(0);
+
+    const ProgramJourney = [
+        {
+            name: "1. Program Eligibility",
+            title: "Program Eligibility",
+            description: "We begin by confirming your startup’s stage, focus area, and readiness for AI-driven growth. This ensures we tailor the program to your specific needs.",
+            list: [
+                "Confirm stage & focus",
+                "Validate startup readiness"
+            ]
+        },
+        {
+            name: "2. Application",
+            title: "Application",
+            description: "A simple, streamlined application captures the essentials: your team, business problem, technology stack, and goals.",
+            list: [
+                "Quick online form"
+            ]
+        },
+        {
+            name: "3. Discovery & Use Case Workshop",
+            title: "Discovery & Use Case Workshop",
+            description: "An interactive session with our experts to map your business challenges to AI-driven solutions. We define measurable success metrics to ensure your investment drives results.",
+            list: [
+                "Workshop with founders",
+                "Map business problem → Gen AI / Agentic AI / Data solution",
+                "Define success criteria"
+            ]
+        },
+        {
+            name: "4. Proof of Concept (POC)",
+            title: "Proof of Concept (POC)",
+            description: "Within 2–4 weeks, we help you build a quick-win prototype that demonstrates the impact of AI agents, LLM-powered applications, or intelligent data pipelines. AWS credits and demo delivery are included.",
+            list: [
+                "Rapid 2–4 week build",
+                "Quick - win prototype(AI agents, LLM apps, intelligent pipelines)",
+                "AWS credits + demo delivery"
+            ]
+        },
+        {
+            name: "5. Future State Planning",
+            title: "Future State Planning",
+            description: "We guide you in designing a scalable architecture roadmap that ensures your AI & agent-based solutions can grow efficiently. Cost optimization, governance, security, and compliance are all included.",
+            list: [
+                "Scalable architecture roadmap",
+                "Total cost of ownership estimates & optimization",
+                "Governance, security & compliance guidance"
+            ]
+        },
+        {
+            name: "6. Close Out & Next Steps",
+            title: "Close Out & Next Steps",
+            description: "Your POC results are delivered with a clear AWS adoption plan. We also connect you to AWS Activate, VC networks, and explore long-term partnership opportunities.",
+            list: [
+                "POC results + AWS adoption plan",
+                "Connect to AWS Activate & VC networks",
+                "Long - term partnership discussion"
+            ]
+        },
+    ];
+
     return (
         <>
 
@@ -40,7 +103,7 @@ const StartupProgram = () => {
 
 
 
-            {/* ---- Key-Benefits Start ---- */}
+            {/* ----Who’s-Eligible? Start ---- */}
             <div className="brands sub waypoint startup-program wd text-center">
                 <p className="description mb-4">
                     Who’s Eligible?
@@ -125,7 +188,66 @@ const StartupProgram = () => {
                     </div>
                 </div>
             </div>
-            {/* ---- Key-Benefits End ---- */}
+            {/* ----Who’s-Eligible? End ---- */}
+
+
+            {/* ---- Step Start ---- */}
+            <div className="step">
+                <div className="vision text-center">
+                    <div>
+                        <h1 className="title">
+                            How it Works ?
+                        </h1>
+
+                        <p className="description">
+                            Program Journey
+                        </p>
+
+                    </div>
+                </div>
+                <div className="step-tabs d-flex flex-wrap">
+                    {ProgramJourney?.map((tab, index) => (
+                        <button
+                            className={`step-tab ${activeProgram === index ? "active" : ""}`}
+                            onClick={() => setActiveProgram(index)}
+                        >
+                            {tab?.name}
+                        </button>
+                    ))}
+
+                </div>
+                <div className="row g-5">
+                    {/* {ProgramJourney?.map((i, index) => {
+                        return ( */}
+                    <div className="col-12">
+                        <div className="box h-100">
+                            <div className="num">
+                                {activeProgram + 1}
+                            </div>
+                            <div className="title">
+                                {ProgramJourney[activeProgram]?.title}
+                            </div>
+                            <div className="description">
+                                <div className='mb-2'>
+                                    {ProgramJourney[activeProgram]?.description}
+                                </div>
+
+                                {
+                                    ProgramJourney[activeProgram]?.list?.length > 0 &&
+                                    <ul className=''>
+                                        {ProgramJourney[activeProgram]?.list?.map((i) => (
+                                            <li>{i}</li>
+                                        ))}
+                                    </ul>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    {/* )
+                    })} */}
+                </div>
+            </div>
+            {/* ---- Step End ---- */}
 
 
             <div className="brands sub waypoint startup-program text-center py-5">
