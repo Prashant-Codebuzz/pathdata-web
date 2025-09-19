@@ -332,18 +332,22 @@
 .step .step-tabs {
     gap: 20px;
     margin-bottom: 40px;
+
+    overflow-x: auto !important;
+    white-space: nowrap;
 }
 
 .step .step-tabs .step-tab {
     padding: 15px 25px;
     background: transparent;
-    outline: 1px solid #FFFFFF24;
+    border: 1px solid #FFFFFF24;
     cursor: pointer;
     border-radius: 100px;
     font-family: var(--popping);
     font-weight: 400;
     font-size: 18px;
     color: #FFFFFF;
+    white-space: nowrap;
 }
 
 .step .step-tabs .step-tab.active {
@@ -394,9 +398,21 @@
     }
 }
 
+@media (max-width: 991px) {
+    .step .step-tabs {
+        margin-bottom: 30px;
+    }
+}
+
+
 @media (max-width: 767px) {
     .step {
         padding: 0px 50px 60px;
+    }
+
+    .step .step-tabs .step-tab {
+        font-size: 16px;
+        padding: 14px 24px;
     }
 }
 
@@ -424,11 +440,24 @@
         font-size: 16px;
         line-height: 20px;
     }
+
+    .step .step-tabs {
+        margin-bottom: 25px;
+    }
+
+    .step .step-tabs .step-tab {
+        font-size: 15px;
+        padding: 13px 23px;
+    }
 }
 
 @media (max-width: 425px) {
     .step {
         padding: 0px 25px 40px;
+    }
+
+    .step .step-tabs {
+        margin-bottom: 20px;
     }
 }
 

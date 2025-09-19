@@ -9,6 +9,7 @@ import turningright from '../../../assets/images/turning-right.png';
 import aws_left from '../../../assets/images/aws_left.png';
 import aws_right from '../../../assets/images/aws_right.png';
 import everystep from '../../../assets/images/every-step.png';
+import awspartner from '../../../assets/images/aws-partner.png';
 
 import finance from '../../../assets/images/finance.png';
 import healthcare from '../../../assets/images/healthcare.png';
@@ -256,6 +257,34 @@ const Waypoint = () => {
                 {/* ---- Square End ---- */}
             </div>
             {/* ---- Banner End ---- */}
+
+
+            {/* ---- AWS-Partner Start ---- */}
+            <div className="step wd mb-2 mb-md-3 mb-md-4">
+                <div className="row align-items-center">
+                    <div className="col-lg-8">
+                        <div className="top mb-0 text-center text-lg-start">
+                            <h1>AWS Select Tier Services Partner</h1>
+
+                            <div className="image d-flex justify-content-center d-lg-none my-4 my-sm-4 my-md-5">
+                                <img src={awspartner} alt="" className='img-fluid' />
+                            </div>
+
+                            <p style={{ lineHeight: '136%' }}>
+                                As an AWS Select Tier Services Partner, we combine certified cloud expertise with practical experience to help organizations move faster on their AWS journey. With validated skills across AWS programs and a growing portfolio of successful customer engagements, we provide tailored cloud consulting solutions that drive innovation, improve scalability, and deliver measurable business value.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 d-none d-lg-block">
+                        <div className="image d-flex justify-content-center">
+                            <img src={awspartner} alt="" className='img-fluid' />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            {/* ---- AWS-Partner End ---- */}
+
 
             {/* ---- Key Features Start ---- */}
             <div className="brands sub waypoint text-center d-none ">

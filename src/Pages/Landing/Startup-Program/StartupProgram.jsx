@@ -205,7 +205,7 @@ const StartupProgram = () => {
 
                     </div>
                 </div>
-                <div className="step-tabs d-flex flex-wrap">
+                <div className="step-tabs d-flex">
                     {ProgramJourney?.map((tab, index) => (
                         <button
                             className={`step-tab ${activeProgram === index ? "active" : ""}`}
@@ -228,7 +228,7 @@ const StartupProgram = () => {
                                 {ProgramJourney[activeProgram]?.title}
                             </div>
                             <div className="description">
-                                <div className='mb-2'>
+                                <div className='mb-2' style={{ lineHeight: '136%' }}>
                                     {ProgramJourney[activeProgram]?.description}
                                 </div>
 
@@ -236,7 +236,7 @@ const StartupProgram = () => {
                                     ProgramJourney[activeProgram]?.list?.length > 0 &&
                                     <ul className=''>
                                         {ProgramJourney[activeProgram]?.list?.map((i) => (
-                                            <li>{i}</li>
+                                            <li style={{ lineHeight: '136%' }}>{i}</li>
                                         ))}
                                     </ul>
                                 }
