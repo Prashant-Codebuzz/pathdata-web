@@ -40,6 +40,38 @@
     margin-block: 30px 22px;
 }
 
+.contact.landing.application .contact-form .group.main-title .add-btn {
+    color: rgba(255, 255, 255, 1);
+    background: rgba(76, 112, 255, 1);
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact.landing.application .contact-form .group.main-title .add-btn:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+
+.contact .contact-form form label .close-btn {
+    color: rgba(255, 255, 255, 1);
+    background: #FF0000;
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .contact-form form label .close-btn img {
+    transform: rotate(45deg);
+}
+
+
+
 .contact.landing.application .contact-form ul {
     padding-left: 45px;
 }
