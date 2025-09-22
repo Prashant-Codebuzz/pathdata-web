@@ -1057,30 +1057,30 @@ const WaypointDetails = () => {
                 <div className='description'>
                     {name === "data-analytics-platforms" &&
                         <>
-                            <Link to={"contact-us"}>Contact us today</Link> to schedule a consultation and discover how we can accelerate your
+                            Contact us today to schedule a consultation and discover how we can accelerate your
                             data-driven transformation.
                         </>
                     }
                     {name === "ai-machine-learning-ai-ops-mlops" &&
                         <>
-                            <Link to={"contact-us"}>Contact us today</Link> to discuss how we can help you create AI solutions that
+                            Contact us today to discuss how we can help you create AI solutions that
                             work in the real world.
                         </>
                     }
                     {name === "generative-al-llm-solutions" &&
                         <>
-                            <Link to={"contact-us"}>Contact us today</Link> to explore how generative AI can transform your workflows and
+                            Contact us today to explore how generative AI can transform your workflows and
                             customer experiences.
                         </>
                     }
                     {name === "it-product-engineering" &&
                         <>
-                            <Link to={"contact-us"}>Contact us today</Link> to discuss how we can bring your product vision to life.
+                            Contact us today to discuss how we can bring your product vision to life.
                         </>
                     }
                     {name === "strategy-advisory" &&
                         <>
-                            <Link to={"contact-us"}>Contact us today</Link>  to schedule a strategic consultation and accelerate your
+                            Contact us today  to schedule a strategic consultation and accelerate your
                             digital transformation journey.
                         </>
                     }
