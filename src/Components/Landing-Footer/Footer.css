@@ -36,6 +36,11 @@
     margin-block: 25px 40px;
 }
 
+.copyright.startup p {
+    margin-block: 25px 15px;
+}
+
+
 .copyright p span {
     background: linear-gradient(178.68deg, #FFFFFF 10.37%, #526EF2 146.85%);
     -webkit-background-clip: text;

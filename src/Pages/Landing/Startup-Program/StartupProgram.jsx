@@ -17,6 +17,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useMediaQuery } from 'react-responsive';
 
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
 const StartupProgram = () => {
 
     const [activeProgram, setActiveProgram] = useState(0);
@@ -85,9 +89,9 @@ const StartupProgram = () => {
     const isMobile = useMediaQuery({ maxWidth: 576 });
     const isTablet = useMediaQuery({ minWidth: 577, maxWidth: 991 });
     const isLaptop = useMediaQuery({ minWidth: 992, maxWidth: 1199 });
-    const isDesktop = useMediaQuery({ minWidth: 12900 });
+    const isDesktop = useMediaQuery({ minWidth: 1200, maxWidth: 1399 });
 
-    const slidesToShow = isMobile ? 1 : isTablet ? 1 : isLaptop ? 2.3 : 3.5;
+    const slidesToShow = isMobile ? 1 : isTablet ? 1 : isLaptop ? 2.3 : isDesktop ? 3 : 3.5;
 
     const SetsUSData = [
 
@@ -113,9 +117,6 @@ const StartupProgram = () => {
         }
     ];
 
-
-    const [activeIndex, setActiveIndex] = useState(0);
-
     const sliderRef = React.useRef(null);
 
     const settings = {
@@ -128,30 +129,54 @@ const StartupProgram = () => {
         infinite: false,
         speed: 500,
         arrows: false,
-        // responsive: [
-        //     {
-        //         breakpoint: 1200, // large tablets / small laptops
-        //         settings: { slidesToShow: 2, centerPadding: "40px" }
-        //     },
-        //     {
-        //         breakpoint: 992,
-        //         settings: { slidesToShow: 1, centerPadding: "200px" }
-        //     },
-        //     {
-        //         breakpoint: 899,
-        //         settings: { slidesToShow: 1, centerPadding: "100px" }
-        //     },
-        //     {
-        //         breakpoint: 576,
-        //         settings: { slidesToShow: 1, centerPadding: "20px" }
-        //     },
-        //     {
-        //         breakpoint: 475,
-        //         settings: { slidesToShow: 1, centerPadding: "20px" }
-        //     }
-        // ]
-
     };
+
+
+
+    const owlSettings = {
+        // items: 3.5, // slidesToShow
+        loop: false,
+        margin: 0,
+        nav: false,
+        dots: false,
+        autoplay: false,
+        smartSpeed: 500,
+        // responsive: {
+        //     0: { items: 1 },
+        //     577: { items: 1 },
+        //     992: { items: 2.3 },
+        //     1200: { items: 3 },
+        //     1400: { items: 3.5 }
+        // },
+        responsive: {
+            0: {
+                items: 1,
+                // stagePadding: 20
+            },
+            577: {
+                items: 1,
+                // stagePadding: 40
+            },
+            767: {
+                items: 1.5,
+                stagePadding: 40
+            },
+            992: {
+                items: 2,
+                stagePadding: 60   // looks like 2.3
+            },
+            1200: {
+                items: 3,
+                stagePadding: 50   // looks like 3.3
+            },
+            1400: {
+                items: 3,
+                stagePadding: 120  // looks like 3.5
+            }
+        }
+        // onaChanged: (event) => setActiveIndex(event.item.index)
+    };
+
 
     return (
         <>
@@ -201,10 +226,10 @@ const StartupProgram = () => {
 
                             <div className="buttons">
                                 <Link
-                                    // to="/contact-us"
+                                    to="/contact-us"
                                     className="main-button book-btn discover-btn"
                                 >
-                                    Learn More
+                                    Contact Us
                                 </Link>
                             </div>
                         </div>
@@ -437,7 +462,7 @@ const StartupProgram = () => {
                 </div>
             </div> */}
 
-            <div className="brands" style={{ position: 'relative', minHeight: '300px' }}>
+            {/* <div className="brands">
                 <h1 className="title">
                     How it Works ?
                 </h1>
@@ -456,7 +481,7 @@ const StartupProgram = () => {
                         </p>
                     </div>
                 </div>
-                
+
                 <div className="step startup p-0">
                     <Slider ref={sliderRef} {...settings}>
                         {ProgramJourney?.map((item, index) => (
@@ -485,13 +510,71 @@ const StartupProgram = () => {
                                 </div>
 
                                 {index !== ProgramJourney.length - 1 && (
-                                <div className="step-arrow mx-4">
-                                    <img src={startupsliderright} alt="arrow" />
-                                </div>
+                                    <div className="step-arrow mx-4">
+                                        <img src={startupsliderright} alt="arrow" />
+                                    </div>
                                 )}
                             </div>
                         ))}
                     </Slider>
+                </div>
+            </div> */}
+
+            <div className="brands">
+                <h1 className="title">
+                    How it Works ?
+                </h1>
+
+                <div className="row justify-content-center justify-content-lg-between align-items-lg-end mb-2 mb-md-3 mb-lg-5">
+                    <div className="col-lg-6 col-6 col-12">
+                        <p className="desc text-center text-lg-start">
+                            We’ve made the process <br className='d-none d-xxl-block' />
+                            simple, so you can focus on<br className='d-none d-xxl-block' />
+                            building — not bureaucracy.
+                        </p>
+                    </div>
+                    <div className="col-lg-6 col-xl-5 col-xxl-4 col-6 col-12">
+                        <p className="description text-center text-lg-end mb-lg-0">
+                            From application to acceleration, here’s how we help your startup grow:
+                        </p>
+                    </div>
+                </div>
+
+                <div className="step startup p-0">
+                    <OwlCarousel className='owl-theme'{...owlSettings}>
+                        {ProgramJourney?.map((item, index) => (
+                            <div key={index} className='d-flex align-items-center h-100'>
+                                <div className="box h-100">
+                                    <div className="num">
+                                        0{index + 1}.
+                                    </div>
+                                    <div className="title mb-0 px-0 border-0 ms-0">
+                                        {item?.title}
+                                    </div>
+                                    <div className="description pt-3">
+                                        <div className='mb-2' style={{ lineHeight: '26px' }}>
+                                            {item?.description}
+                                        </div>
+
+                                        {
+                                            item?.list?.length > 0 &&
+                                            <ul className='pt-3'>
+                                                {item?.list?.map((i) => (
+                                                    <li style={{ lineHeight: '26px' }}>{i}</li>
+                                                ))}
+                                            </ul>
+                                        }
+                                    </div>
+                                </div>
+
+                                {index !== ProgramJourney.length - 1 && (
+                                    <div className="step-arrow mx-4">
+                                        <img src={startupsliderright} alt="arrow" className='w-auto' />
+                                    </div>
+                                )}
+                            </div>
+                        ))}
+                    </OwlCarousel>
                 </div>
             </div>
             {/* <div className="step startup p-0">
@@ -655,7 +738,7 @@ const StartupProgram = () => {
 
 
 
-            <div className="copyright contact text-center" style={{ backgroundImage: 'none' }}>
+            <div className="copyright contact startup text-center" style={{ backgroundImage: 'none' }}>
                 <h1 className="title m-auto mb-4">
                     Contact us
                 </h1>
