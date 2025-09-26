@@ -125,6 +125,8 @@
 }
 
 
+
+
 @media (max-width: 1399px) {
     .new_banner {
         padding: 80px 80px 70px;
@@ -289,7 +291,22 @@
     border: 1px solid #86A4FF26;
     border-radius: 12px;
     padding: 30px 22px;
+    transition: all 0.3s ease;
 }
+
+.step.startup-program .box:hover {
+    background: linear-gradient(95.08deg, #4361ee 11.21%, #738bff 90.73%);
+}
+
+.step.startup-program .box:hover img {
+    filter: brightness(0) invert(1);
+
+}
+
+.step.startup-program .box:hover .description {
+    color: #fff;
+}
+
 
 .step .box .num {
     background: linear-gradient(178.2deg, #FFFFFF 23.77%, #526EF2 75.35%);
@@ -354,6 +371,24 @@
     background: linear-gradient(90deg, #526EF2 0%, #86A4FF 100%);
 }
 
+.step.startup .box {
+    background: #06082057;
+}
+
+
+.step.startup .box .num {
+    font-size: 22px;
+    background: linear-gradient(180deg, #FFFFFF 16.26%, #526EF2 122.76%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.step .box .title {
+    font-size: 22px;
+    background: linear-gradient(180deg, #FFFFFF 16.26%, #526EF2 122.76%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 @media (max-width: 1399px) {
     .step {
@@ -517,6 +552,16 @@
     color: transparent;
 }
 
+.vision.startup-program .description.s {
+    font-size: 32px;
+    max-width: 74%;
+}
+
+.vision.startup-program .description.s span.px-2 {
+    background: linear-gradient(90deg, rgba(134, 164, 255, 0.27) 0%, rgba(2, 4, 24, 0) 100%);
+    color: #BDC9FF;
+}
+
 .vision .images {
     margin-top: 50px;
 }
@@ -596,6 +641,11 @@
         font-size: 32px;
     }
 
+    .vision.startup-program .description.s {
+        font-size: 28px;
+        max-width: 84%;
+    }
+
     .vision .drives .content {
         font-size: 16px;
     }
@@ -610,6 +660,9 @@
         font-size: 28px;
     }
 
+    .vision.startup-program .description.s {
+        font-size: 24px;
+    }
 
     .vision .images {
         margin-top: 40px;
@@ -643,6 +696,10 @@
         font-size: 24px;
     }
 
+    .vision.startup-program .description.s {
+        font-size: 20px;
+    }
+
     .vision .drives .content {
         padding: 12px 14px;
         font-size: 15px;
@@ -666,6 +723,10 @@
         font-size: 20px;
     }
 
+    .vision.startup-program .description.s {
+        font-size: 17px;
+    }
+
     .vision .drives .content {
         font-size: 14px;
     }
@@ -687,6 +748,10 @@
 
     .vision .description.s {
         font-size: 18px;
+    }
+
+    .vision.startup-program .description.s {
+        font-size: 16px;
     }
 
     .vision .images img {

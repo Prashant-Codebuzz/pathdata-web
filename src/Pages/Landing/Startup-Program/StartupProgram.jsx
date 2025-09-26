@@ -4,7 +4,18 @@ import stage from '../../../assets/images/stage.png';
 import focusareas from '../../../assets/images/focus-areas.png';
 import engineering from '../../../assets/images/engineering.png';
 import technology from '../../../assets/images/technology.png';
+import consulting1 from '../../../assets/images/consulting1.png';
+import consulting2 from '../../../assets/images/consulting2.png';
+import consulting3 from '../../../assets/images/consulting3.png';
+import consulting4 from '../../../assets/images/consulting4.png';
+import consulting5 from '../../../assets/images/consulting5.png';
+import startupsliderright from '../../../assets/images/startup-slider-right.png';
 import { Link } from 'react-router-dom';
+
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useMediaQuery } from 'react-responsive';
 
 const StartupProgram = () => {
 
@@ -70,11 +81,83 @@ const StartupProgram = () => {
         },
     ];
 
+
+    const isMobile = useMediaQuery({ maxWidth: 576 });
+    const isTablet = useMediaQuery({ minWidth: 577, maxWidth: 991 });
+    const isLaptop = useMediaQuery({ minWidth: 992, maxWidth: 1199 });
+    const isDesktop = useMediaQuery({ minWidth: 12900 });
+
+    const slidesToShow = isMobile ? 1 : isTablet ? 1 : isLaptop ? 2.3 : 3.5;
+
+    const SetsUSData = [
+
+        {
+            title: "Every Project is Crafted Like a Product",
+            desc: " At Waypoint by PATHSDATA, we don’t just deliver tools — we design and build solutions like products. Each project is treated with care, precision, and dedication, ensuring it’s scalable, adaptable, and built for long-term impact",
+        },
+        {
+            title: "Simplifying Complex Journeys, Delivering Real Outcomes",
+            desc: " We take you from vision to reality, simplifying even the most complex challenges. With a focus on outcomes at every step, our solutions are designed to drive measurable business results, not just technical implementations."
+        },
+        {
+            title: "Cost-Conscious, Outcome-Driven",
+            desc: " We understand the importance of efficiency. Every solution is optimized to maximize value while minimizing costs, ensuring that your investment drives meaningful, long-term business success."
+        },
+        {
+            title: "Built on Ethical Principles",
+            desc: "  At Waypoint by PATHSDATA, ethics are at the core of everything we do. From AI to cloud platforms, we prioritize transparency, fairness, and accountability in every solution we build, ensuring responsible practices and trustworthy systems across all our offerings."
+        },
+        {
+            title: "AWS Experts, Delivering Scalable Solutions",
+            desc: " As AWS-certified experts, we leverage the power of AWS to build modern, scalable platforms that seamlessly integrate into your business. From architecture to deployment, our team ensures optimized performance and long-term success with AWS solutions, aligning every detail with your strategic goals for sustainable growth."
+        }
+    ];
+
+
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    const sliderRef = React.useRef(null);
+
+    const settings = {
+        // centerMode: true,
+        // centerPadding: "0px",
+        // slidesToShow: 3,
+        centerPadding: isMobile ? "20px" : isTablet ? "80px" : isLaptop ? "40px" : "0px",
+        slidesToShow,
+        slidesToScroll: 1,
+        infinite: false,
+        speed: 500,
+        arrows: false,
+        // responsive: [
+        //     {
+        //         breakpoint: 1200, // large tablets / small laptops
+        //         settings: { slidesToShow: 2, centerPadding: "40px" }
+        //     },
+        //     {
+        //         breakpoint: 992,
+        //         settings: { slidesToShow: 1, centerPadding: "200px" }
+        //     },
+        //     {
+        //         breakpoint: 899,
+        //         settings: { slidesToShow: 1, centerPadding: "100px" }
+        //     },
+        //     {
+        //         breakpoint: 576,
+        //         settings: { slidesToShow: 1, centerPadding: "20px" }
+        //     },
+        //     {
+        //         breakpoint: 475,
+        //         settings: { slidesToShow: 1, centerPadding: "20px" }
+        //     }
+        // ]
+
+    };
+
     return (
         <>
 
             {/* ---- Banner Start ---- */}
-            <div className="turning_banner wd text-center">
+            {/* <div className="turning_banner wd text-center">
                 <div className="left">
                     <p className="description f">
                         PATHSDATA
@@ -90,6 +173,59 @@ const StartupProgram = () => {
                     </h1>
                 </div>
 
+                <div className='squre s1'></div>
+                <div className='squre s2'></div>
+                <div className='squre s3'></div>
+                <div className='squre s4'></div>
+                <div className='squre s5'></div>
+                <div className='squre s6'></div>
+            </div> */}
+
+            <div className="new_banner">
+                <div className="row justify-content-center align-items-center">
+                    <div className="col-lg-8 col-xl-8">
+                        <div className="left text-center">
+                            <h1 className="title">
+                                PATHSDATA
+                                <br className='' />
+
+                                <span>
+                                    Startup Program.
+                                </span>
+                            </h1>
+
+                            <p className="description">
+                                Helping Pre-Seed to Series B Startups Accelerate with Generative AI, <br className='d-none d-md-block' />
+                                Agentic AI, and Data/ML Solutions on AWS
+                            </p>
+
+                            <div className="buttons">
+                                <Link
+                                    // to="/contact-us"
+                                    className="main-button book-btn discover-btn"
+                                >
+                                    Learn More
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* ---- Vision Start ---- */}
+                <div className="vision text-center">
+                    <div>
+                        <h1 className="title">
+                            Who’s Eligible?
+                        </h1>
+
+                        <p className="description">
+                            Our program empowers <span className="px-2">startups to accelerate growth</span> and scale with smart, sustainable strategies.
+                        </p>
+
+                    </div>
+                </div>
+                {/* ---- Vision End ---- */}
+
                 {/* ---- Square Start ---- */}
                 <div className='squre s1'></div>
                 <div className='squre s2'></div>
@@ -104,12 +240,12 @@ const StartupProgram = () => {
 
 
             {/* ----Who’s-Eligible? Start ---- */}
-            <div className="brands sub waypoint startup-program wd text-center">
-                <p className="description mb-4">
+            <div className="brands sub waypoint startup-program wd text-center d-none">
+                {/* <p className="description mb-4">
                     Who’s Eligible?
                 </p>
 
-                <p className='short-description mx-auto'>Our program is designed for startups that are ready to move fast and scale intelligently.</p>
+                <p className='short-description mx-auto'>Our program is designed for startups that are ready to move fast and scale intelligently.</p> */}
 
                 <div className="drives row justify-content-center g-4 g-md-4">
                     <div className="col-xxl-3 col-lg-4 col-md-6 col-sm-6">
@@ -188,11 +324,68 @@ const StartupProgram = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="step startup-program">
+                <div className="row g-5">
+                    <div className="col-lg-3 col-md-6">
+                        <div className="box h-100">
+                            <div className='mb-4'>
+                                <img src={stage} alt="" className='img-fluid' />
+                            </div>
+                            <div className="title">
+                                Stage
+                            </div>
+                            <div className="description">
+                                From Pre-Seed to Series A/B — fueling growth at every step.
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-6">
+                        <div className="box h-100">
+                            <div className='mb-4'>
+                                <img src={focusareas} alt="" className='img-fluid' />
+                            </div>
+                            <div className="title">
+                                Focus Areas
+                            </div>
+                            <div className="description">
+                                Generative AI, Agentic AI, and Data/ML innovation.
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-6">
+                        <div className="box h-100">
+                            <div className='mb-4'>
+                                <img src={engineering} alt="" className='img-fluid' />
+                            </div>
+                            <div className="title">
+                                Engineering Orientation
+                            </div>
+                            <div className="description">
+                                Building real-world solutions powered by AI.
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-6">
+                        <div className="box h-100">
+                            <div className='mb-4'>
+                                <img src={technology} alt="" className='img-fluid' />
+                            </div>
+                            <div className="title">
+                                Technology
+                            </div>
+                            <div className="description">
+                                Optimized for AWS-native tools & rapid prototyping.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {/* ----Who’s-Eligible? End ---- */}
 
 
-            {/* ---- Step Start ---- */}
-            <div className="step">
+            {/* ---- How it Works  Start ---- */}
+            {/* <div className="step">
                 <div className="vision text-center">
                     <div>
                         <h1 className="title">
@@ -217,8 +410,6 @@ const StartupProgram = () => {
 
                 </div>
                 <div className="row g-5">
-                    {/* {ProgramJourney?.map((i, index) => {
-                        return ( */}
                     <div className="col-12">
                         <div className="box h-100">
                             <div className="num">
@@ -243,21 +434,141 @@ const StartupProgram = () => {
                             </div>
                         </div>
                     </div>
-                    {/* )
-                    })} */}
+                </div>
+            </div> */}
+
+            <div className="brands" style={{ position: 'relative', minHeight: '300px' }}>
+                <h1 className="title">
+                    How it Works ?
+                </h1>
+
+                <div className="row justify-content-center justify-content-lg-between align-items-lg-end mb-2 mb-md-3 mb-lg-5">
+                    <div className="col-lg-6 col-6 col-12">
+                        <p className="desc text-center text-lg-start">
+                            We’ve made the process <br className='d-none d-xxl-block' />
+                            simple, so you can focus on<br className='d-none d-xxl-block' />
+                            building — not bureaucracy.
+                        </p>
+                    </div>
+                    <div className="col-lg-6 col-xl-5 col-xxl-4 col-6 col-12">
+                        <p className="description text-center text-lg-end mb-lg-0">
+                            From application to acceleration, here’s how we help your startup grow:
+                        </p>
+                    </div>
+                </div>
+                
+                <div className="step startup p-0">
+                    <Slider ref={sliderRef} {...settings}>
+                        {ProgramJourney?.map((item, index) => (
+                            <div key={index} className='d-flex align-items-center'>
+                                <div className="box h-100">
+                                    <div className="num">
+                                        0{index + 1}.
+                                    </div>
+                                    <div className="title mb-0 px-0 border-0">
+                                        {item?.title}
+                                    </div>
+                                    <div className="description pt-3">
+                                        <div className='mb-2' style={{ lineHeight: '26px' }}>
+                                            {item?.description}
+                                        </div>
+
+                                        {
+                                            item?.list?.length > 0 &&
+                                            <ul className='pt-3'>
+                                                {item?.list?.map((i) => (
+                                                    <li style={{ lineHeight: '26px' }}>{i}</li>
+                                                ))}
+                                            </ul>
+                                        }
+                                    </div>
+                                </div>
+
+                                {index !== ProgramJourney.length - 1 && (
+                                <div className="step-arrow mx-4">
+                                    <img src={startupsliderright} alt="arrow" />
+                                </div>
+                                )}
+                            </div>
+                        ))}
+                    </Slider>
                 </div>
             </div>
-            {/* ---- Step End ---- */}
+            {/* <div className="step startup p-0">
+                <Slider ref={sliderRef} {...settings}>
+                    {ProgramJourney?.map((item, index) => (
+                        <div key={index} >
+                            <div className="box h-100">
+                                <div className="num">
+                                    0{index + 1}.
+                                </div>
+                                <div className="title">
+                                    {item?.title}
+                                </div>
+                                <div className="description pt-3">
+                                    <div className='mb-2' style={{ lineHeight: '26px' }}>
+                                        {item?.description}
+                                    </div>
+
+                                    {
+                                        item?.list?.length > 0 &&
+                                        <ul className='pt-3'>
+                                            {item?.list?.map((i) => (
+                                                <li style={{ lineHeight: '26px' }}>{i}</li>
+                                            ))}
+                                        </ul>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </Slider>
+            </div> */}
+            {/* ---- How it Works  End ---- */}
 
 
-            <div className="brands sub waypoint startup-program text-center py-5">
-                <h1 className="title m-auto">
+            {/* ---- Product-Consulting Start ---- */}
+            <div className="vision s startup-program text-center ">
+                <div>
+                    <h1 className="title">
+                        Product Consulting
+                    </h1>
+
+                    <p className="description   s">
+                        Building With Purpose
+                    </p>
+
+                    <p className="description   s">
+                        At PATHSDATA, <span className="px-2">we help founders shape product and company</span> strategy, align technology with business goals, and build a foundation for scalable <br className='d-none d-block' />
+                        <span>
+                            growth. We empower your teams with guidance, frameworks, and insights to move faster and smarter.
+                        </span>
+                    </p>
+
+
+                    <div className='images d-flex gap-2 gap-sm-3 gap-lg-4 flex-wrap justify-content-center align-items-center'>
+                        <img src={consulting1} alt="" className="company-logo img-fluid" />
+                        <img src={consulting2} alt="" className="company-logo img-fluid" />
+                        <img src={consulting5} alt="" className="company-logo img-fluid" />
+                        <img src={consulting3} alt="" className="company-logo img-fluid" />
+                        <img src={consulting4} alt="" className="company-logo img-fluid" />
+                    </div>
+                </div>
+            </div>
+            {/* ---- Product-Consulting End ---- */}
+
+
+            <div className="brands sub waypoint startup-program outcomes text-center pt-5 pb-0 mt-md-3 mt-lg-5 " style={{ backgroundImage: 'none' }}>
+                <h1 className="title mx-auto ms-0">
                     Program Outcomes
                 </h1>
 
-                <p className="description">
-                    Outcome of Startup
+                <p className="description ms-0">
+                    The outcomes you can expect from this program.
                 </p>
+            </div>
+
+            <div className="brands sub waypoint startup-program outcomes text-center py-3 py-md-5">
 
                 <div className="drives row justify-content-center g-4 g-md-4">
                     <div className="col-xxl-4 col-lg-4 col-md-6 col-sm-6">
@@ -341,32 +652,14 @@ const StartupProgram = () => {
                 </div>
             </div>
 
-            <div className="brands sub waypoint startup-program text-center ">
-                <h1 className="title m-auto">
-                    Product Consulting
-                </h1>
-
-                <p className="description">
-                    Building With Purpose
-                </p>
-
-                <p className='short-description mb-3 mb-lg-4'>
-                    At PATHSDATA, we help founders shape their product and company strategy from the ground up.
-                </p>
-
-                <p className='short-description mb-3 mb-lg-4'>
-                    Our focus is on aligning technology with business goals, clarifying direction, and building a strong foundation for scalable growth.
-                </p>
-
-                <p className='short-description'>
-                    We don’t replace your product or design teams — we empower them with the right guidance, frameworks, and technical insight to move faster and smarter.
-                </p>
-            </div>
-
 
 
 
             <div className="copyright contact text-center" style={{ backgroundImage: 'none' }}>
+                <h1 className="title m-auto mb-4">
+                    Contact us
+                </h1>
+
                 <p className=''>
                     <span>
                         Ready to Accelerate Your AI Startup?
@@ -388,7 +681,7 @@ const StartupProgram = () => {
 
                     <Link
                         to="/contact-us"
-                        className="main-button book-btn discover-btn wd mt-0"
+                        className="main-button book-btn discover-btn wd call mt-0"
                     >
                         Book a Call
                     </Link>

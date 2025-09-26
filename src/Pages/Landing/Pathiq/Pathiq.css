@@ -126,6 +126,17 @@
     max-width: 65% !important;
 }
 
+.brands.sub.startup-program.outcomes {
+    /* background: transparent; */
+    background-image: url("../../../assets/images/board-bg.png");
+    background-size: 100% 100%;
+}
+
+.brands.sub.startup-program.outcomes .description {
+    max-width: 100% !important;
+    text-align: left;
+}
+
 .brands.sub.startup-program .description {
     margin: 25px auto 30px;
 }

@@ -276,6 +276,12 @@ footer .copy {
     margin-top: 40px;
 }
 
+.copyright.contact .book-btn.wd.call {
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+
 
 
 /* ---- Contact-Us End ---- */
